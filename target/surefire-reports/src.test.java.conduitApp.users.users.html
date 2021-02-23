@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+      
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+        <meta charset="utf-8">
+            
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+            
+        <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+            
+        <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+            
+        <link href="favicon.ico" rel="shortcut icon">
+            <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+        <title>src.test.java.conduitApp.users.users</title>
+          
+    </head>
+      
+    <body>
+            
+        <div id="root-container">
+                  
+            <div id="leftnav">
+                        
+                <div class="nav-logo">
+                              <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+                    <div class="nav-count">
+                                    
+                        <div class="bg-success" id="nav-pass">1</div>
+                                    
+                        <div class="bg-danger" id="nav-fail">0</div>
+                                  
+                    </div>
+                            
+                </div>
+                        
+                <div id="nav-type">Scenarios</div>
+                         
+        
+                <div id="nav-date">2021-02-23 01:39:19 PM</div>
+                        
+      
+                <div class="nav-container">
+                    <div class="nav-item passed">
+                        <a href="#[1:7]">[1:7] get all users and then get the first user by id </a>
+                    </div>
+                </div>
+            </div>
+                  
+            <div id="content">
+                      
+                <div class="page-heading alert alert-primary">
+                    <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/conduitApp/users/users.feature</span><span class="feature-description">sample karate test script | for help, see: https://github.com/intuit/karate/wiki/IDE-Support</span>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[1:7]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">get all users and then get the first user by id </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 849</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[1:7]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:7]bg">
+                        <div class="step-container" id="1">
+                            <div class="step-ref bg-step">1</div>
+                            <div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="preformatted" data-parent="1">13:39:18.757 karate.env system property was:</div>
+                    <div class="step-row">
+                        <div class="step-container" id="2">
+                            <div class="step-ref passed">2</div>
+                            <div class="step-cell passed">Given path 'users'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="3">
+                            <div class="step-ref passed">3</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">651</div>
+                    </div>
+                    <div class="preformatted" data-parent="3">13:39:19.134 request:
+1 &gt; GET https://jsonplaceholder.typicode.com/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+
+13:39:19.466 response time in milliseconds: 327.98
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Age: 6538
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 6260aa6728922c6e-LHR
+1 &lt; Cache-Control: max-age=43200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 23 Feb 2021 11:39:19 GMT
+1 &lt; Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; Expires: -1
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=9W64%2F3meWCgKdLzN%2F65HdeZHHPILlD%2BIGEUa24Bm2spBFvqya1hV%2F8jVUOE8dSja8RXRMlani%2BfKrGe0iIqvfz0fpeNBBoxFZp16Btq7yKZGGr1cy5eDjxvn%2FxmI"}]}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d901656a66029b5282619ca870d953a7e1614080359; expires=Thu, 25-Mar-21 11:39:19 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1607681300
+1 &lt; cf-request-id: 087048d47800002c6e6fb5d000000001
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]</div>
+                    <div class="step-row">
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">* def first = response[0]</div>
+                        </div>
+                        <div class="time-cell passed">12</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">Given path 'users', first.id</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">When method get</div>
+                        </div>
+                        <div class="time-cell passed">174</div>
+                    </div>
+                    <div class="preformatted" data-parent="7">13:39:19.494 request:
+2 &gt; GET https://jsonplaceholder.typicode.com/users/1
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Cookie: __cfduid=d901656a66029b5282619ca870d953a7e1614080359
+2 &gt; Host: jsonplaceholder.typicode.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+
+13:39:19.667 response time in milliseconds: 171.38
+2 &lt; 200
+2 &lt; Age: 20532
+2 &lt; CF-Cache-Status: HIT
+2 &lt; CF-RAY: 6260aa688996079a-LHR
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Tue, 23 Feb 2021 11:39:19 GMT
+2 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=oSRyFX%2FYOIqoCaPKVt4T9AXYYJeTP%2F%2BfXs9KR5LXzP50%2Be%2Fjnagk%2BIVU1YgUzyu3mSN%2FOEDtJta%2B0nQGf0lXerGuZiqRnzVmtaD9RuhNmtHA9Cl6ArnuToYg30ay"}],"max_age":604800,"group":"cf-nel"}
+2 &lt; Server: cloudflare
+2 &lt; Transfer-Encoding: chunked
+2 &lt; access-control-allow-credentials: true
+2 &lt; cache-control: max-age=43200
+2 &lt; cf-request-id: 087048d55a0000079aeeb50000000001
+2 &lt; etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 &lt; expires: -1
+2 &lt; pragma: no-cache
+2 &lt; vary: Origin, Accept-Encoding
+2 &lt; via: 1.1 vegur
+2 &lt; x-content-type-options: nosniff
+2 &lt; x-powered-by: Express
+2 &lt; x-ratelimit-limit: 1000
+2 &lt; x-ratelimit-remaining: 999
+2 &lt; x-ratelimit-reset: 1604890671
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+           
+  
+    </body>
+    
+</html>

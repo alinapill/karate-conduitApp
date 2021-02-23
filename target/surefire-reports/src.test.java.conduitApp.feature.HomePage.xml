@@ -1,0 +1,29 @@
+<testsuite failures="0" name="src/test/java/conduitApp/feature/HomePage.feature" skipped="0" tests="2" time="2.38417">
+  <testcase classname="src.test.java.conduitApp.feature.HomePage" name="Get all tags" time="1.714368">
+    <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
+Given path 'tags' ......................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.tags contains ['Gandhi', 'test'] ....................... passed
+And match response.tags !contains ['truck'] ............................... passed
+And match response.tags ==  "#array" ...................................... passed
+And match each response.tags ==  "#string" ................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.conduitApp.feature.HomePage" name="Get 10 articles from the page" time="0.669801">
+    <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
+Given path 'tags' ......................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.tags contains ['Gandhi', 'test'] ....................... passed
+And match response.tags !contains ['truck'] ............................... passed
+And match response.tags ==  "#array" ...................................... passed
+And match each response.tags ==  "#string" ................................ passed
+Given url 'https://conduit.productionready.io/api/' ....................... passed
+Given params { limit: 10, offset: 0 } ..................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles == '#[10]' .................................... passed
+And match response.articlesCount == 500 ................................... passed</system-out>
+  </testcase>
+</testsuite>

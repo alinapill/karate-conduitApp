@@ -1,0 +1,132 @@
+14:19:14.117 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:19:14.354 request:
+1 > GET https://conduit.productionready.io/api/tags
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+
+14:19:15.795 response time in milliseconds: 1436.93
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6260e4e0be0dacd6-OTP
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 23 Feb 2021 12:19:15 GMT
+1 < ETag: W/"f4abc756b99299a48e9c94d735964e40"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=mdWM1SbI%2F2odKmMZC2jekuu6zu6glxMuYfj2k6t95n3vR7GM572KcFIypjibOWQGzGsemwwYwrxchcIGIFInq0D8ULjsDT3UBtRewzUdwnHpZU3hmJOR5GsK8g%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=db83e75ee3505f603473ed48aee4aad0b1614082754; expires=Thu, 25-Mar-21 12:19:14 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 8cd87f2b-f0f2-437f-b6b7-606823fb1e5e
+1 < X-Runtime: 0.830541
+1 < X-XSS-Protection: 1; mode=block
+1 < cf-request-id: 08706d60730000acd66f332000000001
+{"tags":["‌","‌‌","‌‌‌","‌‌‌‌","‌‌‌‌‌‌‌","‌‌‌‌‌‌‌‌","‌‌‌‌‌","‌‌‌‌‌‌‌‌‌‌‌","‌‌‌‌‌‌‌‌‌‌","‌‌‌‌‌‌","HuManIty","Hu‌Man‌Ity","Gandhi","HITLER","SIDA","BlackLivesMatter","Black‌Lives‌Matter","test","dragons","butt"]}
+
+14:19:15.855 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:19:15.860 request:
+1 > GET https://conduit.productionready.io/api/articles?limit=10&offset=0
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+
+14:19:16.515 response time in milliseconds: 651.56
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6260e4e94826fcf9-OTP
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 23 Feb 2021 12:19:16 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=M17YV6JFHh6fuj6RLHxEi0JQeD8nb0r1qzR0YnzcQn3B7GOQ2IVLIBBXhGGZ%2FCYbFRuxKyDd3Ms6dDeIoV84DqyDhu%2FSjgFrsoQNxhnnsjPEfDvPftte4QqoUg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d66b58fc9a7ee71d25985519a278607c51614082756; expires=Thu, 25-Mar-21 12:19:16 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < cache-control: max-age=0, private, must-revalidate
+1 < cf-request-id: 08706d65cf0000fcf91d3e9000000001
+1 < etag: W/"973f88b92a54b4f5e15b4e66aa452b6a"
+1 < status: 200 OK
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-powered-by: Phusion Passenger 4.0.60
+1 < x-request-id: f419fbfa-2ace-4c2a-95e0-06e296409bc5
+1 < x-runtime: 0.141903
+1 < x-xss-protection: 1; mode=block
+{"articles":[{"title":"Bla bla","slug":"bla-bla-s37onk","body":"body","createdAt":"2021-02-23T12:18:57.878Z","updatedAt":"2021-02-23T12:18:57.878Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-o97onu","body":"body","createdAt":"2021-02-23T12:17:15.808Z","updatedAt":"2021-02-23T12:17:15.808Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-rzg40q","body":"body","createdAt":"2021-02-23T12:09:29.822Z","updatedAt":"2021-02-23T12:09:29.822Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-2n0ca9","body":"body","createdAt":"2021-02-23T12:08:27.124Z","updatedAt":"2021-02-23T12:08:27.124Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Test","slug":"test-yf5txk","body":"Test 2","createdAt":"2021-02-23T11:33:03.787Z","updatedAt":"2021-02-23T11:33:03.787Z","tagList":[],"description":"Test 1","author":{"username":"arden.wong1010","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"ABC EFFGH","slug":"abc-effgh-gqrzfl","body":"aaa","createdAt":"2021-02-23T11:29:21.765Z","updatedAt":"2021-02-23T11:29:21.765Z","tagList":["ijk","deff","abc"],"description":"aaaaf","author":{"username":"tkt028","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"sdasdsa","slug":"sdasdsa-a3esto","body":"dasdasdasdsad","createdAt":"2021-02-23T11:27:12.896Z","updatedAt":"2021-02-23T11:27:12.896Z","tagList":["dasdasdsadasdasd"],"description":"dasdsa","author":{"username":"Kaaa Kaaa","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Test title","slug":"test-title-qzxcap","body":"Test article","createdAt":"2021-02-23T11:26:42.078Z","updatedAt":"2021-02-23T11:26:42.078Z","tagList":[],"description":"Test subject","author":{"username":"ilay","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Test","slug":"test-pzzx51","body":"Test 2","createdAt":"2021-02-23T11:20:21.086Z","updatedAt":"2021-02-23T11:20:21.086Z","tagList":[],"description":"Test 1","author":{"username":"arden.wong1010","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"This is a title","slug":"this-is-a-title-qfofrt","body":"This is a body of the article","createdAt":"2021-02-23T11:10:03.750Z","updatedAt":"2021-02-23T11:10:03.750Z","tagList":[],"description":"This is a description","author":{"username":"marianocu@gmail.com","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}
+
+ask-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+13:39:19.494 request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=d901656a66029b5282619ca870d953a7e1614080359
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+
+13:39:19.667 response time in milliseconds: 171.38
+2 < 200
+2 < Age: 20532
+2 < CF-Cache-Status: HIT
+2 < CF-RAY: 6260aa688996079a-LHR
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Tue, 23 Feb 2021 11:39:19 GMT
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=oSRyFX%2FYOIqoCaPKVt4T9AXYYJeTP%2F%2BfXs9KR5LXzP50%2Be%2Fjnagk%2BIVU1YgUzyu3mSN%2FOEDtJta%2B0nQGf0lXerGuZiqRnzVmtaD9RuhNmtHA9Cl6ArnuToYg30ay"}],"max_age":604800,"group":"cf-nel"}
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < access-control-allow-credentials: true
+2 < cache-control: max-age=43200
+2 < cf-request-id: 087048d55a0000079aeeb50000000001
+2 < etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < expires: -1
+2 < pragma: no-cache
+2 < vary: Origin, Accept-Encoding
+2 < via: 1.1 vegur
+2 < x-content-type-options: nosniff
+2 < x-powered-by: Express
+2 < x-ratelimit-limit: 1000
+2 < x-ratelimit-remaining: 999
+2 < x-ratelimit-reset: 1604890671
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+

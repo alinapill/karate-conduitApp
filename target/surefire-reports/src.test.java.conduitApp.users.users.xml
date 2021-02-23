@@ -1,0 +1,12 @@
+<testsuite failures="0" name="src/test/java/conduitApp/users/users.feature" skipped="0" tests="1" time="0.848529">
+  <testcase classname="src.test.java.conduitApp.users.users" name="get all users and then get the first user by id" time="0.848529">
+    <system-out>* url 'https://jsonplaceholder.typicode.com' .............................. passed
+Given path 'users' ........................................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def first = response[0] ................................................. passed
+Given path 'users', first.id .............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
