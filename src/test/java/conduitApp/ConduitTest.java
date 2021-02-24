@@ -10,5 +10,5 @@ class ConduitTest {
     Karate testAll() {
         return Karate.run().relativeTo(getClass());
     }
-    
 }
+

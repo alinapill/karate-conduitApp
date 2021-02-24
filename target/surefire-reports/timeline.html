@@ -13,7 +13,7 @@
     <div id="visualization"></div>
     <script>
 var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-3"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"HomePage[1:6]","start":780,"end":2508,"title":"HomePage[1:6] 02:00:00.780-02:00:02.508 Get all tags"},{"id":2,"group":1,"content":"HomePage[2:16]","start":2516,"end":3187,"title":"HomePage[2:16] 02:00:02.516-02:00:03.187 Get 10 articles from the page"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"Articles[1:8]","start":506,"end":2274,"title":"Articles[1:8] 02:00:00.506-02:00:02.274 Create a new article"},{"id":2,"group":1,"content":"Articles[2:27]","start":2282,"end":4868,"title":"Articles[2:27] 02:00:02.282-02:00:04.868 Create and Delete article"}]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });

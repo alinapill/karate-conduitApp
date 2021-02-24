@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="conduitApp.ConduitTest" time="0.609" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="14"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/apila/Documents/GitHub/karate-conduitApp/target/test-classes:/Users/apila/Documents/GitHub/karate-conduitApp/target/classes:/Users/apila/.m2/repository/com/intuit/karate/karate-apache/0.9.6/karate-apache-0.9.6.jar:/Users/apila/.m2/repository/com/intuit/karate/karate-core/0.9.6/karate-core-0.9.6.jar:/Users/apila/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/apila/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/apila/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/apila/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/apila/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/apila/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/apila/.m2/repository/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar:/Users/apila/.m2/repository/de/siegmar/fastcsv/1.0.3/fastcsv-1.0.3.jar:/Users/apila/.m2/repository/info/picocli/picocli/4.0.3/picocli-4.0.3.jar:/Users/apila/.m2/repository/org/apache/httpcomponents/httpclient/4.5.12/httpclient-4.5.12.jar:/Users/apila/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/apila/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/apila/.m2/repository/org/apache/httpcomponents/httpmime/4.5.12/httpmime-4.5.12.jar:/Users/apila/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/apila/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/apila/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/apila/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/apila/.m2/repository/com/intuit/karate/karate-junit5/0.9.6/karate-junit5-0.9.6.jar:/Users/apila/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/apila/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/apila/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/apila/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/apila/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/apila/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RO"/>
+    <property name="sun.boot.library.path" value="/Users/apila/Library/Java/JavaVirtualMachines/openjdk-14.0.1/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/apila/Documents/GitHub/karate-conduitApp/target/surefire/surefirebooter12860491905859826049.jar /Users/apila/Documents/GitHub/karate-conduitApp/target/surefire 2021-02-23T20-33-07_941-jvmRun1 surefire8003107849342722559tmp surefire_09500065975956236639tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/apila/Documents/GitHub/karate-conduitApp/target/test-classes:/Users/apila/Documents/GitHub/karate-conduitApp/target/classes:/Users/apila/.m2/repository/com/intuit/karate/karate-apache/0.9.6/karate-apache-0.9.6.jar:/Users/apila/.m2/repository/com/intuit/karate/karate-core/0.9.6/karate-core-0.9.6.jar:/Users/apila/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/apila/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/apila/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/apila/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/apila/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/apila/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/apila/.m2/repository/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar:/Users/apila/.m2/repository/de/siegmar/fastcsv/1.0.3/fastcsv-1.0.3.jar:/Users/apila/.m2/repository/info/picocli/picocli/4.0.3/picocli-4.0.3.jar:/Users/apila/.m2/repository/org/apache/httpcomponents/httpclient/4.5.12/httpclient-4.5.12.jar:/Users/apila/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/apila/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/apila/.m2/repository/org/apache/httpcomponents/httpmime/4.5.12/httpmime-4.5.12.jar:/Users/apila/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/apila/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/apila/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/apila/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/apila/.m2/repository/com/intuit/karate/karate-junit5/0.9.6/karate-junit5-0.9.6.jar:/Users/apila/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/apila/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/apila/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/apila/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/apila/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/apila/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/apila"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-04-14"/>
+    <property name="java.home" value="/Users/apila/Library/Java/JavaVirtualMachines/openjdk-14.0.1/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/apila/Documents/GitHub/karate-conduitApp"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="karate.options" value="--tags ~@ignore"/>
+    <property name="surefire.real.class.path" value="/Users/apila/Documents/GitHub/karate-conduitApp/target/surefire/surefirebooter12860491905859826049.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="14.0.1+7"/>
+    <property name="user.name" value="apila"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/apila/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/48/566m907n5_vgtqr35g25mhrhj0mrtj/T/"/>
+    <property name="java.version" value="14.0.1"/>
+    <property name="user.dir" value="/Users/apila/Documents/GitHub/karate-conduitApp"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/apila/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="14.0.1+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="58.0"/>
+  </properties>
+  <testcase name="testAll" classname="conduitApp.ConduitTest" time="0.608">
+    <failure message="no features or scenarios found: [classpath:conduitApp]" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: no features or scenarios found: [classpath:conduitApp]
+</failure>
+    <system-out><![CDATA[20:33:08.711 [main] INFO com.intuit.karate.RunnerOptions - found system property 'karate.options': --tags ~@ignore
+]]></system-out>
+    <system-err><![CDATA[Warning: Nashorn engine is planned to be removed from a future JDK release
+]]></system-err>
+  </testcase>
+</testsuite>

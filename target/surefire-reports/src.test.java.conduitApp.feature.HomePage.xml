@@ -1,5 +1,5 @@
-<testsuite failures="0" name="src/test/java/conduitApp/feature/HomePage.feature" skipped="0" tests="2" time="2.38417">
-  <testcase classname="src.test.java.conduitApp.feature.HomePage" name="Get all tags" time="1.714368">
+<testsuite failures="0" name="src/test/java/conduitApp/feature/HomePage.feature" skipped="0" tests="2" time="2.51104">
+  <testcase classname="src.test.java.conduitApp.feature.HomePage" name="Get all tags" time="1.880982">
     <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
 Given path 'tags' ......................................................... passed
 When method Get ........................................................... passed
@@ -9,7 +9,7 @@ And match response.tags !contains ['truck'] ............................... pass
 And match response.tags ==  "#array" ...................................... passed
 And match each response.tags ==  "#string" ................................ passed</system-out>
   </testcase>
-  <testcase classname="src.test.java.conduitApp.feature.HomePage" name="Get 10 articles from the page" time="0.669801">
+  <testcase classname="src.test.java.conduitApp.feature.HomePage" name="Get 10 articles from the page" time="0.630058">
     <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
 Given path 'tags' ......................................................... passed
 When method Get ........................................................... passed

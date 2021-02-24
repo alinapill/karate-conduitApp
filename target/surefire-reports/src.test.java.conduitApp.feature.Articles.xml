@@ -1,16 +1,47 @@
-<testsuite failures="0" name="src/test/java/conduitApp/feature/Articles.feature" skipped="0" tests="1" time="1.835445">
-  <testcase classname="src.test.java.conduitApp.feature.Articles" name="Create a new article" time="1.835445">
+<testsuite failures="0" name="src/test/java/conduitApp/feature/Articles.feature" skipped="0" tests="2" time="4.336207">
+  <testcase classname="src.test.java.conduitApp.feature.Articles" name="Create a new article" time="1.753728">
     <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
-Given path 'users/login' .................................................. passed
-And request {"user": {"email": "karate@user.com", "password": "karate123"}} . passed
-When method Post .......................................................... passed
-Then status 200 ........................................................... passed
-* def token = response.user.token ......................................... passed
+* def tokenResponse = callonce read('../../helpers/CreateToken.feature@CreateToken') { "email": "karate@user.com", "password": "karate123"} . passed
+* def token = tokenResponse.authToken ..................................... passed
 Given header Authorization = 'Token ' + token ............................. passed
 Given path 'articles' ..................................................... passed
 And request ............................................................... passed
 When method Post .......................................................... passed
 Then status 200 ........................................................... passed
 And match response.article.title == 'Bla bla' ............................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.conduitApp.feature.Articles" name="Create and Delete article" time="2.582479">
+    <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
+* def tokenResponse = callonce read('../../helpers/CreateToken.feature@CreateToken') { "email": "karate@user.com", "password": "karate123"} . passed
+* def token = tokenResponse.authToken ..................................... passed
+Given header Authorization = 'Token ' + token ............................. passed
+Given path 'articles' ..................................................... passed
+And request ............................................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == 'Bla bla' ............................. passed
+Given url 'https://conduit.productionready.io/api/' ....................... passed
+* def tokenResponse = callonce read('../../helpers/CreateToken.feature@CreateToken') { "email": "karate@user.com", "password": "karate123"} . passed
+* def token = tokenResponse.authToken ..................................... passed
+Given header Authorization = 'Token ' + token ............................. passed
+Given path 'articles' ..................................................... passed
+And request ............................................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def articleId = response.article.slug ................................... passed
+Given params { limit: 10, offset: 0 } ..................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title == 'Delete test' ..................... passed
+Given header Authorization = 'Token ' + token ............................. passed
+Given path 'articles', articleId .......................................... passed
+When method Delete ........................................................ passed
+Then status 200 ........................................................... passed
+Given params { limit: 10, offset: 0 } ..................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title != 'Delete test' ..................... passed</system-out>
   </testcase>
 </testsuite>
