@@ -1,0 +1,10 @@
+<testsuite failures="0" name="src/test/java/conduitApp/feature/SignUp.feature" skipped="0" tests="1" time="1.270156">
+  <testcase classname="src.test.java.conduitApp.feature.SignUp" name="Create a new user | Sign up" time="1.270156">
+    <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
+Given def userData = {"email":"KarateUser22@user.com","username":"KarateUser22"} . passed
+Given path 'users' ........................................................ passed
+And request ............................................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>
