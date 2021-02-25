@@ -1,0 +1,30 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+target
+
+# IntelliJ
+.idea/*
+/out/
+*.iml
+
+.DS_Store
+
+tmp/
+build/
+out/
+
+**/*.iml
+**/*.ipr
+**/*.iws
+**/.idea
+
+**/.gradle
+
+*.DS_Store
+
+karate.log
+
+/.vscode/

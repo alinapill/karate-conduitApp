@@ -9,7 +9,9 @@ Feature: Tests for the HomePage
         Then status 200
         And match response.tags contains ['Gandhi', 'test']
         And match response.tags !contains ['truck']
-             # fuzzy validation
+        And match response.tags contains any ['dragons', 'test', 'Hitler']
+        And match response.tags !contains any ['dragons1', 'test1', 'Hitler1']
+        # fuzzy validation
         And match response.tags ==  "#array"
         And match each response.tags ==  "#string"
 
@@ -20,5 +22,11 @@ Feature: Tests for the HomePage
         Then status 200
         And match response.articles == '#[10]'
         And match response.articlesCount == 500
-
-   
+        And match response.articlesCount != 100
+        # assert response objects
+        And match response == {"articles": "#array", "articlesCount": 500 }
+        And match response.articles[0].createdAt contains '2021'
+        # (*) is a wildcard in karate (karate looks at all values of the array |   at least one bio is null)
+        And match response.articles[*].author.bio contains null
+        # shortcut to get the values of the object/array using (..)
+        And match each response..following == false
