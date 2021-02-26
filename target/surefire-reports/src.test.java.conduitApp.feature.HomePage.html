@@ -46,12 +46,12 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2021-02-25 03:55:09 PM</div>
+                <div id="nav-date">2021-02-26 10:53:32 AM</div>
                         
       
                 <div class="nav-container">
                     <div class="nav-item passed">
-                        <a href="#[2:18]">[2:18] Get 10 articles from the page </a>
+                        <a href="#[2:21]">[2:21] Get 10 articles from the page </a>
                     </div>
                 </div>
             </div>
@@ -62,105 +62,112 @@
                     <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/conduitApp/feature/HomePage.feature</span><span class="feature-description">Tests for the HomePage</span>
                 </div>
                 <div class="scenario">
-                    <div class="scenario-heading" id="[2:18]">
+                    <div class="scenario-heading" id="[2:21]">
                         <div class="heading-container">
                             <div class="scenario-tags"></div>
-                            <span class="scenario-keyword">Scenario: [2:18]</span><span class="scenario-name">Get 10 articles from the page </span>
+                            <span class="scenario-keyword">Scenario: [2:21]</span><span class="scenario-name">Get 10 articles from the page </span>
                         </div>
-                        <div class="scenario-time passed">ms: 1365</div>
+                        <div class="scenario-time passed">ms: 1747</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="[2:18]bg">
+                        <div class="step-container" id="[2:21]bg">
                             <div class="step-ref bg-step">&gt;&gt;</div>
                             <div class="step-cell passed">Background:</div>
                         </div>
                         <div class="time-cell passed"></div>
                     </div>
-                    <div class="step-row" data-parent="[2:18]bg">
+                    <div class="step-row" data-parent="[2:21]bg">
                         <div class="step-container" id="1">
                             <div class="step-ref bg-step">1</div>
                             <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
                         </div>
-                        <div class="time-cell passed">2</div>
+                        <div class="time-cell passed">3</div>
                     </div>
-                    <div class="preformatted" data-parent="1">15:55:08.449 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="preformatted" data-parent="1">10:53:31.026 not a js function or feature file: [type: NULL, value: null]</div>
                     <div class="step-row">
                         <div class="step-container" id="2">
                             <div class="step-ref passed">2</div>
-                            <div class="step-cell passed">Given params { limit: 10, offset: 0 }</div>
+                            <div class="step-cell passed">* def timeValidator = read('../../helpers/timeValidator.js')</div>
                         </div>
-                        <div class="time-cell passed">35</div>
+                        <div class="time-cell passed">65</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="3">
                             <div class="step-ref passed">3</div>
-                            <div class="step-cell passed">Given path 'articles'</div>
+                            <div class="step-cell passed">Given params { limit: 10, offset: 0 }</div>
                         </div>
-                        <div class="time-cell passed">3</div>
+                        <div class="time-cell passed">39</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="4">
                             <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">Given path 'articles'</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
                             <div class="step-cell passed">When method Get</div>
                         </div>
-                        <div class="time-cell passed">1302</div>
+                        <div class="time-cell passed">1573</div>
                     </div>
-                    <div class="preformatted" data-parent="4">15:55:08.770 request:
+                    <div class="preformatted" data-parent="5">10:53:31.510 request:
 1 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: conduit.productionready.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 
-15:55:09.805 response time in milliseconds: 1030.92
+10:53:32.723 response time in milliseconds: 1208.89
 1 &lt; 200
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 6271ec277d12fcfd-OTP
+1 &lt; CF-RAY: 62786fbb0bdaad00-OTP
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 25 Feb 2021 13:55:11 GMT
-1 &lt; ETag: W/"2a306d4ab53c14986802f7eefcf1d836"
+1 &lt; Date: Fri, 26 Feb 2021 08:53:35 GMT
+1 &lt; ETag: W/"f56cb196ac1731b7f068cbf6bababd8f"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=VTK6stUjQMWHO1kUN4JdEn6JtpmARv2yYvtTfJUw8Pvq3tui2volvsxBEKIJmdkPZ%2BSOYU%2B3y6erDbQGrsETMIjRjyIMnhKwJK1iNHiSjlcLbSxtuSRyN4iT5w%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=EoHeeqWZ6JpvbyLsziXSXcSEdbODwSrtAnfaJqNC4HdvL%2B25q5elszNma8WpsaUNSpW0oNtMtSDDzzy8Gz0idgj0oiQHBsiGCVaDEFjOPqzPsL2RbNK%2FGcwv0Q%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=dce151922d1d98cdad439b324ee6a62121614261310; expires=Sat, 27-Mar-21 13:55:10 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Set-Cookie: __cfduid=d1be616d229a504e576d72a0b40b27f351614329614; expires=Sun, 28-Mar-21 08:53:34 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 &lt; Status: 200 OK
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Origin
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Powered-By: Phusion Passenger 4.0.60
-1 &lt; X-Request-Id: 1e6ac9ef-a65e-42bd-86d6-62a81bb2f164
-1 &lt; X-Runtime: 0.236298
+1 &lt; X-Request-Id: fcbbdcf3-4fe7-4e98-b5bb-53a55772f525
+1 &lt; X-Runtime: 0.185579
 1 &lt; X-XSS-Protection: 1; mode=block
-1 &lt; cf-request-id: 087b11ecaa0000fcfd441b7000000001
-{"articles":[{"title":"some title","slug":"some-title-yeccpm","body":"some body","createdAt":"2021-02-25T13:40:12.141Z","updatedAt":"2021-02-25T13:40:12.141Z","tagList":[],"description":"some description","author":{"username":"Di5235235","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"some title","slug":"some-title-s7w7n","body":"some body","createdAt":"2021-02-25T13:40:07.925Z","updatedAt":"2021-02-25T13:40:07.925Z","tagList":[],"description":"some description","author":{"username":"Di5235235","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Test","slug":"test-9v87g1","body":"Test 2","createdAt":"2021-02-25T13:39:05.941Z","updatedAt":"2021-02-25T13:39:05.941Z","tagList":[],"description":"Test 1","author":{"username":"innanep","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Conga","slug":"conga-yki7la","body":"Learning karate","createdAt":"2021-02-25T13:35:34.725Z","updatedAt":"2021-02-25T13:35:34.725Z","tagList":[],"description":"About testing","author":{"username":"titotullidito","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"test title","slug":"test-title-hfn3ub","body":"test content","createdAt":"2021-02-25T13:25:51.062Z","updatedAt":"2021-02-25T13:25:51.062Z","tagList":[],"description":"test about","author":{"username":"test743700","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"test title","slug":"test-title-bmgkuz","body":"test content","createdAt":"2021-02-25T13:25:46.709Z","updatedAt":"2021-02-25T13:25:46.709Z","tagList":[],"description":"test about","author":{"username":"test743700","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Some","slug":"some-fs0gla","body":"text about life","createdAt":"2021-02-25T13:20:00.525Z","updatedAt":"2021-02-25T13:20:00.525Z","tagList":["Life"],"description":"soooome","author":{"username":"some_good","bio":null,"image":"https://www.ferra.ru/thumb/1720x0/filters:quality(75):no_upscale()/imgs/2019/10/19/11/3616575/7f9ac917e0d2052a54773bc77c5541e7a3ecc339.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"test title","slug":"test-title-u7xpvm","body":"test content","createdAt":"2021-02-25T13:03:33.157Z","updatedAt":"2021-02-25T13:03:33.157Z","tagList":[],"description":"test about","author":{"username":"test36546","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":2},{"title":"test title","slug":"test-title-npg1dq","body":"test content","createdAt":"2021-02-25T13:03:27.220Z","updatedAt":"2021-02-25T13:03:27.220Z","tagList":[],"description":"test about","author":{"username":"test36546","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Article Test","slug":"article-test-pjipdr","body":"Write etwas","createdAt":"2021-02-25T12:56:04.086Z","updatedAt":"2021-02-25T12:56:04.086Z","tagList":[],"description":"To test Article","author":{"username":"testconduittest","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1}],"articlesCount":500}</div>
+1 &lt; cf-request-id: 087f2428e50000ad004b2fe000000001
+{"articles":[{"title":"testTitle8385371","slug":"testtitle8385371-q9zl4b","body":"testContent5265709","createdAt":"2021-02-26T08:51:38.511Z","updatedAt":"2021-02-26T08:51:38.511Z","tagList":[],"description":"testAbout5825143","author":{"username":"test5688180","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"testTitle3078501","slug":"testtitle3078501-ik9g8j","body":"testContent4880742","createdAt":"2021-02-26T08:50:47.119Z","updatedAt":"2021-02-26T08:50:47.119Z","tagList":[],"description":"testAbout205586","author":{"username":"test51977864","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"testTitle5235874","slug":"testtitle5235874-fkq2xr","body":"testContent6578275","createdAt":"2021-02-26T08:50:17.065Z","updatedAt":"2021-02-26T08:50:17.065Z","tagList":[],"description":"testAbout9292935","author":{"username":"test56797441","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"testTitle5531803","slug":"testtitle5531803-74st8i","body":"testContent2338290","createdAt":"2021-02-26T08:49:00.927Z","updatedAt":"2021-02-26T08:49:00.927Z","tagList":[],"description":"testAbout4881059","author":{"username":"test27160583","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"test test test","slug":"test-test-test-g0n7hc","body":"fgf","createdAt":"2021-02-26T08:40:56.089Z","updatedAt":"2021-02-26T08:40:56.089Z","tagList":["ii"],"description":"short description","author":{"username":"Maksim Adams","bio":null,"image":"https://99px.ru/sstorage/41/2016/12/image_412712160204353152833.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"testTitle2003243","slug":"testtitle2003243-u3llq7","body":"testContent194097","createdAt":"2021-02-26T08:38:06.018Z","updatedAt":"2021-02-26T08:38:06.018Z","tagList":[],"description":"testAbout5557033","author":{"username":"test98525286","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"fgdfg","slug":"fgdfg-hgjg1w","body":"dfgfdg","createdAt":"2021-02-26T08:35:58.974Z","updatedAt":"2021-02-26T08:35:58.974Z","tagList":[],"description":"fdgg","author":{"username":"testart123","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"testTitle6744001","slug":"testtitle6744001-x4udoq","body":"testContent403002","createdAt":"2021-02-26T08:34:33.476Z","updatedAt":"2021-02-26T08:34:33.476Z","tagList":[],"description":"testAbout4340259","author":{"username":"test52364526","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"testTitle3054335","slug":"testtitle3054335-az0x77","body":"testContent9414968","createdAt":"2021-02-26T08:33:24.379Z","updatedAt":"2021-02-26T08:33:24.379Z","tagList":[],"description":"testAbout5727695","author":{"username":"test44395743","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"testTitle8720421","slug":"testtitle8720421-ul8fov","body":"testContent8714163","createdAt":"2021-02-26T08:32:48.636Z","updatedAt":"2021-02-26T08:32:48.636Z","tagList":[],"description":"testAbout6749153","author":{"username":"test34735628","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}</div>
                     <div class="step-row">
-                        <div class="step-container" id="5">
-                            <div class="step-ref passed">5</div>
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
                             <div class="step-cell passed">Then status 200</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="6">
-                            <div class="step-ref passed">6</div>
-                            <div class="step-cell passed">And match response.articles == '#[10]'</div>
-                        </div>
-                        <div class="time-cell passed">8</div>
-                    </div>
-                    <div class="step-row">
                         <div class="step-container" id="7">
                             <div class="step-ref passed">7</div>
-                            <div class="step-cell passed">And match response.articlesCount == 500</div>
+                            <div class="step-cell passed">And match response.articles == '#[10]'</div>
                         </div>
-                        <div class="time-cell passed">3</div>
+                        <div class="time-cell passed">7</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="8">
                             <div class="step-ref passed">8</div>
+                            <div class="step-cell passed">And match response.articlesCount == 500</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
                             <div class="step-cell passed">And match response.articlesCount != 100</div>
                         </div>
                         <div class="time-cell passed">2</div>
@@ -173,15 +180,15 @@
                         <div class="time-cell comment"></div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="9">
-                            <div class="step-ref passed">9</div>
-                            <div class="step-cell passed">And match response == {"articles": "#array", "articlesCount": 500 }</div>
-                        </div>
-                        <div class="time-cell passed">0</div>
-                    </div>
-                    <div class="step-row">
                         <div class="step-container" id="10">
                             <div class="step-ref passed">10</div>
+                            <div class="step-cell passed">And match response == {"articles": "#array", "articlesCount": 500 }</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
                             <div class="step-cell passed">And match response.articles[0].createdAt contains '2021'</div>
                         </div>
                         <div class="time-cell passed">3</div>
@@ -189,24 +196,90 @@
                     <div class="step-row">
                         <div class="step-container">
                             <div class="step-ref passed"></div>
-                            <div class="step-cell comment"># (*) is a wildcard in karate (ar least one bio is null)</div>
+                            <div class="step-cell comment"># (*) is a wildcard in karate (karate looks at all values of the array |   at least one bio is null)</div>
                         </div>
                         <div class="time-cell comment"></div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="11">
-                            <div class="step-ref passed">11</div>
-                            <div class="step-cell passed">And match response.articles[*].author.bio contains null</div>
-                        </div>
-                        <div class="time-cell passed">3</div>
-                    </div>
-                    <div class="step-row">
                         <div class="step-container" id="12">
                             <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">And match response.articles[*].author.bio contains null</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># shortcut to get the values of the object/array using (..)</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="13">
+                            <div class="step-ref passed">13</div>
                             <div class="step-cell passed">And match each response..following == false</div>
                         </div>
                         <div class="time-cell passed">3</div>
                     </div>
+                    <div class="step-row">
+                        <div class="step-container" id="14">
+                            <div class="step-ref passed">14</div>
+                            <div class="step-cell passed">And match each response..following == '#boolean'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="15">
+                            <div class="step-ref passed">15</div>
+                            <div class="step-cell passed">And match each response..favouritesCount == '#number'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># (##) null or String</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">And match each response..bio == '##string'</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># schema validation</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-cell passed">And match each response.articles ==</div>
+                        </div>
+                        <div class="time-cell passed">36</div>
+                    </div>
+                    <div class="preformatted" data-parent="17">{
+           "title": "#string",
+           "slug": "#string",
+           "body": "#string",
+           "createdAt": "#? timeValidator(_)",
+           "updatedAt": "#? timeValidator(_)",
+           "tagList": "#array",
+           "description": "#string",
+           "author": {
+               "username": "#string",
+               "bio": "##string",
+               "image": "#string",
+               "following": #boolean
+           },
+           "favorited": #boolean,
+           "favoritesCount": #number
+            }</div>
                 </div>
             </div>
                 

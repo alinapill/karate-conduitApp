@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce0519c-9284-4110-a7b0-546ab653f9d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/helpers/timeValidator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ForkJoinPool-1-worker-3.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/ForkJoinPool-1-worker-3.log" afterDir="false" />
@@ -31,11 +32,12 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/conduitApp/feature" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Debugger_Data_Views_Java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/java/conduitApp/feature" />
     </key>
   </component>

@@ -28,3 +28,4 @@ out/
 karate.log
 
 /.vscode/
+/target/
