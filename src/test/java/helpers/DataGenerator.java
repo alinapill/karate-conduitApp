@@ -22,5 +22,4 @@ public class DataGenerator {
         String username = faker.name().username();
         return username;
     }
-
 }

@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce0519c-9284-4110-a7b0-546ab653f9d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/helpers/DataGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karate-practice-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/karate-practice-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/SignUp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/SignUp.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/DataGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ForkJoinPool-1-worker-3.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/ForkJoinPool-1-worker-3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" afterDir="false" />
@@ -18,9 +16,6 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.SignUp.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.SignUp.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.SignUp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.SignUp.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/timeline.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/ConduitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conduitApp/ConduitTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/HomePage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/SignUp.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/SignUp.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +48,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/conduitApp/feature" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Create a new user | Sign up - using a JS function to create an instance of the JAVA file">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Validate sign up | Error messages">
     <configuration name="Feature: SignUp" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/SignUp.feature" />
@@ -133,15 +128,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Get all tags" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Validate sign up | Error messages" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/SignUp.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="karate-practice-project" />
-      <option name="NAME_FILTER" value="^Get all tags$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Get all tags$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Get all tags" />
+      <option name="NAME_FILTER" value="^Validate sign up \| Error messages$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Validate sign up \| Error messages$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate sign up | Error messages" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -155,18 +150,18 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Scenario: Create a new user | Sign up" />
-      <item itemvalue="Cucumber Java.Scenario: Get all tags" />
       <item itemvalue="Cucumber Java.Scenario: Get 10 articles from the page" />
       <item itemvalue="Cucumber Java.Feature: SignUp" />
       <item itemvalue="Cucumber Java.Scenario: Create a new user | Sign up - using a JS function to create an instance of the JAVA file" />
+      <item itemvalue="Cucumber Java.Scenario: Validate sign up | Error messages" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Validate sign up | Error messages" />
         <item itemvalue="Cucumber Java.Scenario: Create a new user | Sign up - using a JS function to create an instance of the JAVA file" />
         <item itemvalue="Cucumber Java.Feature: SignUp" />
         <item itemvalue="Cucumber Java.Scenario: Create a new user | Sign up" />
         <item itemvalue="Cucumber Java.Scenario: Get 10 articles from the page" />
-        <item itemvalue="Cucumber Java.Scenario: Get all tags" />
       </list>
     </recent_temporary>
   </component>
