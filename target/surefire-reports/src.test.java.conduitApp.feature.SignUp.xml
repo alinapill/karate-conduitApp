@@ -1,10 +1,16 @@
-<testsuite failures="0" name="src/test/java/conduitApp/feature/SignUp.feature" skipped="0" tests="1" time="1.270156">
-  <testcase classname="src.test.java.conduitApp.feature.SignUp" name="Create a new user | Sign up" time="1.270156">
+<testsuite failures="0" name="src/test/java/conduitApp/feature/SignUp.feature" skipped="0" tests="1" time="1.546813">
+  <testcase classname="src.test.java.conduitApp.feature.SignUp" name="Create a new user | Sign up - using a JS function to create an instance of the JAVA file" time="1.546813">
     <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
-Given def userData = {"email":"KarateUser22@user.com","username":"KarateUser22"} . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* def timeValidator = read('../../helpers/timeValidator.js') .............. passed
+* def randomEmail = dataGenerator.getRandomEmail() ........................ passed
+* def randomUsername = dataGenerator.getRandomUsername() .................. passed
+* def jsFunction = ........................................................ passed
+* def randomUser2 = call jsFunction ....................................... passed
 Given path 'users' ........................................................ passed
 And request ............................................................... passed
 When method Post .......................................................... passed
-Then status 200 ........................................................... passed</system-out>
+Then status 200 ........................................................... passed
+And match response == ..................................................... passed</system-out>
   </testcase>
 </testsuite>

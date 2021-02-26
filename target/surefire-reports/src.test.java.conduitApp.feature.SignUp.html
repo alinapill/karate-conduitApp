@@ -46,12 +46,12 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2021-02-25 10:45:16 AM</div>
+                <div id="nav-date">2021-02-26 05:38:27 PM</div>
                         
       
                 <div class="nav-container">
                     <div class="nav-item passed">
-                        <a href="#[1:7]">[1:7] Create a new user | Sign up </a>
+                        <a href="#[2:45]">[2:45] Create a new user | Sign up - using a JS function to create an instance of the JAVA file </a>
                     </div>
                 </div>
             </div>
@@ -62,106 +62,179 @@
                     <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/conduitApp/feature/SignUp.feature</span><span class="feature-description">Sign up a new user</span>
                 </div>
                 <div class="scenario">
-                    <div class="scenario-heading" id="[1:7]">
+                    <div class="scenario-heading" id="[2:45]">
                         <div class="heading-container">
                             <div class="scenario-tags"></div>
-                            <span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Create a new user | Sign up </span>
+                            <span class="scenario-keyword">Scenario: [2:45]</span><span class="scenario-name">Create a new user | Sign up - using a JS function to create an instance of the JAVA file </span>
                         </div>
-                        <div class="scenario-time passed">ms: 1270</div>
+                        <div class="scenario-time passed">ms: 1547</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="[1:7]bg">
+                        <div class="step-container" id="[2:45]bg">
                             <div class="step-ref bg-step">&gt;&gt;</div>
                             <div class="step-cell passed">Background:</div>
                         </div>
                         <div class="time-cell passed"></div>
                     </div>
-                    <div class="step-row" data-parent="[1:7]bg">
+                    <div class="step-row" data-parent="[2:45]bg">
                         <div class="step-container" id="1">
                             <div class="step-ref bg-step">1</div>
                             <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
                         </div>
                         <div class="time-cell passed">2</div>
                     </div>
-                    <div class="preformatted" data-parent="1">10:45:15.115 not a js function or feature file: [type: NULL, value: null]</div>
-                    <div class="step-row">
-                        <div class="step-container" id="2">
-                            <div class="step-ref passed">2</div>
-                            <div class="step-cell passed">Given def userData = {"email":"KarateUser22@user.com","username":"KarateUser22"}</div>
+                    <div class="preformatted" data-parent="1">17:38:26.132 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="step-row" data-parent="[2:45]bg">
+                        <div class="step-container">
+                            <div class="step-ref bg-step"></div>
+                            <div class="step-cell comment">#        Given url baseUrl</div>
                         </div>
-                        <div class="time-cell passed">33</div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2:45]bg">
+                        <div class="step-container" id="2">
+                            <div class="step-ref bg-step">2</div>
+                            <div class="step-cell passed">* def dataGenerator = Java.type('helpers.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">5</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:45]bg">
+                        <div class="step-container" id="3">
+                            <div class="step-ref bg-step">3</div>
+                            <div class="step-cell passed">* def timeValidator = read('../../helpers/timeValidator.js')</div>
+                        </div>
+                        <div class="time-cell passed">73</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="3">
-                            <div class="step-ref passed">3</div>
+                        <div class="step-container" id="4">
+                            <div class="step-ref passed">4</div>
+                            <div class="step-cell passed">* def randomEmail = dataGenerator.getRandomEmail()</div>
+                        </div>
+                        <div class="time-cell passed">135</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="5">
+                            <div class="step-ref passed">5</div>
+                            <div class="step-cell passed">* def randomUsername = dataGenerator.getRandomUsername()</div>
+                        </div>
+                        <div class="time-cell passed">50</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container">
+                            <div class="step-ref passed"></div>
+                            <div class="step-cell comment"># jsFunction variable is the entry point to the JS function</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="6">
+                            <div class="step-ref passed">6</div>
+                            <div class="step-cell passed">* def jsFunction =</div>
+                        </div>
+                        <div class="time-cell passed">3</div>
+                    </div>
+                    <div class="preformatted" data-parent="6">function() {
+    var DataGenerator = Java.type('helpers.DataGenerator')
+    var generator = new DataGenerator()
+    return generator.getRandomUsernameNonStaticMethod()
+}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="7">
+                            <div class="step-ref passed">7</div>
+                            <div class="step-cell passed">* def randomUser2 = call jsFunction</div>
+                        </div>
+                        <div class="time-cell passed">30</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="8">
+                            <div class="step-ref passed">8</div>
                             <div class="step-cell passed">Given path 'users'</div>
                         </div>
                         <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="4">
-                            <div class="step-ref passed">4</div>
+                        <div class="step-container" id="9">
+                            <div class="step-ref passed">9</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">17</div>
+                        <div class="time-cell passed">47</div>
                     </div>
-                    <div class="preformatted" data-parent="4">{
+                    <div class="preformatted" data-parent="9">{
     "user": {
-        "email": #('Test' + userData.email),
-        "password": "karate2134",
-        "username": #('TestUser' + userData.username)
+        "email": #(randomEmail),
+        "password": "karate2121",
+        "username": #(randomUser2)
     }
 }</div>
                     <div class="step-row">
-                        <div class="step-container" id="5">
-                            <div class="step-ref passed">5</div>
+                        <div class="step-container" id="10">
+                            <div class="step-ref passed">10</div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">1217</div>
+                        <div class="time-cell passed">1174</div>
                     </div>
-                    <div class="preformatted" data-parent="5">10:45:15.388 request:
+                    <div class="preformatted" data-parent="10">17:38:26.759 request:
 1 &gt; POST https://conduit.productionready.io/api/users
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 104
+1 &gt; Content-Length: 93
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: conduit.productionready.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
-{"user":{"email":"TestKarateUser22@user.com","password":"karate2134","username":"TestUserKarateUser22"}}
+{"user":{"email":"garnett13@test.com","password":"karate2121","username":"chase.cartwright"}}
 
-10:45:16.397 response time in milliseconds: 1005.65
+17:38:27.664 response time in milliseconds: 901.45
 1 &lt; 200
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 6270263608a0fcfd-OTP
+1 &lt; CF-RAY: 627ac0dfa9ddad42-OTP
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 25 Feb 2021 08:45:17 GMT
-1 &lt; ETag: W/"d80d04e947cd4db0557415c10ed26466"
+1 &lt; Date: Fri, 26 Feb 2021 15:38:30 GMT
+1 &lt; ETag: W/"df5b58a2b79fcf384f610dfddd8bc2a3"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; Location: /
-1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=3tkMKyq9Yd%2BcnsDWHKapg%2BTMYlAwDS9HKEFRUgS%2FSyNMvkRql6bSK77yBfSSfvwEHokCs0XXtlEXRkZweFYo0lABDOpj4mE8oFQ3WLPMP9uZNbgMRvx7v6ftqg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=Ggk29nSgZ2U0rGzYhp8R1BfmWk4BbYjsEIYp3tC2u%2FA73O7YSK3jm3uPC0lKPwH60oXwG0jzvybmL0QTKC4ylBUcU8CqXRg1VsigvZy%2F39euyT91eMyGhICQ2A%3D%3D"}]}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d13f3e4c46e192b51cacb8e817a8219f11614242717; expires=Sat, 27-Mar-21 08:45:17 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Set-Cookie: __cfduid=d67a3c7fcf50bc8d21a00fe68e4b381661614353909; expires=Sun, 28-Mar-21 15:38:29 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 &lt; Status: 200 OK
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Origin
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Powered-By: Phusion Passenger 4.0.60
-1 &lt; X-Request-Id: 75412ef6-648d-4c4f-bd70-4827211ccbfc
-1 &lt; X-Runtime: 0.103672
+1 &lt; X-Request-Id: 8479ba8f-9dbb-453a-9394-49db82921db0
+1 &lt; X-Runtime: 0.093522
 1 &lt; X-XSS-Protection: 1; mode=block
-1 &lt; cf-request-id: 0879f635ca0000fcfd3f9af000000001
-{"user":{"id":144831,"email":"testkarateuser22@user.com","createdAt":"2021-02-25T08:45:17.561Z","updatedAt":"2021-02-25T08:45:17.568Z","username":"TestUserKarateUser22","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ0ODMxLCJ1c2VybmFtZSI6IlRlc3RVc2VyS2FyYXRlVXNlcjIyIiwiZXhwIjoxNjE5NDI2NzE3fQ.jq-4r7wNurpD3Y2r_0baYjXVgampicmFPGjX1a6b8bk"}}</div>
+1 &lt; cf-request-id: 088096dfca0000ad4270139000000001
+{"user":{"id":145325,"email":"garnett13@test.com","createdAt":"2021-02-26T15:38:30.166Z","updatedAt":"2021-02-26T15:38:30.171Z","username":"chase.cartwright","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ1MzI1LCJ1c2VybmFtZSI6ImNoYXNlLmNhcnR3cmlnaHQiLCJleHAiOjE2MTk1Mzc5MTB9.VlX7nVdW5zO5C-WuUfsfccxyQoNMkYJMI-4SaTW6f4w"}}</div>
                     <div class="step-row">
-                        <div class="step-container" id="6">
-                            <div class="step-ref passed">6</div>
+                        <div class="step-container" id="11">
+                            <div class="step-ref passed">11</div>
                             <div class="step-cell passed">Then status 200</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
+                    <div class="step-row">
+                        <div class="step-container" id="12">
+                            <div class="step-ref passed">12</div>
+                            <div class="step-cell passed">And match response ==</div>
+                        </div>
+                        <div class="time-cell passed">27</div>
+                    </div>
+                    <div class="preformatted" data-parent="12">{
+    "user": {
+        "id": #number,
+        "email": #(randomEmail),
+        "createdAt": "#? timeValidator(_)",
+        "updatedAt": "#? timeValidator(_)",
+        "username": #(randomUser2),
+        "bio": null,
+        "image": null,
+        "token": "#string"
+    }
+}</div>
                 </div>
             </div>
                 

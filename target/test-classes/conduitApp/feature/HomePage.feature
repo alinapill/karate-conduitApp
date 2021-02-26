@@ -20,6 +20,8 @@ Feature: Tests for the HomePage
 
     Scenario: Get 10 articles from the page
 
+        * def timeValidator = read('../../helpers/timeValidator.js')
+
         Given params { limit: 10, offset: 0 }
         Given path 'articles'
         When method Get
@@ -44,14 +46,14 @@ Feature: Tests for the HomePage
         And match each response..bio == '##string'
 
         # schema validation
-        And match response.articles ==
+        And match each response.articles ==
         """
              {
                         "title": "#string",
                         "slug": "#string",
                         "body": "#string",
-                        "createdAt": "2021-02-25T13:40:12.141Z",
-                        "updatedAt": "2021-02-25T13:40:12.141Z",
+                        "createdAt": "#? timeValidator(_)",
+                        "updatedAt": "#? timeValidator(_)",
                         "tagList": "#array",
                         "description": "#string",
                         "author": {
