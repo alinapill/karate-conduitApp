@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: conduitApp.ConduitTest
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.277 s - in conduitApp.ConduitTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.602 s - in conduitApp.ConduitTest

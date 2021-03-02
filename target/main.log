@@ -1,40 +1,34 @@
-11:51:17.907 not a js function or feature file: [type: NULL, value: null]
-11:51:17.924 >> lock acquired, begin callonce: read('classpath:src/test/java/helpers/CreateToken.feature')
-11:51:18.237 request:
-1 > POST https://conduit.productionready.io/api/users/login
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 59
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: conduit.productionready.io
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
-{"user":{"email":"karate@user.com","password":"karate123"}}
-
-11:51:23.234 response time in milliseconds: 4994.54
-1 < 200
-1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 6299b9cf8a85ce7f-LHR
-1 < Cache-Control: max-age=0, private, must-revalidate
-1 < Connection: keep-alive
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Tue, 02 Mar 2021 09:51:23 GMT
-1 < ETag: W/"e3beb730265a6bef93b79b5d138db120"
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=0YVtczETZJ9oc%2BNL4ilI69UX7VVzOnAtGAs2url%2BfMpTSD5YWOpR02DlRqYsTO0Fl4W9lNmm3LTbLCm2yiAFS7qpZJERoJVJp5c7Mhigubi0%2BDMsWSVWfgNcww%3D%3D"}],"max_age":604800,"group":"cf-nel"}
-1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d02d7c99d768000bd2553e765326384201614678678; expires=Thu, 01-Apr-21 09:51:18 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
-1 < Status: 200 OK
-1 < Transfer-Encoding: chunked
-1 < Vary: Origin
-1 < X-Content-Type-Options: nosniff
-1 < X-Frame-Options: SAMEORIGIN
-1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: 22db3cd2-daee-4df6-a6bb-e4c65fc5a617
-1 < X-Runtime: 0.151156
-1 < X-XSS-Protection: 1; mode=block
-1 < cf-request-id: 0893f275b50000ce7f6312d000000001
-{"user":{"id":142785,"email":"karate@user.com","createdAt":"2021-02-15T14:14:26.716Z","updatedAt":"2021-02-15T14:14:26.722Z","username":"karateuser","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg"}}
+13:07:24.295 not a js function or feature file: [type: NULL, value: null]
+13:07:24.639 [print] christiana.powlowski
+13:07:24.643 [print] First scenario
+13:07:24.742 not a js function or feature file: [type: NULL, value: null]
+13:07:24.753 >> lock acquired, begin callonce: read('classpath:src/test/java/helpers/CreateToken.feature')
+13:07:25.940 << lock released, cached callonce: read('classpath:src/test/java/helpers/CreateToken.feature')
+13:07:26.856 not a js function or feature file: [type: NULL, value: null]
+13:07:27.538 not a js function or feature file: [type: NULL, value: null]
+13:07:28.301 not a js function or feature file: [type: NULL, value: null]
+13:07:31.803 not a js function or feature file: [type: NULL, value: null]
+13:07:32.709 not a js function or feature file: [type: NULL, value: null]
+13:07:33.607 not a js function or feature file: [type: NULL, value: null]
+13:07:34.365 not a js function or feature file: [type: NULL, value: null]
+13:07:35.141 not a js function or feature file: [type: NULL, value: null]
+13:07:35.760 not a js function or feature file: [type: NULL, value: null]
+13:07:36.992 not a js function or feature file: [type: NULL, value: null]
+13:07:37.678 not a js function or feature file: [type: NULL, value: null]
+13:07:37.687 [print]
+13:07:37.688 [print] First scenario
+13:07:37.738 not a js function or feature file: [type: NULL, value: null]
+13:07:37.740 [print]
+13:07:37.742 [print] Second scenario
+13:07:37.779 not a js function or feature file: [type: NULL, value: null]
+13:07:37.813 >> lock acquired, begin callonce: read('classpath:helpers/Dummy.feature')
+13:07:37.834 << lock released, cached callonce: read('classpath:helpers/Dummy.feature')
+13:07:37.840 [print] darcie.johnson
+13:07:37.840 [print] First scenario
+13:07:37.847 not a js function or feature file: [type: NULL, value: null]
+13:07:37.875 [print] darcie.johnson
+13:07:37.876 [print] Second scenario
+","updatedAt":"2021-02-15T14:14:26.722Z","username":"karateuser","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg"}}
 
 11:51:23.248 << lock released, cached callonce: read('classpath:src/test/java/helpers/CreateToken.feature')
 11:51:23.434 request:

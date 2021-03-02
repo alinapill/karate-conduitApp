@@ -7,6 +7,7 @@ Feature: Articles
         # call JSON object, assign this Json into this object, call: articleRequestBody.article.title-description-body, assign to these values - the generated values
         * def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json')
         * def dataGenerator = Java.type('helpers.DataGenerator')
+
         * set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title
         * set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title
         * set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description
