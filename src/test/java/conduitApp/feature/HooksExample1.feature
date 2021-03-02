@@ -1,3 +1,4 @@
+@debug
 Feature: Hooks | using 'call'
     This feature is using 'call'
     If you use 'call', karate will generate the value for the 'result' object for each of these scenarios

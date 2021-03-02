@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="conduitApp.ConduitTest" time="13.292" tests="15" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="conduitApp.ConduitTest" time="1.503" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="14"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RO"/>
     <property name="sun.boot.library.path" value="/Users/apila/Library/Java/JavaVirtualMachines/openjdk-14.0.1/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/apila/Documents/GitHub/karate-conduitApp/target/surefire/surefirebooter8680122464913067194.jar /Users/apila/Documents/GitHub/karate-conduitApp/target/surefire 2021-03-02T14-19-52_155-jvmRun1 surefire4352769185831013438tmp surefire_05318008367131752812tmp"/>
+    <property name="sun.java.command" value="/Users/apila/Documents/GitHub/karate-conduitApp/target/surefire/surefirebooter10907032799344317133.jar /Users/apila/Documents/GitHub/karate-conduitApp/target/surefire 2021-03-02T14-40-41_248-jvmRun1 surefire12999892556478391106tmp surefire_016828251682701246539tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/apila/Documents/GitHub/karate-conduitApp/target/test-classes:/Users/apila/Documents/GitHub/karate-conduitApp/target/classes:/Users/apila/.m2/repository/com/intuit/karate/karate-apache/0.9.6/karate-apache-0.9.6.jar:/Users/apila/.m2/repository/com/intuit/karate/karate-core/0.9.6/karate-core-0.9.6.jar:/Users/apila/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/apila/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/apila/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/apila/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/apila/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar:/Users/apila/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar:/Users/apila/.m2/repository/org/yaml/snakeyaml/1.24/snakeyaml-1.24.jar:/Users/apila/.m2/repository/de/siegmar/fastcsv/1.0.3/fastcsv-1.0.3.jar:/Users/apila/.m2/repository/info/picocli/picocli/4.0.3/picocli-4.0.3.jar:/Users/apila/.m2/repository/org/apache/httpcomponents/httpclient/4.5.12/httpclient-4.5.12.jar:/Users/apila/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/apila/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/apila/.m2/repository/org/apache/httpcomponents/httpmime/4.5.12/httpmime-4.5.12.jar:/Users/apila/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/apila/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/apila/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/apila/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/apila/.m2/repository/com/intuit/karate/karate-junit5/0.9.6/karate-junit5-0.9.6.jar:/Users/apila/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.5.0/junit-jupiter-api-5.5.0.jar:/Users/apila/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/apila/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/apila/.m2/repository/org/junit/platform/junit-platform-commons/1.5.0/junit-platform-commons-1.5.0.jar:/Users/apila/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.5.0/junit-jupiter-engine-5.5.0.jar:/Users/apila/.m2/repository/org/junit/platform/junit-platform-engine/1.5.0/junit-platform-engine-1.5.0.jar:/Users/apila/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/apila/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/apila/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/apila/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/apila/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,8 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/apila/Documents/GitHub/karate-conduitApp/target/surefire/surefirebooter8680122464913067194.jar"/>
+    <property name="karate.options" value="--tags @debug"/>
+    <property name="surefire.real.class.path" value="/Users/apila/Documents/GitHub/karate-conduitApp/target/surefire/surefirebooter10907032799344317133.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="14.0.1+7"/>
     <property name="user.name" value="apila"/>
@@ -50,19 +51,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="58.0"/>
   </properties>
-  <testcase name="testAll[1][1]" classname="conduitApp.ConduitTest" time="0.317"/>
-  <testcase name="testAll[1][2]" classname="conduitApp.ConduitTest" time="0.181"/>
-  <testcase name="testAll[2][1]" classname="conduitApp.ConduitTest" time="1.983"/>
-  <testcase name="testAll[2][2]" classname="conduitApp.ConduitTest" time="0.743"/>
-  <testcase name="testAll[2][3]" classname="conduitApp.ConduitTest" time="0.615"/>
-  <testcase name="testAll[2][4]" classname="conduitApp.ConduitTest" time="2.817"/>
-  <testcase name="testAll[3][1]" classname="conduitApp.ConduitTest" time="0.742"/>
-  <testcase name="testAll[3][2]" classname="conduitApp.ConduitTest" time="0.741"/>
-  <testcase name="testAll[3][3]" classname="conduitApp.ConduitTest" time="0.568"/>
-  <testcase name="testAll[3][4]" classname="conduitApp.ConduitTest" time="0.66"/>
-  <testcase name="testAll[3][5]" classname="conduitApp.ConduitTest" time="0.628"/>
-  <testcase name="testAll[4][1]" classname="conduitApp.ConduitTest" time="1.528"/>
-  <testcase name="testAll[4][2]" classname="conduitApp.ConduitTest" time="0.894"/>
-  <testcase name="testAll[5][1]" classname="conduitApp.ConduitTest" time="0.082"/>
-  <testcase name="testAll[5][2]" classname="conduitApp.ConduitTest" time="0.086"/>
+  <testcase name="testAll[1][1]" classname="conduitApp.ConduitTest" time="0.398"/>
+  <testcase name="testAll[1][2]" classname="conduitApp.ConduitTest" time="0.151"/>
 </testsuite>

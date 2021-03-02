@@ -1,3 +1,4 @@
+@parallel=false
 Feature: Hooks | using 'callonce'
     This feature is using 'callonce'
     If you use 'callonce', karate will remember the value for the first 'result' object and use this cached value in both scenarios where it is called
