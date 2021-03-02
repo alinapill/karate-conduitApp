@@ -39,7 +39,7 @@
     <build>
         <testResources>
             <testResource>
-                <directory>srcOld/test/java</directory>
+                <directory>src/test/java</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>
@@ -61,11 +61,11 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
-                <configuration>
-                    <systemProperties>
-                        <karate.options>--tags ~@ignore</karate.options>
-                    </systemProperties>
-                </configuration>
+<!--                <configuration>-->
+<!--                    <systemProperties>-->
+<!--                        <karate.options>&#45;&#45;tags ~@ignore</karate.options>-->
+<!--                    </systemProperties>-->
+<!--                </configuration>-->
             </plugin>            
         </plugins>        
     </build>       

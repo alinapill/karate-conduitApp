@@ -5,18 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce0519c-9284-4110-a7b0-546ab653f9d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/conduitApp/json/newArticleRequest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Hooks.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/helpers/Dummy.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Articles.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Articles.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/helpers/DataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ForkJoinPool-1-worker-3.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/ForkJoinPool-1-worker-3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/results-json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/results-json.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.Articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.Articles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.Articles.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.Articles.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.Articles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.Articles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ForkJoinPool-1-worker-3.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/main.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-conduitApp.ConduitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-conduitApp.ConduitTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.ConduitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/conduitApp.ConduitTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.Articles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.HomePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.SignUp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/jquery.tablesorter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/karate-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/karate-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/karate-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/karate-report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/results-json.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.Articles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.Articles.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.Articles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.HomePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.HomePage.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.HomePage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.SignUp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.SignUp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.conduitApp.feature.SignUp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.helpers.CreateToken.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.helpers.CreateToken.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/src.test.java.helpers.CreateToken.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/ConduitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conduitApp/ConduitTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/Articles.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/HomePage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/SignUp.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/helpers/CreateToken.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/karate-config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,16 +86,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/helpers" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/java/helpers" />
       <recent name="$PROJECT_DIR$/src/test/java/conduitApp/feature" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: Articles">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Feature: HomePage">
     <configuration name="Feature: Articles" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/Articles.feature" />
@@ -70,6 +109,25 @@
       <module name="karate-practice-project" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <option name="SUGGESTED_NAME" value="Feature: Articles" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: HomePage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" />
+      <option name="GLUE" value="com.intuit.karate" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="karate-practice-project" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: HomePage" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -138,40 +196,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Validate sign up | Error messages" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/SignUp.feature" />
-      <option name="GLUE" value="com.intuit.karate" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="karate-practice-project" />
-      <option name="NAME_FILTER" value="^Validate sign up \| Error messages$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Validate sign up \| Error messages$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Validate sign up | Error messages" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Scenario: Validate sign up | Error messages" />
       <item itemvalue="Cucumber Java.Feature: Articles" />
       <item itemvalue="Cucumber Java.Scenario: Create a new article | using JSON request body file" />
       <item itemvalue="Cucumber Java.Scenario: Create a new article | using dynamic values - dataGenerated values" />
       <item itemvalue="Cucumber Java.Scenario: Create and Delete article | hardcoded values" />
+      <item itemvalue="Cucumber Java.Feature: HomePage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: HomePage" />
         <item itemvalue="Cucumber Java.Feature: Articles" />
         <item itemvalue="Cucumber Java.Scenario: Create and Delete article | hardcoded values" />
         <item itemvalue="Cucumber Java.Scenario: Create a new article | using dynamic values - dataGenerated values" />
         <item itemvalue="Cucumber Java.Scenario: Create a new article | using JSON request body file" />
-        <item itemvalue="Cucumber Java.Scenario: Validate sign up | Error messages" />
       </list>
     </recent_temporary>
   </component>

@@ -5,12 +5,11 @@ Feature: Sign up a new user
 #        Given url baseUrl
         * def dataGenerator = Java.type('helpers.DataGenerator')
         * def timeValidator = read('../../helpers/timeValidator.js')
+        * def randomEmail = dataGenerator.getRandomEmail()
+        * def randomUsername = dataGenerator.getRandomUsername()
 
         # embedded expressions | multiline expressions
     Scenario: Create a new user | Sign up
-
-        * def randomEmail = dataGenerator.getRandomEmail()
-        * def randomUsername = dataGenerator.getRandomUsername()
 
         Given path 'users'
         And request
@@ -44,18 +43,17 @@ Feature: Sign up a new user
 
     Scenario: Create a new user | Sign up - using a JS function to create an instance of the JAVA file
 
-        * def randomEmail = dataGenerator.getRandomEmail()
-        * def randomUsername = dataGenerator.getRandomUsername()
-
+        # jsFunction variable is the entry point to the JS function
         * def jsFunction =
         """
             function() {
                 var DataGenerator = Java.type('helpers.DataGenerator')
                 var generator = new DataGenerator()
-                
+                return generator.getRandomUsernameNonStaticMethod()
             }
         """
 
+        * def randomUser2 = call jsFunction
 
         Given path 'users'
         And request
@@ -64,7 +62,7 @@ Feature: Sign up a new user
                             "user": {
                                 "email": #(randomEmail),
                                 "password": "karate2121",
-                                "username": #(randomUsername)
+                                "username": #(randomUser2)
                             }
                         }
                     """
@@ -79,10 +77,33 @@ Feature: Sign up a new user
                     "email": #(randomEmail),
                     "createdAt": "#? timeValidator(_)",
                     "updatedAt": "#? timeValidator(_)",
-                    "username": #(randomUsername),
+                    "username": #(randomUser2),
                     "bio": null,
                     "image": null,
                     "token": "#string"
                 }
             }
         """
+
+    Scenario Outline: Validate sign up | Error messages
+
+        Given path 'users'
+        And request
+                    """
+                        {
+                            "user": {
+                                "email": "<email>",
+                                "password": "<password>",
+                                "username": <username>
+                            }
+                        }
+                    """
+        When method Post
+        Then status 422
+        And match response == <errorResponse>
+
+        Examples:
+            | email                | password  | username          | errorResponse                                        |
+            | #(randomEmail)       | Karate123 | KarateUser123     | {"errors": {"username": ["has already been taken"]}} |
+            | KarateUser1@test.com | Karate123 | #(randomUsername) | {"errors": {"email": ["has already been taken"]}}    |
+            |                      | Karate123 | #(randomUsername) | {"errors": {"email": ["can't be blank"]}}            |

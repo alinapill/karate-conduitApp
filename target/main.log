@@ -1,6 +1,6 @@
-10:48:40.971 not a js function or feature file: [type: NULL, value: null]
-10:48:40.989 >> lock acquired, begin callonce: read('../../helpers/CreateToken.feature@CreateToken')
-10:48:41.323 request:
+11:51:17.907 not a js function or feature file: [type: NULL, value: null]
+11:51:17.924 >> lock acquired, begin callonce: read('classpath:src/test/java/helpers/CreateToken.feature')
+11:51:18.237 request:
 1 > POST https://conduit.productionready.io/api/users/login
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -10,36 +10,37 @@
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 {"user":{"email":"karate@user.com","password":"karate123"}}
 
-10:48:42.013 response time in milliseconds: 688.01
+11:51:23.234 response time in milliseconds: 4994.54
 1 < 200
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 62702b3d4f0cace2-OTP
+1 < CF-RAY: 6299b9cf8a85ce7f-LHR
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Feb 2021 08:48:43 GMT
-1 < ETag: W/"2d36ae51020150b7c43771c7c65ea6f7"
+1 < Date: Tue, 02 Mar 2021 09:51:23 GMT
+1 < ETag: W/"e3beb730265a6bef93b79b5d138db120"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=ox1WQRUvfQZHHFfQT7mKrhvnxjokLug35ewsCuIT%2F5CdxPGynlZogqUaddCNp%2FaKOV06H4gl3mLBUav3JbW3WqQDGvWSD2OBzxThbk%2FlrGhdvs2UVGDeNLKgkA%3D%3D"}],"max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=0YVtczETZJ9oc%2BNL4ilI69UX7VVzOnAtGAs2url%2BfMpTSD5YWOpR02DlRqYsTO0Fl4W9lNmm3LTbLCm2yiAFS7qpZJERoJVJp5c7Mhigubi0%2BDMsWSVWfgNcww%3D%3D"}],"max_age":604800,"group":"cf-nel"}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d8f8faef43b2869fa8dda5d99f78799f71614242923; expires=Sat, 27-Mar-21 08:48:43 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Set-Cookie: __cfduid=d02d7c99d768000bd2553e765326384201614678678; expires=Thu, 01-Apr-21 09:51:18 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
 1 < Vary: Origin
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: 87779e21-6f1d-4860-8ef1-f734903172e8
-1 < X-Runtime: 0.081239
+1 < X-Request-Id: 22db3cd2-daee-4df6-a6bb-e4c65fc5a617
+1 < X-Runtime: 0.151156
 1 < X-XSS-Protection: 1; mode=block
-1 < cf-request-id: 0879f95a4e0000ace27a06c000000001
-{"user":{"id":142785,"email":"karate@user.com","createdAt":"2021-02-15T14:14:26.716Z","updatedAt":"2021-02-15T14:14:26.722Z","username":"karateuser","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk0MjY5MjN9.5hbiLOuMPjv8rE1x7pqO1qMoXioPeLCRbxIivuKVhXY"}}
+1 < cf-request-id: 0893f275b50000ce7f6312d000000001
+{"user":{"id":142785,"email":"karate@user.com","createdAt":"2021-02-15T14:14:26.716Z","updatedAt":"2021-02-15T14:14:26.722Z","username":"karateuser","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg"}}
 
-10:48:42.027 << lock released, cached callonce: read('../../helpers/CreateToken.feature@CreateToken')
-10:48:42.044 request:
+11:51:23.248 << lock released, cached callonce: read('classpath:src/test/java/helpers/CreateToken.feature')
+11:51:23.434 request:
 1 > POST https://conduit.productionready.io/api/articles
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk0MjY5MjN9.5hbiLOuMPjv8rE1x7pqO1qMoXioPeLCRbxIivuKVhXY
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg
 1 > Connection: Keep-Alive
 1 > Content-Length: 84
 1 > Content-Type: application/json; charset=UTF-8
@@ -47,37 +48,113 @@
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 {"article":{"tagList":[],"title":"Bla bla","description":"test test","body":"body"}}
 
-10:48:42.614 response time in milliseconds: 569.15
+11:51:24.065 response time in milliseconds: 629.42
 1 < 200
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 62702b40d9a1fcfd-OTP
+1 < CF-RAY: 6299b9ef2b925446-LHR
+1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Feb 2021 08:48:44 GMT
+1 < Date: Tue, 02 Mar 2021 09:51:24 GMT
+1 < ETag: W/"17254d32a6dfcbab8e7cef244d18bef5"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=CKfszrONtJaBQGszxwvM35CBC%2FkTw3pKkgnUSLU0jo3jugbl9BEqoOSzL%2B4IXkyks3pUm1eYde4DAPELpsyTVXDCSq4oJrEVw79dDgCaEDjcpx5IzKEIO8hIXQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=mL77%2B6Ds%2FZvcGpwJETk7h2ONj0Z%2Fra0VXzJnSdrUyQ1y9d0P5j9cBUpNu9CVVntCGTNfDKj7FzoWX8JcDa7eBt1JV3nUVowkY5ZZO60Q%2BDSqLGz1uqONPYUzAg%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d74844844611ea905231592f7f9b7d1f01614242923; expires=Sat, 27-Mar-21 08:48:43 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Set-Cookie: __cfduid=d8da0702a0384db4b10ad2283a45fdf081614678684; expires=Thu, 01-Apr-21 09:51:24 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 200 OK
 1 < Transfer-Encoding: chunked
-1 < cache-control: max-age=0, private, must-revalidate
-1 < cf-request-id: 0879f95c880000fcfd9d04d000000001
-1 < etag: W/"0cd8ddc6d1615c765718301a95f0badc"
-1 < status: 200 OK
-1 < vary: Origin
-1 < x-content-type-options: nosniff
-1 < x-frame-options: SAMEORIGIN
-1 < x-powered-by: Phusion Passenger 4.0.60
-1 < x-request-id: 9e00dccb-f0ee-4653-becb-04ae23c3084a
-1 < x-runtime: 0.115042
-1 < x-xss-protection: 1; mode=block
-{"article":{"title":"Bla bla","slug":"bla-bla-h6i4u5","body":"body","createdAt":"2021-02-25T08:48:44.071Z","updatedAt":"2021-02-25T08:48:44.071Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 815f5b86-9757-4419-a095-db70825d9509
+1 < X-Runtime: 0.106865
+1 < X-XSS-Protection: 1; mode=block
+1 < cf-request-id: 0893f2897900005446112d8000000001
+{"article":{"title":"Bla bla","slug":"bla-bla-ri29qj","body":"body","createdAt":"2021-03-02T09:51:24.382Z","updatedAt":"2021-03-02T09:51:24.382Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}
 
-10:48:42.635 not a js function or feature file: [type: NULL, value: null]
-10:48:42.643 request:
+11:51:24.083 not a js function or feature file: [type: NULL, value: null]
+11:51:24.136 request:
 1 > POST https://conduit.productionready.io/api/articles
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk0MjY5MjN9.5hbiLOuMPjv8rE1x7pqO1qMoXioPeLCRbxIivuKVhXY
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg
+1 > Connection: Keep-Alive
+1 > Content-Length: 103
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"article":{"tagList":[],"title":"Meereen","description":"Edrick Stark","body":"The North remembers."}}
+
+11:51:24.862 response time in milliseconds: 724.69
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6299b9f38edcdbf3-LHR
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 02 Mar 2021 09:51:25 GMT
+1 < ETag: W/"a19e5d4c96697a81cf117043b23b6f9d"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=d4bwXemC1ITntQV8617NMSMFrxltZzm2Quld7OhjUjG08U5W96EiuyQrnK0ZAk5NolV%2FKMhXQqCEF%2F098Z3ObvPvCp2wyNgZVhjzOHNC1xzQOJ%2BJ0oMOaSVN1w%3D%3D"}]}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dc5a232f849334f5ed35a3b3bbb7ebcff1614678684; expires=Thu, 01-Apr-21 09:51:24 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 4a9a70db-a660-41b2-afc2-84ae24286da5
+1 < X-Runtime: 0.089601
+1 < X-XSS-Protection: 1; mode=block
+1 < cf-request-id: 0893f28c370000dbf35c06c000000001
+{"article":{"title":"Meereen","slug":"meereen-kaeszn","body":"The North remembers.","createdAt":"2021-03-02T09:51:25.076Z","updatedAt":"2021-03-02T09:51:25.076Z","tagList":[],"description":"Edrick Stark","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}
+
+11:51:24.880 not a js function or feature file: [type: NULL, value: null]
+11:51:24.954 request:
+1 > POST https://conduit.productionready.io/api/articles
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg
+1 > Connection: Keep-Alive
+1 > Content-Length: 106
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"article":{"tagList":[],"title":"Elyria","description":"Eden Risley","body":"The things I do for love."}}
+
+11:51:25.783 response time in milliseconds: 827.67
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6299b9f8ab4f5445-LHR
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 02 Mar 2021 09:51:25 GMT
+1 < ETag: W/"896a54da54df438ba1fcf6b7ab6c9893"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=LyiiHU6mWAx5OMMnSoC%2BQWV7S9YDD8v6dc1ILLkR%2F2Hru0hbzaXCJ%2F9suOjYPkdtOitQuDaDA%2BAeFLXH5Mo300UYKf8YtxyJLggZz9inp2JjHV1FewZwWhtjag%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d2c724a48dff1876831769b39e5527d201614678685; expires=Thu, 01-Apr-21 09:51:25 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 84c14d0f-d3bc-4411-94b5-f41e23a88a65
+1 < X-Runtime: 0.076789
+1 < X-XSS-Protection: 1; mode=block
+1 < cf-request-id: 0893f28f6e0000544556361000000001
+{"article":{"title":"Elyria","slug":"elyria-hmsccf","body":"The things I do for love.","createdAt":"2021-03-02T09:51:25.873Z","updatedAt":"2021-03-02T09:51:25.873Z","tagList":[],"description":"Eden Risley","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}
+
+11:51:25.792 not a js function or feature file: [type: NULL, value: null]
+11:51:25.831 request:
+1 > POST https://conduit.productionready.io/api/articles
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg
 1 > Connection: Keep-Alive
 1 > Content-Length: 88
 1 > Content-Type: application/json; charset=UTF-8
@@ -85,51 +162,52 @@
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 {"article":{"tagList":[],"title":"Delete test","description":"test test","body":"body"}}
 
-10:48:43.307 response time in milliseconds: 662.51
+11:51:26.705 response time in milliseconds: 872.92
 1 < 200
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 62702b44adfdacf4-OTP
+1 < CF-RAY: 6299b9fe28dc0712-LHR
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Feb 2021 08:48:44 GMT
-1 < ETag: W/"6a48f65c10585854346e1599bef43739"
+1 < Date: Tue, 02 Mar 2021 09:51:26 GMT
+1 < ETag: W/"97de006a6955fcaccdb04f9f63b1cfa8"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=KxrW%2BTRzvCzdlXJNBMiSQRvZgJewOqkQy%2B9kuEPBRMZ7aFmWdVkfncDZbXUk%2BLf1XJZ5hC9rT%2BMNmNChtGMU8Bx1qNGGx0OUqi%2F%2FWDe6e669BjyDhZguQnaUtA%3D%3D"}],"max_age":604800}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=92%2BcnnOWnbTetFlZuo8NmvAh8%2FjbkMxMvh3ybbIFMGxIxAyPWuRykfzGT5nkcHi2GAjDJF4bywHKjNcxJGKWXJK2LeElJ2SE8O6%2BLX5fgqrAJx5x%2BbN3ytsnWw%3D%3D"}],"max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d44577580d698915499dcdabe235a25ab1614242924; expires=Sat, 27-Mar-21 08:48:44 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Set-Cookie: __cfduid=d0e3f258114ea09365e099680fffa9ac31614678686; expires=Thu, 01-Apr-21 09:51:26 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
 1 < Vary: Origin
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: 10246c68-002b-4d2b-bd6a-a6a3422aa1a5
-1 < X-Runtime: 0.064343
+1 < X-Request-Id: a0fffb85-6bf1-4d70-a25e-bb42ae200256
+1 < X-Runtime: 0.066077
 1 < X-XSS-Protection: 1; mode=block
-1 < cf-request-id: 0879f95eed0000acf4f5314000000001
-{"article":{"title":"Delete test","slug":"delete-test-i54jzw","body":"body","createdAt":"2021-02-25T08:48:44.626Z","updatedAt":"2021-02-25T08:48:44.626Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}
+1 < cf-request-id: 0893f292da00000712cb26c000000001
+{"article":{"title":"Delete test","slug":"delete-test-hdt7wk","body":"body","createdAt":"2021-03-02T09:51:26.751Z","updatedAt":"2021-03-02T09:51:26.751Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}
 
-10:48:43.314 request:
+11:51:26.712 request:
 2 > GET https://conduit.productionready.io/api/articles?limit=10&offset=0
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
-2 > Cookie: __cfduid=d44577580d698915499dcdabe235a25ab1614242924
+2 > Cookie: __cfduid=d0e3f258114ea09365e099680fffa9ac31614678686
 2 > Host: conduit.productionready.io
 2 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 
-10:48:44.064 response time in milliseconds: 744.65
+11:51:27.625 response time in milliseconds: 911.52
 2 < 200
 2 < CF-Cache-Status: DYNAMIC
-2 < CF-RAY: 62702b48cdf0ad4e-OTP
+2 < CF-RAY: 6299ba03ab5c2c8a-LHR
 2 < Cache-Control: max-age=0, private, must-revalidate
 2 < Connection: keep-alive
 2 < Content-Type: application/json; charset=utf-8
-2 < Date: Thu, 25 Feb 2021 08:48:45 GMT
-2 < ETag: W/"545116b9cca318fd587dddff519f50fb"
+2 < Date: Tue, 02 Mar 2021 09:51:27 GMT
+2 < ETag: W/"ed09eb80b557541fd7e08ea53d49dfe9"
 2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 2 < NEL: {"report_to":"cf-nel","max_age":604800}
-2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=gF39otcKlC92TPeRlWCRurwPXc3ZL7Xp3FRQ0L72bs9IzqAYfvrfc94bJNTDWkqvr0YLSb9B%2F5sSTV8LDKcoBbPJKU1H4f%2FCRPT6EWoPcwGlKbU4ctdjOPQlxg%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=gTRfrDYbieaRVUzxKe0Y8hNieAmKS6fgLzqJKizVOW91TWrQ%2FoDHtRYiGcNEXCois5%2BJ9Umw7BHJ%2F7yhQRvJvD9Rukd0k%2Bp3Bqb3o2P%2FaxEjYgmBYwMltxarvQ%3D%3D"}]}
 2 < Server: cloudflare
 2 < Status: 200 OK
 2 < Transfer-Encoding: chunked
@@ -137,183 +215,336 @@
 2 < X-Content-Type-Options: nosniff
 2 < X-Frame-Options: SAMEORIGIN
 2 < X-Powered-By: Phusion Passenger 4.0.60
-2 < X-Request-Id: 41b90eed-a196-43a9-8451-0e3a9f7f1763
-2 < X-Runtime: 0.147065
+2 < X-Request-Id: 4737567e-de9d-482e-8c4b-25dfe0a15524
+2 < X-Runtime: 0.146326
 2 < X-XSS-Protection: 1; mode=block
-2 < cf-request-id: 0879f961790000ad4ec79a8000000001
-{"articles":[{"title":"Delete test","slug":"delete-test-i54jzw","body":"body","createdAt":"2021-02-25T08:48:44.626Z","updatedAt":"2021-02-25T08:48:44.626Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-h6i4u5","body":"body","createdAt":"2021-02-25T08:48:44.071Z","updatedAt":"2021-02-25T08:48:44.071Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-w2f51l","body":"body","createdAt":"2021-02-25T08:48:24.458Z","updatedAt":"2021-02-25T08:48:24.458Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"sadasdas","slug":"sadasdas-ezcbr5","body":"sjgjkadgjvaj","createdAt":"2021-02-25T08:41:10.988Z","updatedAt":"2021-02-25T08:41:10.988Z","tagList":[],"description":"sfghsgfhs","author":{"username":"zzc","bio":"I like to skateboard","image":"https://i.stack.imgur.com/xHWG8.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"who are you?","slug":"who-are-you-lxjm0x","body":"It's a lonely road to the top.","createdAt":"2021-02-25T08:38:28.797Z","updatedAt":"2021-02-25T08:38:28.797Z","tagList":["night","afternoon","moring"],"description":"this is my first title","author":{"username":"zzc","bio":"I like to skateboard","image":"https://i.stack.imgur.com/xHWG8.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"ưefwer","slug":"efwer-ic2h8d","body":"ưeerwerwe","createdAt":"2021-02-25T08:09:55.321Z","updatedAt":"2021-02-25T08:09:55.321Z","tagList":[],"description":"ưerwer","author":{"username":"Linh95sấ","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"just testing","slug":"just-testing-3io6ls","body":"lnmadfeelauztsskpq@kiabws.com","createdAt":"2021-02-25T08:03:38.847Z","updatedAt":"2021-02-25T08:03:38.847Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"test test test","slug":"test-test-test-lkefoe","body":"kkkkkkkk","createdAt":"2021-02-25T08:03:10.465Z","updatedAt":"2021-02-25T08:03:10.465Z","tagList":["lk"],"description":"short description","author":{"username":"Maksim Adams","bio":null,"image":"https://99px.ru/sstorage/41/2016/12/image_412712160204353152833.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-skfn2h","body":"Inbox\nRefresh\nAPI\nFAQ\nPrivacy\nFeedback\nContacts\n© 2021 Mail.tm\n\nEmail\nyysdfglcz@maxresistance.com\n\n\n\nY\n\nTemp Mail\nProtect your personal email address from spam, bots, phishing and other online abuse. Temporary anonymous email address - no commitments and no risks.","createdAt":"2021-02-25T08:02:43.147Z","updatedAt":"2021-02-25T08:02:43.147Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-p11kyc","body":"Tempmailo - Temp mail address\nYour temporary email address\nvelapo@thichanthit.com\n\nCopy\nCopied\nAutorefresh in\n8\n Refresh\n Change\nInbox\n\nHello\nWelcome to Tempmailo\nFree, fast and secure temp email application\nTempmailo Team\nWelcome\n\nTweet Share on Facebook Submit to Reddit Send email\nTemp mail use cases\nWhy do we need a temp mail? Often, websites and online services ask for a valid e-mail address to register, access and view or receive content, etc. The problem, however, is that some of these sites may end up using our email address to send spam.\n\nOne good way to deal with this is to use a temp email address when you are not sure that this website is completely credible and trustworthy. This will help you keep your personal e-mail spam free and protect your privacy.\n\nThe disposable mail (also known as temp mail, temporary mail, 10 minute mail) works like any other email service with some differences:\n\nIt is short-living – from a few minutes up to few days (Тempmailo keep old emails for 2 days).\nIt's just for receiving emails. Sending a mail via temp mail service is impossible.\nOnly text and html messages are allowed, file attachments are disabled. The main reason for this is to protect users from dangerous content and viruses.\nThere are a few basic cases where you need temporary mail\nFor programmers to test the functionality of email part of the developed applications. They no longer need to create special test email inboxes. In Tempmailo they are ready right away. Our API will also soon become publicly available, which will make the job even easier.\nWhen you need to keep your personal data and privacy from suspicious websites and services, and to protect your personal mail from unwanted messages and junk mail. By using temp email you will no longer have to worry about it. Online privacy is now a huge concern for everyone. Temp mail is a good protection against dangers.\nFor each site or associated services, which is not important to you\nFor temporary registration on forums, mail listings to receive subscription protected content\nOn any non-trustworthy place on the internet\nRegistration in social networks - Facebook, Instagram, Twitter, etc.\nNote: Never use disposable mail for important information. It is short-living and your mail address is only temporary.\n\nFAQ\nWhat's a temp mail and how does it work?\n\nWhere can I use a temp mail?\nHow to use disposable email?\nHow long we keep your mail messages?\n\n\nWhere, who and how to use temp mail?\nWhere, who and how to use temp mail? \nTemporary Email or Disposable Email Service\nTemporary Email or Disposable Email Service \nGet temporary email address and get rid of Spam\nGet temporary email address and get rid of Spam\nCopyright ©2021 Tempmailo Status Privacy Terms Contact","createdAt":"2021-02-25T08:02:22.802Z","updatedAt":"2021-02-25T08:02:22.802Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}
+2 < cf-request-id: 0893f2964e00002c8a57183000000001
+{"articles":[{"title":"Delete test","slug":"delete-test-hdt7wk","body":"body","createdAt":"2021-03-02T09:51:26.751Z","updatedAt":"2021-03-02T09:51:26.751Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Elyria","slug":"elyria-hmsccf","body":"The things I do for love.","createdAt":"2021-03-02T09:51:25.873Z","updatedAt":"2021-03-02T09:51:25.873Z","tagList":[],"description":"Eden Risley","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Meereen","slug":"meereen-kaeszn","body":"The North remembers.","createdAt":"2021-03-02T09:51:25.076Z","updatedAt":"2021-03-02T09:51:25.076Z","tagList":[],"description":"Edrick Stark","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-ri29qj","body":"body","createdAt":"2021-03-02T09:51:24.382Z","updatedAt":"2021-03-02T09:51:24.382Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-yy6qz3","body":"body","createdAt":"2021-03-02T09:47:45.569Z","updatedAt":"2021-03-02T09:47:45.569Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Bla bla","slug":"bla-bla-wl7fju","body":"body","createdAt":"2021-03-02T09:47:18.723Z","updatedAt":"2021-03-02T09:47:18.723Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Bla bla","slug":"bla-bla-m5gn6r","body":"body","createdAt":"2021-03-02T09:39:37.904Z","updatedAt":"2021-03-02T09:39:37.904Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Title test 4","slug":"title-test-4-vh5n58","body":"Article test 4","createdAt":"2021-03-02T09:37:00.614Z","updatedAt":"2021-03-02T09:37:00.614Z","tagList":[],"description":"Desc test 4","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Title test 3","slug":"title-test-3-krxitd","body":"Article test 3","createdAt":"2021-03-02T09:36:58.415Z","updatedAt":"2021-03-02T09:36:58.415Z","tagList":[],"description":"Desc test 3","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Title test 2","slug":"title-test-2-kc5k9v","body":"Article test 2","createdAt":"2021-03-02T09:36:56.273Z","updatedAt":"2021-03-02T09:36:56.273Z","tagList":[],"description":"Desc test 2","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1}],"articlesCount":500}
 
-10:48:44.074 request:
-3 > DELETE https://conduit.productionready.io/api/articles/delete-test-i54jzw
+11:51:27.633 request:
+3 > DELETE https://conduit.productionready.io/api/articles/delete-test-hdt7wk
 3 > Accept-Encoding: gzip,deflate
-3 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk0MjY5MjN9.5hbiLOuMPjv8rE1x7pqO1qMoXioPeLCRbxIivuKVhXY
+3 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg
 3 > Connection: Keep-Alive
-3 > Cookie: __cfduid=d44577580d698915499dcdabe235a25ab1614242924
+3 > Cookie: __cfduid=d0e3f258114ea09365e099680fffa9ac31614678686
 3 > Host: conduit.productionready.io
 3 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 
-10:48:44.403 response time in milliseconds: 327.92
+11:51:28.240 response time in milliseconds: 605.93
 3 < 200
 3 < CF-Cache-Status: DYNAMIC
-3 < CF-RAY: 62702b4d9fecad0c-OTP
+3 < CF-RAY: 6299ba096a3a40d7-LHR
 3 < Cache-Control: max-age=0, private, must-revalidate
 3 < Connection: keep-alive
 3 < Content-Type: application/json; charset=utf-8
-3 < Date: Thu, 25 Feb 2021 08:48:45 GMT
+3 < Date: Tue, 02 Mar 2021 09:51:28 GMT
 3 < ETag: W/"99914b932bd37a50b983c5e7c90ae93b"
 3 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-3 < NEL: {"report_to":"cf-nel","max_age":604800}
-3 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=yT8un%2FHLsLAgJ80BNc%2F7TnJFqtT13qVJ2kVLAua%2FKaCRmPK4oDS7spIQM%2Fylj44zK31O6GaYs03ULDHTN6bcA1ah84TrJL8HcnjyV6Ku3xn2NkQby44QNSdwRQ%3D%3D"}]}
+3 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+3 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=JkR5NhAK4GBvigX0POpsnbCVcuhC99eQ%2BvMD1ffujoKicjLW%2BpDDk0frIZOkR2LZBRkZnAYQI2fg3nry5HpknpspxW5PuKw5CpYYO328Lh5UFXxZfGzkB0DIDQ%3D%3D"}],"max_age":604800}
 3 < Server: cloudflare
 3 < Status: 200 OK
+3 < Transfer-Encoding: chunked
 3 < Vary: Origin
 3 < X-Content-Type-Options: nosniff
 3 < X-Frame-Options: SAMEORIGIN
 3 < X-Powered-By: Phusion Passenger 4.0.60
-3 < X-Request-Id: 77ca8189-b6bc-494d-9b13-c1e358b0f6c0
-3 < X-Runtime: 0.053285
+3 < X-Request-Id: 604d2540-f954-4f61-a1f2-32e127d108aa
+3 < X-Runtime: 0.045771
 3 < X-XSS-Protection: 1; mode=block
-3 < cf-request-id: 0879f964800000ad0c7f92d000000001
+3 < cf-request-id: 0893f299e3000040d7ff0e4000000001
 {}
 
-10:48:44.406 request:
+11:51:28.243 request:
 4 > GET https://conduit.productionready.io/api/articles?limit=10&offset=0
 4 > Accept-Encoding: gzip,deflate
 4 > Connection: Keep-Alive
-4 > Cookie: __cfduid=d44577580d698915499dcdabe235a25ab1614242924
+4 > Cookie: __cfduid=d0e3f258114ea09365e099680fffa9ac31614678686
 4 > Host: conduit.productionready.io
 4 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 
-10:48:45.290 response time in milliseconds: 881.21
+11:51:29.030 response time in milliseconds: 785.40
 4 < 200
 4 < CF-Cache-Status: DYNAMIC
-4 < CF-RAY: 62702b4f8b41ad24-OTP
-4 < Cache-Control: max-age=0, private, must-revalidate
+4 < CF-RAY: 6299ba0d4c865470-LHR
 4 < Connection: keep-alive
 4 < Content-Type: application/json; charset=utf-8
-4 < Date: Thu, 25 Feb 2021 08:48:46 GMT
-4 < ETag: W/"f7eb70abbc2660a2a77ac7bbb7f47336"
+4 < Date: Tue, 02 Mar 2021 09:51:29 GMT
 4 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 4 < NEL: {"report_to":"cf-nel","max_age":604800}
-4 < Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=Nk1%2F18Wmr%2F939BjhjA%2B%2FIvlpyfWQkk2XM0slicuuz5sXaEJN82fwn6mlAV16ZsT5OJD9zyk00K%2BnpZdU2n%2BabLnuNlTpM%2FQaBJVdQ2orBZpsYDbojnijSdm7Kg%3D%3D"}]}
+4 < Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=01Rezi5CwlHxH%2BCL%2FYOLAxnLXZXbTYv%2FZ3W6Yh8N1PdJV2MAkCwE8Cx6UnPS%2FfzdqbvcKAn%2BWGuXExN0B5rDTEY%2Bdmla5huNzgA2VlK3R4KmyH2f2aupA48ngA%3D%3D"}]}
 4 < Server: cloudflare
-4 < Status: 200 OK
 4 < Transfer-Encoding: chunked
-4 < Vary: Origin
-4 < X-Content-Type-Options: nosniff
-4 < X-Frame-Options: SAMEORIGIN
-4 < X-Powered-By: Phusion Passenger 4.0.60
-4 < X-Request-Id: a8ad0af0-9227-46fd-aa74-bf76bc5d985b
-4 < X-Runtime: 0.157500
-4 < X-XSS-Protection: 1; mode=block
-4 < cf-request-id: 0879f965b80000ad24399d7000000001
-{"articles":[{"title":"Bla bla","slug":"bla-bla-h6i4u5","body":"body","createdAt":"2021-02-25T08:48:44.071Z","updatedAt":"2021-02-25T08:48:44.071Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-w2f51l","body":"body","createdAt":"2021-02-25T08:48:24.458Z","updatedAt":"2021-02-25T08:48:24.458Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"sadasdas","slug":"sadasdas-ezcbr5","body":"sjgjkadgjvaj","createdAt":"2021-02-25T08:41:10.988Z","updatedAt":"2021-02-25T08:41:10.988Z","tagList":[],"description":"sfghsgfhs","author":{"username":"zzc","bio":"I like to skateboard","image":"https://i.stack.imgur.com/xHWG8.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"who are you?","slug":"who-are-you-lxjm0x","body":"It's a lonely road to the top.","createdAt":"2021-02-25T08:38:28.797Z","updatedAt":"2021-02-25T08:38:28.797Z","tagList":["night","afternoon","moring"],"description":"this is my first title","author":{"username":"zzc","bio":"I like to skateboard","image":"https://i.stack.imgur.com/xHWG8.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"ưefwer","slug":"efwer-ic2h8d","body":"ưeerwerwe","createdAt":"2021-02-25T08:09:55.321Z","updatedAt":"2021-02-25T08:09:55.321Z","tagList":[],"description":"ưerwer","author":{"username":"Linh95sấ","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"just testing","slug":"just-testing-3io6ls","body":"lnmadfeelauztsskpq@kiabws.com","createdAt":"2021-02-25T08:03:38.847Z","updatedAt":"2021-02-25T08:03:38.847Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"test test test","slug":"test-test-test-lkefoe","body":"kkkkkkkk","createdAt":"2021-02-25T08:03:10.465Z","updatedAt":"2021-02-25T08:03:10.465Z","tagList":["lk"],"description":"short description","author":{"username":"Maksim Adams","bio":null,"image":"https://99px.ru/sstorage/41/2016/12/image_412712160204353152833.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-skfn2h","body":"Inbox\nRefresh\nAPI\nFAQ\nPrivacy\nFeedback\nContacts\n© 2021 Mail.tm\n\nEmail\nyysdfglcz@maxresistance.com\n\n\n\nY\n\nTemp Mail\nProtect your personal email address from spam, bots, phishing and other online abuse. Temporary anonymous email address - no commitments and no risks.","createdAt":"2021-02-25T08:02:43.147Z","updatedAt":"2021-02-25T08:02:43.147Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-p11kyc","body":"Tempmailo - Temp mail address\nYour temporary email address\nvelapo@thichanthit.com\n\nCopy\nCopied\nAutorefresh in\n8\n Refresh\n Change\nInbox\n\nHello\nWelcome to Tempmailo\nFree, fast and secure temp email application\nTempmailo Team\nWelcome\n\nTweet Share on Facebook Submit to Reddit Send email\nTemp mail use cases\nWhy do we need a temp mail? Often, websites and online services ask for a valid e-mail address to register, access and view or receive content, etc. The problem, however, is that some of these sites may end up using our email address to send spam.\n\nOne good way to deal with this is to use a temp email address when you are not sure that this website is completely credible and trustworthy. This will help you keep your personal e-mail spam free and protect your privacy.\n\nThe disposable mail (also known as temp mail, temporary mail, 10 minute mail) works like any other email service with some differences:\n\nIt is short-living – from a few minutes up to few days (Тempmailo keep old emails for 2 days).\nIt's just for receiving emails. Sending a mail via temp mail service is impossible.\nOnly text and html messages are allowed, file attachments are disabled. The main reason for this is to protect users from dangerous content and viruses.\nThere are a few basic cases where you need temporary mail\nFor programmers to test the functionality of email part of the developed applications. They no longer need to create special test email inboxes. In Tempmailo they are ready right away. Our API will also soon become publicly available, which will make the job even easier.\nWhen you need to keep your personal data and privacy from suspicious websites and services, and to protect your personal mail from unwanted messages and junk mail. By using temp email you will no longer have to worry about it. Online privacy is now a huge concern for everyone. Temp mail is a good protection against dangers.\nFor each site or associated services, which is not important to you\nFor temporary registration on forums, mail listings to receive subscription protected content\nOn any non-trustworthy place on the internet\nRegistration in social networks - Facebook, Instagram, Twitter, etc.\nNote: Never use disposable mail for important information. It is short-living and your mail address is only temporary.\n\nFAQ\nWhat's a temp mail and how does it work?\n\nWhere can I use a temp mail?\nHow to use disposable email?\nHow long we keep your mail messages?\n\n\nWhere, who and how to use temp mail?\nWhere, who and how to use temp mail? \nTemporary Email or Disposable Email Service\nTemporary Email or Disposable Email Service \nGet temporary email address and get rid of Spam\nGet temporary email address and get rid of Spam\nCopyright ©2021 Tempmailo Status Privacy Terms Contact","createdAt":"2021-02-25T08:02:22.802Z","updatedAt":"2021-02-25T08:02:22.802Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"zivndfmaptsmxbrj","slug":"zivndfmaptsmxbrj-so2txi","body":"Automation testing description","createdAt":"2021-02-25T07:47:13.532Z","updatedAt":"2021-02-25T07:47:13.532Z","tagList":[],"description":"How to do automation testing","author":{"username":"wavkdmsdtgqhayhy","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}
+4 < cache-control: max-age=0, private, must-revalidate
+4 < cf-request-id: 0893f29c4c0000547069148000000001
+4 < etag: W/"f2ef71006ec3c85ffcb607833cd2f105"
+4 < status: 200 OK
+4 < vary: Origin
+4 < x-content-type-options: nosniff
+4 < x-frame-options: SAMEORIGIN
+4 < x-powered-by: Phusion Passenger 4.0.60
+4 < x-request-id: 584c813e-f4c0-4b28-8107-9d7d90206bef
+4 < x-runtime: 0.150382
+4 < x-xss-protection: 1; mode=block
+{"articles":[{"title":"Elyria","slug":"elyria-hmsccf","body":"The things I do for love.","createdAt":"2021-03-02T09:51:25.873Z","updatedAt":"2021-03-02T09:51:25.873Z","tagList":[],"description":"Eden Risley","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Meereen","slug":"meereen-kaeszn","body":"The North remembers.","createdAt":"2021-03-02T09:51:25.076Z","updatedAt":"2021-03-02T09:51:25.076Z","tagList":[],"description":"Edrick Stark","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-ri29qj","body":"body","createdAt":"2021-03-02T09:51:24.382Z","updatedAt":"2021-03-02T09:51:24.382Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-yy6qz3","body":"body","createdAt":"2021-03-02T09:47:45.569Z","updatedAt":"2021-03-02T09:47:45.569Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Bla bla","slug":"bla-bla-wl7fju","body":"body","createdAt":"2021-03-02T09:47:18.723Z","updatedAt":"2021-03-02T09:47:18.723Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Bla bla","slug":"bla-bla-m5gn6r","body":"body","createdAt":"2021-03-02T09:39:37.904Z","updatedAt":"2021-03-02T09:39:37.904Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Title test 4","slug":"title-test-4-vh5n58","body":"Article test 4","createdAt":"2021-03-02T09:37:00.614Z","updatedAt":"2021-03-02T09:37:00.614Z","tagList":[],"description":"Desc test 4","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Title test 3","slug":"title-test-3-krxitd","body":"Article test 3","createdAt":"2021-03-02T09:36:58.415Z","updatedAt":"2021-03-02T09:36:58.415Z","tagList":[],"description":"Desc test 3","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Title test 2","slug":"title-test-2-kc5k9v","body":"Article test 2","createdAt":"2021-03-02T09:36:56.273Z","updatedAt":"2021-03-02T09:36:56.273Z","tagList":[],"description":"Desc test 2","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Title test 1","slug":"title-test-1-q20sb2","body":"Article test 1","createdAt":"2021-03-02T09:36:54.320Z","updatedAt":"2021-03-02T09:36:54.320Z","tagList":[],"description":"Desc test 1","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1}],"articlesCount":500}
 
-10:48:45.423 not a js function or feature file: [type: NULL, value: null]
-10:48:45.434 request:
+11:51:29.144 not a js function or feature file: [type: NULL, value: null]
+11:51:29.201 request:
 1 > POST https://conduit.productionready.io/api/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 103
+1 > Content-Length: 88
 1 > Content-Type: application/json; charset=UTF-8
 1 > Host: conduit.productionready.io
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
-{"user":{"email":"TestKarateUser223@user.com","password":"karate21343","username":"UserKarateUser223"}}
+{"user":{"email":"alissa17@test.com","password":"karate2121","username":"alla.mcglynn"}}
 
-10:48:46.014 response time in milliseconds: 579.60
+11:51:30.024 response time in milliseconds: 821.25
 1 < 200
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 62702b560840acfa-OTP
+1 < CF-RAY: 6299ba133f0adc17-LHR
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Feb 2021 08:48:47 GMT
-1 < ETag: W/"1a9cd46daaa18b62b29f26cb6242825c"
+1 < Date: Tue, 02 Mar 2021 09:51:30 GMT
+1 < ETag: W/"3ba9dc94aead2d1ac3376b4f22b7ead4"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < Location: /
 1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=3KTqFOr8%2BD1jQ6Db1hspL22IYgHWIje46%2Bj24a%2BOm7gLE%2F0UUEuppi5pwVsDwc3aUMjGPHeaOfLx7v2YO0fArphlp4XhnvEZd5LzuTteGFN%2BFmOMAbnvGLQKKQ%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=RPkKHRShZO0n2wUKseiL9LonNaLRWZWiJLbJX1SerUrTNgD0VkT51rHu%2FTqevJ7NHhmzEgqeGcMAAat0bwCLcp7ELDDE%2BzLamZn37cBF8AsNdRIT7lBuFN4rTw%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d076e4b919f5c0e299810ca53a45fa0591614242927; expires=Sat, 27-Mar-21 08:48:47 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Set-Cookie: __cfduid=db43fc46b6f912287e3c3b2e050605a551614678689; expires=Thu, 01-Apr-21 09:51:29 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 < Status: 200 OK
 1 < Transfer-Encoding: chunked
 1 < Vary: Origin
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: bbef016e-e0e3-4df2-a678-efb743a346bc
-1 < X-Runtime: 0.135731
+1 < X-Request-Id: 3c3d1687-9166-48ba-b98b-87910996b307
+1 < X-Runtime: 0.096378
 1 < X-XSS-Protection: 1; mode=block
-1 < cf-request-id: 0879f969c20000acfa83175000000001
-{"user":{"id":144832,"email":"testkarateuser223@user.com","createdAt":"2021-02-25T08:48:47.441Z","updatedAt":"2021-02-25T08:48:47.463Z","username":"UserKarateUser223","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ0ODMyLCJ1c2VybmFtZSI6IlVzZXJLYXJhdGVVc2VyMjIzIiwiZXhwIjoxNjE5NDI2OTI3fQ.NdMdx5Gxk4VEghisElvJYyD2vniSpdg8uatiD9lY2Os"}}
+1 < cf-request-id: 0893f2a0070000dc17ea319000000001
+{"user":{"id":145970,"email":"alissa17@test.com","createdAt":"2021-03-02T09:51:30.141Z","updatedAt":"2021-03-02T09:51:30.146Z","username":"alla.mcglynn","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ1OTcwLCJ1c2VybmFtZSI6ImFsbGEubWNnbHlubiIsImV4cCI6MTYxOTg2MjY5MH0.PgJkVegYU00V6wfU4j0QwQSmfIRJ-xngPuREnON4W_I"}}
 
-10:48:46.037 not a js function or feature file: [type: NULL, value: null]
-10:48:46.041 request:
+11:51:30.055 not a js function or feature file: [type: NULL, value: null]
+11:51:30.126 request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 89
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"user":{"email":"nikia75@test.com","password":"karate2121","username":"eliseo.abshire"}}
+
+11:51:31.004 response time in milliseconds: 870.87
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6299ba19084240b9-LHR
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 02 Mar 2021 09:51:31 GMT
+1 < ETag: W/"7e8a64d22fdbb429e1826772c238c1ab"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Location: /
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=9dFykOIyR5Kz%2ByNupnSmcc4WGKQDJ1YeRR2eiv%2FdpO0R292jkVVRN5mdPZet%2FrECzrnPBaWr7I83PoYUXj0OWZZG%2FQRwqPCLgaPCq3B2QIRhKjOwSxsoubbdUA%3D%3D"}]}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d26a6a2bc20771a4cdbdd292ef72df4d61614678690; expires=Thu, 01-Apr-21 09:51:30 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 24c69382-f0a3-4331-99c9-d00ae4036ee0
+1 < X-Runtime: 0.093549
+1 < X-XSS-Protection: 1; mode=block
+1 < cf-request-id: 0893f2a3a2000040b9133dd000000001
+{"user":{"id":145971,"email":"nikia75@test.com","createdAt":"2021-03-02T09:51:31.072Z","updatedAt":"2021-03-02T09:51:31.077Z","username":"eliseo.abshire","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ1OTcxLCJ1c2VybmFtZSI6ImVsaXNlby5hYnNoaXJlIiwiZXhwIjoxNjE5ODYyNjkxfQ.1AWY9SRk9BYksN_b3Lp1sv3oOYg4ViLQ2IYLEZz5B30"}}
+
+11:51:31.013 not a js function or feature file: [type: NULL, value: null]
+11:51:31.048 request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 89
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"user":{"email":"socorro53@test.com","password":"Karate123","username":"KarateUser123"}}
+
+11:51:31.926 response time in milliseconds: 876.86
+1 < 422
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6299ba1ecf38544c-LHR
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 02 Mar 2021 09:51:32 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=pwPGm845xYC270Mjhrqh4GX43u4FjnUQ9N4p2%2FN5h%2Bw4dB61eL8eLlkm2KE%2B%2FYUKRYdHNlai2OdPhOYM0p185yZV0XWikdhiS9lPzZoL87xC%2FjcUkWT9SXKzxQ%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dfe1bddbab5153c002299cc4327672ec51614678691; expires=Thu, 01-Apr-21 09:51:31 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 422 Unprocessable Entity
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 9a734c1f-3c6f-41b0-8699-22d91dcc8d75
+1 < X-Runtime: 0.087175
+1 < X-XSS-Protection: 1; mode=block
+1 < cf-request-id: 0893f2a73d0000544c62bb6000000001
+{"errors":{"username":["has already been taken"]}}
+
+11:51:31.934 not a js function or feature file: [type: NULL, value: null]
+11:51:31.971 request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 88
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"user":{"email":"KarateUser1@test.com","password":"Karate123","username":"luke.frami"}}
+
+11:51:32.848 response time in milliseconds: 875.91
+1 < 422
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6299ba2488842c92-LHR
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 02 Mar 2021 09:51:32 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=IB72xkmTN7Y1RtPgy5eNdzrDtIF4fzONOOWfRKW07jxnn3cCH2A%2FAkKsnjz5OZFplBSUzmXTSPhZVny5w41SIeGk6HdaO23Ob%2BKGy6ace59CLqb9E2EfOBWHfg%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d441cf153b9a092cb62041794fad11a8e1614678692; expires=Thu, 01-Apr-21 09:51:32 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 422 Unprocessable Entity
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 731c79b1-5119-48c1-b5d4-e123261584b3
+1 < X-Runtime: 0.084730
+1 < X-XSS-Protection: 1; mode=block
+1 < cf-request-id: 0893f2aad200002c92ed197000000001
+{"errors":{"email":["has already been taken"]}}
+
+11:51:32.858 not a js function or feature file: [type: NULL, value: null]
+11:51:32.885 request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 72
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"user":{"email":"","password":"Karate123","username":"hipolito.white"}}
+
+11:51:33.487 response time in milliseconds: 600.91
+1 < 422
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 6299ba2a3cc753ec-LHR
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 02 Mar 2021 09:51:33 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=l%2B63YV%2BXXxIlBIyunmYR222%2B9Ma3AoXAcdTUWlkz0m2yL%2Biag%2FdeikeBv8LOv%2BOb6%2ByRIl3L0hFp96P03l4gaTo191vcMJs3UDjbtiGa0vraxUDX3M2ZQRqSNw%3D%3D"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dc5d57293e6f594e0fad5c6148ede3ed81614678693; expires=Thu, 01-Apr-21 09:51:33 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 422 Unprocessable Entity
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 7a849ec7-6879-4410-8988-2be2b649126d
+1 < X-Runtime: 0.086419
+1 < X-XSS-Protection: 1; mode=block
+1 < cf-request-id: 0893f2ae64000053ec53097000000001
+{"errors":{"email":["can't be blank"]}}
+
+11:51:33.510 not a js function or feature file: [type: NULL, value: null]
+11:51:33.513 request:
 1 > GET https://conduit.productionready.io/api/tags
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: conduit.productionready.io
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 
-10:48:47.459 response time in milliseconds: 1417.33
+11:51:35.306 response time in milliseconds: 1791.03
 1 < 200
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 62702b59f8d6fd11-OTP
+1 < CF-RAY: 6299ba2e28fb2c6a-LHR
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Feb 2021 08:48:49 GMT
-1 < ETag: W/"8fcac31e727584e6e89c442637cf9f1a"
+1 < Date: Tue, 02 Mar 2021 09:51:35 GMT
+1 < ETag: W/"abf949375f099139bf9b64970c54784e"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=ACQ1R2rEeEGHFHYQjfQPslJ5QwiDA81trE0EHbVJS5yg1y%2FEiHHXx2%2F49hrmzTQqxY9JK4T0xCDUbw9Vkmci0HqnF1%2Bx82UEI6vbUyYioaF8ymkHoAQ5qVCsPg%3D%3D"}]}
+1 < Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=Vnkw8pvjzV3Z2IrP%2B7R4X%2BpywEruHSgw4GRpNR35QU2bVP4hXZqO2tYV3k50fTwkLsBMoVBLRjERuREuvrg6jYejM85WdDC3BDbyVvjQjZ8y46LjS1VMgYqBGA%3D%3D"}]}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d4768e487a09e0ea6f64f2f5a56613c021614242927; expires=Sat, 27-Mar-21 08:48:47 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Set-Cookie: __cfduid=da37639718ced8469cae9068f3d61ca301614678694; expires=Thu, 01-Apr-21 09:51:34 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 < Status: 200 OK
 1 < Transfer-Encoding: chunked
 1 < Vary: Origin
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: 6456c7a9-78e4-414f-b33d-9ce10bd68a1a
-1 < X-Runtime: 0.951713
+1 < X-Request-Id: 372382fe-692e-44ca-85d7-6e1ea8cc68fd
+1 < X-Runtime: 0.811957
 1 < X-XSS-Protection: 1; mode=block
-1 < cf-request-id: 0879f96c3e0000fd11da2cb000000001
-{"tags":["‌","‌‌","‌‌‌","‌‌‌‌","‌‌‌‌‌","‌‌‌‌‌‌‌","‌‌‌‌‌‌‌‌","‌‌‌‌‌‌‌‌‌‌","‌‌‌‌‌‌‌‌‌‌‌","‌‌‌‌‌‌","HuManIty","Hu‌Man‌Ity","Gandhi","HITLER","SIDA","BlackLivesMatter","Black‌Lives‌Matter","test","dragons","butt"]}
+1 < cf-request-id: 0893f2b0d500002c6a178cb000000001
+{"tags":["‌","‌‌","‌‌‌","‌‌‌‌","‌‌‌‌‌‌‌","‌‌‌‌‌‌‌‌","‌‌‌‌‌","‌‌‌‌‌‌‌‌‌‌‌","‌‌‌‌‌‌","‌‌‌‌‌‌‌‌‌‌","HuManIty","Hu‌Man‌Ity","Gandhi","HITLER","SIDA","BlackLivesMatter","Black‌Lives‌Matter","test","dragons","butt"]}
 
-10:48:47.486 not a js function or feature file: [type: NULL, value: null]
-10:48:47.489 request:
+11:51:35.322 not a js function or feature file: [type: NULL, value: null]
+11:51:35.329 request:
 1 > GET https://conduit.productionready.io/api/articles?limit=10&offset=0
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: conduit.productionready.io
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 
-10:48:48.366 response time in milliseconds: 872.05
+11:51:36.228 response time in milliseconds: 898.02
 1 < 200
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 62702b62dd382930-OTP
+1 < CF-RAY: 6299ba398d79541b-LHR
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 25 Feb 2021 08:48:49 GMT
-1 < ETag: W/"f7eb70abbc2660a2a77ac7bbb7f47336"
+1 < Date: Tue, 02 Mar 2021 09:51:36 GMT
+1 < ETag: W/"f2ef71006ec3c85ffcb607833cd2f105"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < NEL: {"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=iZGOnJtBYWh0QdeDUwgWxsp7FljP5Nc4S2EeaP6R0ptytk43Fa8AgA6scBeKILbp6goibPkKE1g6LxrVcOiRF%2BTsWFVDQiFzbz7NF%2BJBA%2FrIjnM7Ub8sMGc7oA%3D%3D"}]}
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=O4DMzrsp55zf0oa1Kbm%2FcM5EWbcw8FE0HnaTjC0lrDAtX4zpgDeElkz5U6CTQGnfSBJNi6zGwYKIKE3coRTV88GezZsutTzBwE4JsD4FmqskzR4XRhWxWmm57Q%3D%3D"}],"max_age":604800}
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=de8aafc6c1eb8a113a0ea6457d43551981614242929; expires=Sat, 27-Mar-21 08:48:49 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Set-Cookie: __cfduid=d2aee7aa57eed986e03eb6bc9dbdd7b201614678695; expires=Thu, 01-Apr-21 09:51:35 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 < Status: 200 OK
 1 < Transfer-Encoding: chunked
 1 < Vary: Origin
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Powered-By: Phusion Passenger 4.0.60
-1 < X-Request-Id: ada273e1-6987-4d53-be90-5978f0c484ff
-1 < X-Runtime: 0.143896
+1 < X-Request-Id: 86bffbd4-450b-43c9-8a59-99b7503c8632
+1 < X-Runtime: 0.156803
 1 < X-XSS-Protection: 1; mode=block
-1 < cf-request-id: 0879f971c800002930f816f000000001
-{"articles":[{"title":"Bla bla","slug":"bla-bla-h6i4u5","body":"body","createdAt":"2021-02-25T08:48:44.071Z","updatedAt":"2021-02-25T08:48:44.071Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-w2f51l","body":"body","createdAt":"2021-02-25T08:48:24.458Z","updatedAt":"2021-02-25T08:48:24.458Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"sadasdas","slug":"sadasdas-ezcbr5","body":"sjgjkadgjvaj","createdAt":"2021-02-25T08:41:10.988Z","updatedAt":"2021-02-25T08:41:10.988Z","tagList":[],"description":"sfghsgfhs","author":{"username":"zzc","bio":"I like to skateboard","image":"https://i.stack.imgur.com/xHWG8.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"who are you?","slug":"who-are-you-lxjm0x","body":"It's a lonely road to the top.","createdAt":"2021-02-25T08:38:28.797Z","updatedAt":"2021-02-25T08:38:28.797Z","tagList":["night","afternoon","moring"],"description":"this is my first title","author":{"username":"zzc","bio":"I like to skateboard","image":"https://i.stack.imgur.com/xHWG8.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"ưefwer","slug":"efwer-ic2h8d","body":"ưeerwerwe","createdAt":"2021-02-25T08:09:55.321Z","updatedAt":"2021-02-25T08:09:55.321Z","tagList":[],"description":"ưerwer","author":{"username":"Linh95sấ","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"just testing","slug":"just-testing-3io6ls","body":"lnmadfeelauztsskpq@kiabws.com","createdAt":"2021-02-25T08:03:38.847Z","updatedAt":"2021-02-25T08:03:38.847Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"test test test","slug":"test-test-test-lkefoe","body":"kkkkkkkk","createdAt":"2021-02-25T08:03:10.465Z","updatedAt":"2021-02-25T08:03:10.465Z","tagList":["lk"],"description":"short description","author":{"username":"Maksim Adams","bio":null,"image":"https://99px.ru/sstorage/41/2016/12/image_412712160204353152833.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-skfn2h","body":"Inbox\nRefresh\nAPI\nFAQ\nPrivacy\nFeedback\nContacts\n© 2021 Mail.tm\n\nEmail\nyysdfglcz@maxresistance.com\n\n\n\nY\n\nTemp Mail\nProtect your personal email address from spam, bots, phishing and other online abuse. Temporary anonymous email address - no commitments and no risks.","createdAt":"2021-02-25T08:02:43.147Z","updatedAt":"2021-02-25T08:02:43.147Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-p11kyc","body":"Tempmailo - Temp mail address\nYour temporary email address\nvelapo@thichanthit.com\n\nCopy\nCopied\nAutorefresh in\n8\n Refresh\n Change\nInbox\n\nHello\nWelcome to Tempmailo\nFree, fast and secure temp email application\nTempmailo Team\nWelcome\n\nTweet Share on Facebook Submit to Reddit Send email\nTemp mail use cases\nWhy do we need a temp mail? Often, websites and online services ask for a valid e-mail address to register, access and view or receive content, etc. The problem, however, is that some of these sites may end up using our email address to send spam.\n\nOne good way to deal with this is to use a temp email address when you are not sure that this website is completely credible and trustworthy. This will help you keep your personal e-mail spam free and protect your privacy.\n\nThe disposable mail (also known as temp mail, temporary mail, 10 minute mail) works like any other email service with some differences:\n\nIt is short-living – from a few minutes up to few days (Тempmailo keep old emails for 2 days).\nIt's just for receiving emails. Sending a mail via temp mail service is impossible.\nOnly text and html messages are allowed, file attachments are disabled. The main reason for this is to protect users from dangerous content and viruses.\nThere are a few basic cases where you need temporary mail\nFor programmers to test the functionality of email part of the developed applications. They no longer need to create special test email inboxes. In Tempmailo they are ready right away. Our API will also soon become publicly available, which will make the job even easier.\nWhen you need to keep your personal data and privacy from suspicious websites and services, and to protect your personal mail from unwanted messages and junk mail. By using temp email you will no longer have to worry about it. Online privacy is now a huge concern for everyone. Temp mail is a good protection against dangers.\nFor each site or associated services, which is not important to you\nFor temporary registration on forums, mail listings to receive subscription protected content\nOn any non-trustworthy place on the internet\nRegistration in social networks - Facebook, Instagram, Twitter, etc.\nNote: Never use disposable mail for important information. It is short-living and your mail address is only temporary.\n\nFAQ\nWhat's a temp mail and how does it work?\n\nWhere can I use a temp mail?\nHow to use disposable email?\nHow long we keep your mail messages?\n\n\nWhere, who and how to use temp mail?\nWhere, who and how to use temp mail? \nTemporary Email or Disposable Email Service\nTemporary Email or Disposable Email Service \nGet temporary email address and get rid of Spam\nGet temporary email address and get rid of Spam\nCopyright ©2021 Tempmailo Status Privacy Terms Contact","createdAt":"2021-02-25T08:02:22.802Z","updatedAt":"2021-02-25T08:02:22.802Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"zivndfmaptsmxbrj","slug":"zivndfmaptsmxbrj-so2txi","body":"Automation testing description","createdAt":"2021-02-25T07:47:13.532Z","updatedAt":"2021-02-25T07:47:13.532Z","tagList":[],"description":"How to do automation testing","author":{"username":"wavkdmsdtgqhayhy","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}
+1 < cf-request-id: 0893f2b7f10000541b22043000000001
+{"articles":[{"title":"Elyria","slug":"elyria-hmsccf","body":"The things I do for love.","createdAt":"2021-03-02T09:51:25.873Z","updatedAt":"2021-03-02T09:51:25.873Z","tagList":[],"description":"Eden Risley","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Meereen","slug":"meereen-kaeszn","body":"The North remembers.","createdAt":"2021-03-02T09:51:25.076Z","updatedAt":"2021-03-02T09:51:25.076Z","tagList":[],"description":"Edrick Stark","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-ri29qj","body":"body","createdAt":"2021-03-02T09:51:24.382Z","updatedAt":"2021-03-02T09:51:24.382Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-yy6qz3","body":"body","createdAt":"2021-03-02T09:47:45.569Z","updatedAt":"2021-03-02T09:47:45.569Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Bla bla","slug":"bla-bla-wl7fju","body":"body","createdAt":"2021-03-02T09:47:18.723Z","updatedAt":"2021-03-02T09:47:18.723Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Bla bla","slug":"bla-bla-m5gn6r","body":"body","createdAt":"2021-03-02T09:39:37.904Z","updatedAt":"2021-03-02T09:39:37.904Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Title test 4","slug":"title-test-4-vh5n58","body":"Article test 4","createdAt":"2021-03-02T09:37:00.614Z","updatedAt":"2021-03-02T09:37:00.614Z","tagList":[],"description":"Desc test 4","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Title test 3","slug":"title-test-3-krxitd","body":"Article test 3","createdAt":"2021-03-02T09:36:58.415Z","updatedAt":"2021-03-02T09:36:58.415Z","tagList":[],"description":"Desc test 3","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Title test 2","slug":"title-test-2-kc5k9v","body":"Article test 2","createdAt":"2021-03-02T09:36:56.273Z","updatedAt":"2021-03-02T09:36:56.273Z","tagList":[],"description":"Desc test 2","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Title test 1","slug":"title-test-1-q20sb2","body":"Article test 1","createdAt":"2021-03-02T09:36:54.320Z","updatedAt":"2021-03-02T09:36:54.320Z","tagList":[],"description":"Desc test 1","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1}],"articlesCount":500}
 
-rited":false,"favoritesCount":0}],"articlesCount":500}
-
+11:51:36.283 not a js function or feature file: [type: NULL, value: null]
+11:51:36.303 >> lock acquired, begin callonce: read('classpath:helpers/Dummy.feature')
+11:51:36.320 << lock released, cached callonce: read('classpath:helpers/Dummy.feature')
+11:51:36.322 [print] melonie.kertzmann
+11:51:36.324 [print] First scenario
+11:51:36.328 not a js function or feature file: [type: NULL, value: null]
+11:51:36.349 [print] melonie.kertzmann
+11:51:36.350 [print] Second scenario

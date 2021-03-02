@@ -11,9 +11,8 @@ Feature: Tests for the HomePage
 
         And match response.tags contains ['Gandhi', 'test']
         And match response.tags !contains ['truck']
-        And match response.tags contains any ['dragons', 'test', 'Hitler']
-        And match response.tags !contains any ['dragons1', 'test1', 'Hitler1']
-
+        And match response.tags contains any ['dragons', 'test', 'HITLER']
+#        And match response.tags !contains ['dragons1', 'test1', 'Hitler1']
             # fuzzy validation
         And match response.tags ==  "#array"
         And match each response.tags ==  "#string"

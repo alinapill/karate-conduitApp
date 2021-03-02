@@ -35,7 +35,7 @@
           
                     <div class="nav-count">
                                     
-                        <div class="bg-success" id="nav-pass">2</div>
+                        <div class="bg-success" id="nav-pass">4</div>
                                     
                         <div class="bg-danger" id="nav-fail">0</div>
                                   
@@ -46,15 +46,21 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2021-02-25 10:48:45 AM</div>
+                <div id="nav-date">2021-03-02 11:51:29 AM</div>
                         
       
                 <div class="nav-container">
                     <div class="nav-item passed">
-                        <a href="#[1:8]">[1:8] Create a new article </a>
+                        <a href="#[1:15]">[1:15] Create a new article | hardcoded values </a>
                     </div>
                     <div class="nav-item passed">
-                        <a href="#[2:27]">[2:27] Create and Delete article </a>
+                        <a href="#[2:34]">[2:34] Create a new article | using dynamic values - dataGenerated values </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[3:42]">[3:42] Create a new article | data generated values </a>
+                    </div>
+                    <div class="nav-item passed">
+                        <a href="#[4:50]">[4:50] Create and Delete article | hardcoded values | using JSON request body file </a>
                     </div>
                 </div>
             </div>
@@ -65,42 +71,42 @@
                     <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">conduitApp/feature/Articles.feature</span><span class="feature-description">Articles</span>
                 </div>
                 <div class="scenario">
-                    <div class="scenario-heading" id="[1:8]">
+                    <div class="scenario-heading" id="[1:15]">
                         <div class="heading-container">
                             <div class="scenario-tags"></div>
-                            <span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">Create a new article </span>
+                            <span class="scenario-keyword">Scenario: [1:15]</span><span class="scenario-name">Create a new article | hardcoded values </span>
                         </div>
-                        <div class="scenario-time passed">ms: 1643</div>
+                        <div class="scenario-time passed">ms: 6156</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="[1:8]bg">
+                        <div class="step-container" id="[1:15]bg">
                             <div class="step-ref bg-step">&gt;&gt;</div>
                             <div class="step-cell passed">Background:</div>
                         </div>
                         <div class="time-cell passed"></div>
                     </div>
-                    <div class="step-row" data-parent="[1:8]bg">
+                    <div class="step-row" data-parent="[1:15]bg">
                         <div class="step-container" id="1">
                             <div class="step-ref bg-step">1</div>
                             <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
                         </div>
                         <div class="time-cell passed">2</div>
                     </div>
-                    <div class="preformatted" data-parent="1">10:48:40.971 not a js function or feature file: [type: NULL, value: null]</div>
-                    <div class="step-row" data-parent="[1:8]bg">
+                    <div class="preformatted" data-parent="1">11:51:17.907 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="step-row" data-parent="[1:15]bg">
                         <div class="step-container" id="2">
                             <div class="step-ref bg-step">2</div>
-                            <div class="step-cell passed">* def tokenResponse = callonce read('../../helpers/CreateToken.feature@CreateToken') { "email": "karate@user.com", "password": "karate123"}</div>
+                            <div class="step-cell passed">* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"}</div>
                         </div>
-                        <div class="time-cell passed">1045</div>
+                        <div class="time-cell passed">5341</div>
                     </div>
-                    <div class="preformatted" data-parent="2">10:48:42.027 &lt;&lt; lock released, cached callonce: read('../../helpers/CreateToken.feature@CreateToken')</div>
-                    <div class="step-row" data-parent="[1:8]bg">
+                    <div class="preformatted" data-parent="2">11:51:23.248 &lt;&lt; lock released, cached callonce: read('classpath:src/test/java/helpers/CreateToken.feature')</div>
+                    <div class="step-row" data-parent="[1:15]bg">
                         <div class="step-container" id="2.1">
                             <div class="step-ref bg-step">&gt;&gt;</div>
-                            <div class="step-cell passed">helpers/CreateToken.feature</div>
+                            <div class="step-cell passed">src/test/java/helpers/CreateToken.feature</div>
                         </div>
-                        <div class="time-cell passed">997</div>
+                        <div class="time-cell passed">5273</div>
                     </div>
                     <div class="callarg-container" data-parent="2.1">
                         <div class="step-ref"> </div>
@@ -110,16 +116,16 @@
 }
 </div>
                     </div>
-                    <div class="step-row" data-parent="[1:8]bg">
+                    <div class="step-row" data-parent="[1:15]bg">
                         <div class="step-container" id="3">
                             <div class="step-ref bg-step">3</div>
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
                         </div>
-                        <div class="time-cell passed">3</div>
+                        <div class="time-cell passed">2</div>
                     </div>
-                    <div class="preformatted" data-parent="3">10:48:40.989 &gt;&gt; lock acquired, begin callonce: read('../../helpers/CreateToken.feature@CreateToken')</div>
-                    <div class="step-row" data-parent="[1:8]bg">
+                    <div class="preformatted" data-parent="3">11:51:17.924 &gt;&gt; lock acquired, begin callonce: read('classpath:src/test/java/helpers/CreateToken.feature')</div>
+                    <div class="step-row" data-parent="[1:15]bg">
                         <div class="step-container" id="4">
                             <div class="step-ref bg-step">4</div>
                             <div class="step-indent"> </div>
@@ -127,23 +133,23 @@
                         </div>
                         <div class="time-cell passed">2</div>
                     </div>
-                    <div class="step-row" data-parent="[1:8]bg">
+                    <div class="step-row" data-parent="[1:15]bg">
                         <div class="step-container" id="5">
                             <div class="step-ref bg-step">5</div>
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And request {"user": {"email": "#(email)", "password": "#(password)"}}</div>
                         </div>
-                        <div class="time-cell passed">6</div>
+                        <div class="time-cell passed">5</div>
                     </div>
-                    <div class="step-row" data-parent="[1:8]bg">
+                    <div class="step-row" data-parent="[1:15]bg">
                         <div class="step-container" id="6">
                             <div class="step-ref bg-step">6</div>
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">975</div>
+                        <div class="time-cell passed">5253</div>
                     </div>
-                    <div class="preformatted" data-parent="6">10:48:41.323 request:
+                    <div class="preformatted" data-parent="6">11:51:18.237 request:
 1 &gt; POST https://conduit.productionready.io/api/users/login
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -153,31 +159,32 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 {"user":{"email":"karate@user.com","password":"karate123"}}
 
-10:48:42.013 response time in milliseconds: 688.01
+11:51:23.234 response time in milliseconds: 4994.54
 1 &lt; 200
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 62702b3d4f0cace2-OTP
+1 &lt; CF-RAY: 6299b9cf8a85ce7f-LHR
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 25 Feb 2021 08:48:43 GMT
-1 &lt; ETag: W/"2d36ae51020150b7c43771c7c65ea6f7"
+1 &lt; Date: Tue, 02 Mar 2021 09:51:23 GMT
+1 &lt; ETag: W/"e3beb730265a6bef93b79b5d138db120"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=ox1WQRUvfQZHHFfQT7mKrhvnxjokLug35ewsCuIT%2F5CdxPGynlZogqUaddCNp%2FaKOV06H4gl3mLBUav3JbW3WqQDGvWSD2OBzxThbk%2FlrGhdvs2UVGDeNLKgkA%3D%3D"}],"max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=0YVtczETZJ9oc%2BNL4ilI69UX7VVzOnAtGAs2url%2BfMpTSD5YWOpR02DlRqYsTO0Fl4W9lNmm3LTbLCm2yiAFS7qpZJERoJVJp5c7Mhigubi0%2BDMsWSVWfgNcww%3D%3D"}],"max_age":604800,"group":"cf-nel"}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d8f8faef43b2869fa8dda5d99f78799f71614242923; expires=Sat, 27-Mar-21 08:48:43 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Set-Cookie: __cfduid=d02d7c99d768000bd2553e765326384201614678678; expires=Thu, 01-Apr-21 09:51:18 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Origin
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Powered-By: Phusion Passenger 4.0.60
-1 &lt; X-Request-Id: 87779e21-6f1d-4860-8ef1-f734903172e8
-1 &lt; X-Runtime: 0.081239
+1 &lt; X-Request-Id: 22db3cd2-daee-4df6-a6bb-e4c65fc5a617
+1 &lt; X-Runtime: 0.151156
 1 &lt; X-XSS-Protection: 1; mode=block
-1 &lt; cf-request-id: 0879f95a4e0000ace27a06c000000001
-{"user":{"id":142785,"email":"karate@user.com","createdAt":"2021-02-15T14:14:26.716Z","updatedAt":"2021-02-15T14:14:26.722Z","username":"karateuser","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk0MjY5MjN9.5hbiLOuMPjv8rE1x7pqO1qMoXioPeLCRbxIivuKVhXY"}}</div>
-                    <div class="step-row" data-parent="[1:8]bg">
+1 &lt; cf-request-id: 0893f275b50000ce7f6312d000000001
+{"user":{"id":142785,"email":"karate@user.com","createdAt":"2021-02-15T14:14:26.716Z","updatedAt":"2021-02-15T14:14:26.722Z","username":"karateuser","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg"}}</div>
+                    <div class="step-row" data-parent="[1:15]bg">
                         <div class="step-container" id="7">
                             <div class="step-ref bg-step">7</div>
                             <div class="step-indent"> </div>
@@ -185,7 +192,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="step-row" data-parent="[1:8]bg">
+                    <div class="step-row" data-parent="[1:15]bg">
                         <div class="step-container" id="8">
                             <div class="step-ref bg-step">8</div>
                             <div class="step-indent"> </div>
@@ -193,35 +200,84 @@
                         </div>
                         <div class="time-cell passed">11</div>
                     </div>
-                    <div class="step-row" data-parent="[1:8]bg">
+                    <div class="step-row" data-parent="[1:15]bg">
                         <div class="step-container" id="9">
                             <div class="step-ref bg-step">9</div>
                             <div class="step-cell passed">* def token = tokenResponse.authToken</div>
                         </div>
-                        <div class="time-cell passed">6</div>
-                    </div>
-                    <div class="step-row">
-                        <div class="step-container" id="10">
-                            <div class="step-ref passed">10</div>
-                            <div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
-                        </div>
                         <div class="time-cell passed">5</div>
                     </div>
-                    <div class="step-row">
-                        <div class="step-container" id="11">
-                            <div class="step-ref passed">11</div>
-                            <div class="step-cell passed">Given path 'articles'</div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container">
+                            <div class="step-ref bg-step"></div>
+                            <div class="step-cell comment"># call JSON object, assign this Json into this object, call: articleRequestBody.article.title-description-body, assign to these values - the generated values</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="10">
+                            <div class="step-ref bg-step">10</div>
+                            <div class="step-cell passed">* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json')</div>
                         </div>
                         <div class="time-cell passed">3</div>
                     </div>
-                    <div class="step-row">
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="11">
+                            <div class="step-ref bg-step">11</div>
+                            <div class="step-cell passed">* def dataGenerator = Java.type('helpers.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:15]bg">
                         <div class="step-container" id="12">
-                            <div class="step-ref passed">12</div>
+                            <div class="step-ref bg-step">12</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title</div>
+                        </div>
+                        <div class="time-cell passed">105</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="13">
+                            <div class="step-ref bg-step">13</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title</div>
+                        </div>
+                        <div class="time-cell passed">14</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="14">
+                            <div class="step-ref bg-step">14</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description</div>
+                        </div>
+                        <div class="time-cell passed">20</div>
+                    </div>
+                    <div class="step-row" data-parent="[1:15]bg">
+                        <div class="step-container" id="15">
+                            <div class="step-ref bg-step">15</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body</div>
+                        </div>
+                        <div class="time-cell passed">14</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="16">
+                            <div class="step-ref passed">16</div>
+                            <div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="17">
+                            <div class="step-ref passed">17</div>
+                            <div class="step-cell passed">Given path 'articles'</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="18">
+                            <div class="step-ref passed">18</div>
                             <div class="step-cell passed">And request</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="12">{
+                    <div class="preformatted" data-parent="18">{
   "article": {
     "tagList": [
     ],
@@ -231,16 +287,16 @@
   }
 }</div>
                     <div class="step-row">
-                        <div class="step-container" id="13">
-                            <div class="step-ref passed">13</div>
+                        <div class="step-container" id="19">
+                            <div class="step-ref passed">19</div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">572</div>
+                        <div class="time-cell passed">632</div>
                     </div>
-                    <div class="preformatted" data-parent="13">10:48:42.044 request:
+                    <div class="preformatted" data-parent="19">11:51:23.434 request:
 1 &gt; POST https://conduit.productionready.io/api/articles
 1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk0MjY5MjN9.5hbiLOuMPjv8rE1x7pqO1qMoXioPeLCRbxIivuKVhXY
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Length: 84
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -248,105 +304,484 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 {"article":{"tagList":[],"title":"Bla bla","description":"test test","body":"body"}}
 
-10:48:42.614 response time in milliseconds: 569.15
+11:51:24.065 response time in milliseconds: 629.42
 1 &lt; 200
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 62702b40d9a1fcfd-OTP
+1 &lt; CF-RAY: 6299b9ef2b925446-LHR
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 25 Feb 2021 08:48:44 GMT
+1 &lt; Date: Tue, 02 Mar 2021 09:51:24 GMT
+1 &lt; ETag: W/"17254d32a6dfcbab8e7cef244d18bef5"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=CKfszrONtJaBQGszxwvM35CBC%2FkTw3pKkgnUSLU0jo3jugbl9BEqoOSzL%2B4IXkyks3pUm1eYde4DAPELpsyTVXDCSq4oJrEVw79dDgCaEDjcpx5IzKEIO8hIXQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=mL77%2B6Ds%2FZvcGpwJETk7h2ONj0Z%2Fra0VXzJnSdrUyQ1y9d0P5j9cBUpNu9CVVntCGTNfDKj7FzoWX8JcDa7eBt1JV3nUVowkY5ZZO60Q%2BDSqLGz1uqONPYUzAg%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d74844844611ea905231592f7f9b7d1f01614242923; expires=Sat, 27-Mar-21 08:48:43 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Set-Cookie: __cfduid=d8da0702a0384db4b10ad2283a45fdf081614678684; expires=Thu, 01-Apr-21 09:51:24 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
 1 &lt; Transfer-Encoding: chunked
-1 &lt; cache-control: max-age=0, private, must-revalidate
-1 &lt; cf-request-id: 0879f95c880000fcfd9d04d000000001
-1 &lt; etag: W/"0cd8ddc6d1615c765718301a95f0badc"
-1 &lt; status: 200 OK
-1 &lt; vary: Origin
-1 &lt; x-content-type-options: nosniff
-1 &lt; x-frame-options: SAMEORIGIN
-1 &lt; x-powered-by: Phusion Passenger 4.0.60
-1 &lt; x-request-id: 9e00dccb-f0ee-4653-becb-04ae23c3084a
-1 &lt; x-runtime: 0.115042
-1 &lt; x-xss-protection: 1; mode=block
-{"article":{"title":"Bla bla","slug":"bla-bla-h6i4u5","body":"body","createdAt":"2021-02-25T08:48:44.071Z","updatedAt":"2021-02-25T08:48:44.071Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
-                    <div class="step-row">
-                        <div class="step-container" id="14">
-                            <div class="step-ref passed">14</div>
-                            <div class="step-cell passed">Then status 200</div>
-                        </div>
-                        <div class="time-cell passed">0</div>
-                    </div>
-                    <div class="step-row">
-                        <div class="step-container" id="15">
-                            <div class="step-ref passed">15</div>
-                            <div class="step-cell passed">And match response.article.title == 'Bla bla'</div>
-                        </div>
-                        <div class="time-cell passed">9</div>
-                    </div>
-                </div>
-                <div class="scenario">
-                    <div class="scenario-heading" id="[2:27]">
-                        <div class="heading-container">
-                            <div class="scenario-tags"></div>
-                            <span class="scenario-keyword">Scenario: [2:27]</span><span class="scenario-name">Create and Delete article </span>
-                        </div>
-                        <div class="scenario-time passed">ms: 2655</div>
-                    </div>
-                    <div class="step-row">
-                        <div class="step-container" id="[2:27]bg">
-                            <div class="step-ref bg-step">&gt;&gt;</div>
-                            <div class="step-cell passed">Background:</div>
-                        </div>
-                        <div class="time-cell passed"></div>
-                    </div>
-                    <div class="step-row" data-parent="[2:27]bg">
-                        <div class="step-container" id="16">
-                            <div class="step-ref bg-step">16</div>
-                            <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
-                        </div>
-                        <div class="time-cell passed">0</div>
-                    </div>
-                    <div class="preformatted" data-parent="16">10:48:42.635 not a js function or feature file: [type: NULL, value: null]</div>
-                    <div class="step-row" data-parent="[2:27]bg">
-                        <div class="step-container" id="17">
-                            <div class="step-ref bg-step">17</div>
-                            <div class="step-cell passed">* def tokenResponse = callonce read('../../helpers/CreateToken.feature@CreateToken') { "email": "karate@user.com", "password": "karate123"}</div>
-                        </div>
-                        <div class="time-cell passed">3</div>
-                    </div>
-                    <div class="step-row" data-parent="[2:27]bg">
-                        <div class="step-container" id="18">
-                            <div class="step-ref bg-step">18</div>
-                            <div class="step-cell passed">* def token = tokenResponse.authToken</div>
-                        </div>
-                        <div class="time-cell passed">2</div>
-                    </div>
-                    <div class="step-row">
-                        <div class="step-container" id="19">
-                            <div class="step-ref passed">19</div>
-                            <div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
-                        </div>
-                        <div class="time-cell passed">0</div>
-                    </div>
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 815f5b86-9757-4419-a095-db70825d9509
+1 &lt; X-Runtime: 0.106865
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 0893f2897900005446112d8000000001
+{"article":{"title":"Bla bla","slug":"bla-bla-ri29qj","body":"body","createdAt":"2021-03-02T09:51:24.382Z","updatedAt":"2021-03-02T09:51:24.382Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
                     <div class="step-row">
                         <div class="step-container" id="20">
                             <div class="step-ref passed">20</div>
-                            <div class="step-cell passed">Given path 'articles'</div>
+                            <div class="step-cell passed">Then status 200</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="21">
                             <div class="step-ref passed">21</div>
+                            <div class="step-cell passed">And match response.article.title == 'Bla bla'</div>
+                        </div>
+                        <div class="time-cell passed">9</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[2:34]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [2:34]</span><span class="scenario-name">Create a new article | using dynamic values - dataGenerated values </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 784</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[2:34]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2:34]bg">
+                        <div class="step-container" id="22">
+                            <div class="step-ref bg-step">22</div>
+                            <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="22">11:51:24.083 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="step-row" data-parent="[2:34]bg">
+                        <div class="step-container" id="23">
+                            <div class="step-ref bg-step">23</div>
+                            <div class="step-cell passed">* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"}</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:34]bg">
+                        <div class="step-container" id="24">
+                            <div class="step-ref bg-step">24</div>
+                            <div class="step-cell passed">* def token = tokenResponse.authToken</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:34]bg">
+                        <div class="step-container">
+                            <div class="step-ref bg-step"></div>
+                            <div class="step-cell comment"># call JSON object, assign this Json into this object, call: articleRequestBody.article.title-description-body, assign to these values - the generated values</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row" data-parent="[2:34]bg">
+                        <div class="step-container" id="25">
+                            <div class="step-ref bg-step">25</div>
+                            <div class="step-cell passed">* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json')</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:34]bg">
+                        <div class="step-container" id="26">
+                            <div class="step-ref bg-step">26</div>
+                            <div class="step-cell passed">* def dataGenerator = Java.type('helpers.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:34]bg">
+                        <div class="step-container" id="27">
+                            <div class="step-ref bg-step">27</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title</div>
+                        </div>
+                        <div class="time-cell passed">11</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:34]bg">
+                        <div class="step-container" id="28">
+                            <div class="step-ref bg-step">28</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title</div>
+                        </div>
+                        <div class="time-cell passed">8</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:34]bg">
+                        <div class="step-container" id="29">
+                            <div class="step-ref bg-step">29</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description</div>
+                        </div>
+                        <div class="time-cell passed">14</div>
+                    </div>
+                    <div class="step-row" data-parent="[2:34]bg">
+                        <div class="step-container" id="30">
+                            <div class="step-ref bg-step">30</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="31">
+                            <div class="step-ref passed">31</div>
+                            <div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="32">
+                            <div class="step-ref passed">32</div>
+                            <div class="step-cell passed">Given path 'articles'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="33">
+                            <div class="step-ref passed">33</div>
+                            <div class="step-cell passed">And request articleRequestBody</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="34">
+                            <div class="step-ref passed">34</div>
+                            <div class="step-cell passed">When method Post</div>
+                        </div>
+                        <div class="time-cell passed">728</div>
+                    </div>
+                    <div class="preformatted" data-parent="34">11:51:24.136 request:
+1 &gt; POST https://conduit.productionready.io/api/articles
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 103
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"article":{"tagList":[],"title":"Meereen","description":"Edrick Stark","body":"The North remembers."}}
+
+11:51:24.862 response time in milliseconds: 724.69
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 6299b9f38edcdbf3-LHR
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 02 Mar 2021 09:51:25 GMT
+1 &lt; ETag: W/"a19e5d4c96697a81cf117043b23b6f9d"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=d4bwXemC1ITntQV8617NMSMFrxltZzm2Quld7OhjUjG08U5W96EiuyQrnK0ZAk5NolV%2FKMhXQqCEF%2F098Z3ObvPvCp2wyNgZVhjzOHNC1xzQOJ%2BJ0oMOaSVN1w%3D%3D"}]}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=dc5a232f849334f5ed35a3b3bbb7ebcff1614678684; expires=Thu, 01-Apr-21 09:51:24 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 4a9a70db-a660-41b2-afc2-84ae24286da5
+1 &lt; X-Runtime: 0.089601
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 0893f28c370000dbf35c06c000000001
+{"article":{"title":"Meereen","slug":"meereen-kaeszn","body":"The North remembers.","createdAt":"2021-03-02T09:51:25.076Z","updatedAt":"2021-03-02T09:51:25.076Z","tagList":[],"description":"Edrick Stark","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="35">
+                            <div class="step-ref passed">35</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="36">
+                            <div class="step-ref passed">36</div>
+                            <div class="step-cell passed">And match response.article.title == articleRequestBody.article.title</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[3:42]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [3:42]</span><span class="scenario-name">Create a new article | data generated values </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 903</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[3:42]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3:42]bg">
+                        <div class="step-container" id="37">
+                            <div class="step-ref bg-step">37</div>
+                            <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="37">11:51:24.880 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="step-row" data-parent="[3:42]bg">
+                        <div class="step-container" id="38">
+                            <div class="step-ref bg-step">38</div>
+                            <div class="step-cell passed">* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"}</div>
+                        </div>
+                        <div class="time-cell passed">4</div>
+                    </div>
+                    <div class="step-row" data-parent="[3:42]bg">
+                        <div class="step-container" id="39">
+                            <div class="step-ref bg-step">39</div>
+                            <div class="step-cell passed">* def token = tokenResponse.authToken</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[3:42]bg">
+                        <div class="step-container">
+                            <div class="step-ref bg-step"></div>
+                            <div class="step-cell comment"># call JSON object, assign this Json into this object, call: articleRequestBody.article.title-description-body, assign to these values - the generated values</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row" data-parent="[3:42]bg">
+                        <div class="step-container" id="40">
+                            <div class="step-ref bg-step">40</div>
+                            <div class="step-cell passed">* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json')</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[3:42]bg">
+                        <div class="step-container" id="41">
+                            <div class="step-ref bg-step">41</div>
+                            <div class="step-cell passed">* def dataGenerator = Java.type('helpers.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[3:42]bg">
+                        <div class="step-container" id="42">
+                            <div class="step-ref bg-step">42</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title</div>
+                        </div>
+                        <div class="time-cell passed">15</div>
+                    </div>
+                    <div class="step-row" data-parent="[3:42]bg">
+                        <div class="step-container" id="43">
+                            <div class="step-ref bg-step">43</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title</div>
+                        </div>
+                        <div class="time-cell passed">13</div>
+                    </div>
+                    <div class="step-row" data-parent="[3:42]bg">
+                        <div class="step-container" id="44">
+                            <div class="step-ref bg-step">44</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description</div>
+                        </div>
+                        <div class="time-cell passed">19</div>
+                    </div>
+                    <div class="step-row" data-parent="[3:42]bg">
+                        <div class="step-container" id="45">
+                            <div class="step-ref bg-step">45</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body</div>
+                        </div>
+                        <div class="time-cell passed">13</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="46">
+                            <div class="step-ref passed">46</div>
+                            <div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="47">
+                            <div class="step-ref passed">47</div>
+                            <div class="step-cell passed">Given path 'articles'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="48">
+                            <div class="step-ref passed">48</div>
+                            <div class="step-cell passed">And request articleRequestBody</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="49">
+                            <div class="step-ref passed">49</div>
+                            <div class="step-cell passed">When method Post</div>
+                        </div>
+                        <div class="time-cell passed">832</div>
+                    </div>
+                    <div class="preformatted" data-parent="49">11:51:24.954 request:
+1 &gt; POST https://conduit.productionready.io/api/articles
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 106
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"article":{"tagList":[],"title":"Elyria","description":"Eden Risley","body":"The things I do for love."}}
+
+11:51:25.783 response time in milliseconds: 827.67
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 6299b9f8ab4f5445-LHR
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 02 Mar 2021 09:51:25 GMT
+1 &lt; ETag: W/"896a54da54df438ba1fcf6b7ab6c9893"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=LyiiHU6mWAx5OMMnSoC%2BQWV7S9YDD8v6dc1ILLkR%2F2Hru0hbzaXCJ%2F9suOjYPkdtOitQuDaDA%2BAeFLXH5Mo300UYKf8YtxyJLggZz9inp2JjHV1FewZwWhtjag%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d2c724a48dff1876831769b39e5527d201614678685; expires=Thu, 01-Apr-21 09:51:25 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 84c14d0f-d3bc-4411-94b5-f41e23a88a65
+1 &lt; X-Runtime: 0.076789
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 0893f28f6e0000544556361000000001
+{"article":{"title":"Elyria","slug":"elyria-hmsccf","body":"The things I do for love.","createdAt":"2021-03-02T09:51:25.873Z","updatedAt":"2021-03-02T09:51:25.873Z","tagList":[],"description":"Eden Risley","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
+                    <div class="step-row">
+                        <div class="step-container" id="50">
+                            <div class="step-ref passed">50</div>
+                            <div class="step-cell passed">Then status 200</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="51">
+                            <div class="step-ref passed">51</div>
+                            <div class="step-cell passed">And match response.article.title == articleRequestBody.article.title</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                </div>
+                <div class="scenario">
+                    <div class="scenario-heading" id="[4:50]">
+                        <div class="heading-container">
+                            <div class="scenario-tags"></div>
+                            <span class="scenario-keyword">Scenario: [4:50]</span><span class="scenario-name">Create and Delete article | hardcoded values | using JSON request body file </span>
+                        </div>
+                        <div class="scenario-time passed">ms: 3236</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="[4:50]bg">
+                            <div class="step-ref bg-step">&gt;&gt;</div>
+                            <div class="step-cell passed">Background:</div>
+                        </div>
+                        <div class="time-cell passed"></div>
+                    </div>
+                    <div class="step-row" data-parent="[4:50]bg">
+                        <div class="step-container" id="52">
+                            <div class="step-ref bg-step">52</div>
+                            <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="preformatted" data-parent="52">11:51:25.792 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="step-row" data-parent="[4:50]bg">
+                        <div class="step-container" id="53">
+                            <div class="step-ref bg-step">53</div>
+                            <div class="step-cell passed">* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"}</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[4:50]bg">
+                        <div class="step-container" id="54">
+                            <div class="step-ref bg-step">54</div>
+                            <div class="step-cell passed">* def token = tokenResponse.authToken</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[4:50]bg">
+                        <div class="step-container">
+                            <div class="step-ref bg-step"></div>
+                            <div class="step-cell comment"># call JSON object, assign this Json into this object, call: articleRequestBody.article.title-description-body, assign to these values - the generated values</div>
+                        </div>
+                        <div class="time-cell comment"></div>
+                    </div>
+                    <div class="step-row" data-parent="[4:50]bg">
+                        <div class="step-container" id="55">
+                            <div class="step-ref bg-step">55</div>
+                            <div class="step-cell passed">* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json')</div>
+                        </div>
+                        <div class="time-cell passed">2</div>
+                    </div>
+                    <div class="step-row" data-parent="[4:50]bg">
+                        <div class="step-container" id="56">
+                            <div class="step-ref bg-step">56</div>
+                            <div class="step-cell passed">* def dataGenerator = Java.type('helpers.DataGenerator')</div>
+                        </div>
+                        <div class="time-cell passed">1</div>
+                    </div>
+                    <div class="step-row" data-parent="[4:50]bg">
+                        <div class="step-container" id="57">
+                            <div class="step-ref bg-step">57</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title</div>
+                        </div>
+                        <div class="time-cell passed">7</div>
+                    </div>
+                    <div class="step-row" data-parent="[4:50]bg">
+                        <div class="step-container" id="58">
+                            <div class="step-ref bg-step">58</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title</div>
+                        </div>
+                        <div class="time-cell passed">10</div>
+                    </div>
+                    <div class="step-row" data-parent="[4:50]bg">
+                        <div class="step-container" id="59">
+                            <div class="step-ref bg-step">59</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row" data-parent="[4:50]bg">
+                        <div class="step-container" id="60">
+                            <div class="step-ref bg-step">60</div>
+                            <div class="step-cell passed">* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body</div>
+                        </div>
+                        <div class="time-cell passed">6</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="61">
+                            <div class="step-ref passed">61</div>
+                            <div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="62">
+                            <div class="step-ref passed">62</div>
+                            <div class="step-cell passed">Given path 'articles'</div>
+                        </div>
+                        <div class="time-cell passed">0</div>
+                    </div>
+                    <div class="step-row">
+                        <div class="step-container" id="63">
+                            <div class="step-ref passed">63</div>
                             <div class="step-cell passed">And request</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="21">{
+                    <div class="preformatted" data-parent="63">{
   "article": {
     "tagList": [
     ],
@@ -356,16 +791,16 @@
   }
 }</div>
                     <div class="step-row">
-                        <div class="step-container" id="22">
-                            <div class="step-ref passed">22</div>
+                        <div class="step-container" id="64">
+                            <div class="step-ref passed">64</div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">665</div>
+                        <div class="time-cell passed">876</div>
                     </div>
-                    <div class="preformatted" data-parent="22">10:48:42.643 request:
+                    <div class="preformatted" data-parent="64">11:51:25.831 request:
 1 &gt; POST https://conduit.productionready.io/api/articles
 1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk0MjY5MjN9.5hbiLOuMPjv8rE1x7pqO1qMoXioPeLCRbxIivuKVhXY
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg
 1 &gt; Connection: Keep-Alive
 1 &gt; Content-Length: 88
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -373,85 +808,86 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 {"article":{"tagList":[],"title":"Delete test","description":"test test","body":"body"}}
 
-10:48:43.307 response time in milliseconds: 662.51
+11:51:26.705 response time in milliseconds: 872.92
 1 &lt; 200
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; CF-RAY: 62702b44adfdacf4-OTP
+1 &lt; CF-RAY: 6299b9fe28dc0712-LHR
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 25 Feb 2021 08:48:44 GMT
-1 &lt; ETag: W/"6a48f65c10585854346e1599bef43739"
+1 &lt; Date: Tue, 02 Mar 2021 09:51:26 GMT
+1 &lt; ETag: W/"97de006a6955fcaccdb04f9f63b1cfa8"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=KxrW%2BTRzvCzdlXJNBMiSQRvZgJewOqkQy%2B9kuEPBRMZ7aFmWdVkfncDZbXUk%2BLf1XJZ5hC9rT%2BMNmNChtGMU8Bx1qNGGx0OUqi%2F%2FWDe6e669BjyDhZguQnaUtA%3D%3D"}],"max_age":604800}
+1 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=92%2BcnnOWnbTetFlZuo8NmvAh8%2FjbkMxMvh3ybbIFMGxIxAyPWuRykfzGT5nkcHi2GAjDJF4bywHKjNcxJGKWXJK2LeElJ2SE8O6%2BLX5fgqrAJx5x%2BbN3ytsnWw%3D%3D"}],"max_age":604800}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d44577580d698915499dcdabe235a25ab1614242924; expires=Sat, 27-Mar-21 08:48:44 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Set-Cookie: __cfduid=d0e3f258114ea09365e099680fffa9ac31614678686; expires=Thu, 01-Apr-21 09:51:26 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
 1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Origin
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Powered-By: Phusion Passenger 4.0.60
-1 &lt; X-Request-Id: 10246c68-002b-4d2b-bd6a-a6a3422aa1a5
-1 &lt; X-Runtime: 0.064343
+1 &lt; X-Request-Id: a0fffb85-6bf1-4d70-a25e-bb42ae200256
+1 &lt; X-Runtime: 0.066077
 1 &lt; X-XSS-Protection: 1; mode=block
-1 &lt; cf-request-id: 0879f95eed0000acf4f5314000000001
-{"article":{"title":"Delete test","slug":"delete-test-i54jzw","body":"body","createdAt":"2021-02-25T08:48:44.626Z","updatedAt":"2021-02-25T08:48:44.626Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
+1 &lt; cf-request-id: 0893f292da00000712cb26c000000001
+{"article":{"title":"Delete test","slug":"delete-test-hdt7wk","body":"body","createdAt":"2021-03-02T09:51:26.751Z","updatedAt":"2021-03-02T09:51:26.751Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
                     <div class="step-row">
-                        <div class="step-container" id="23">
-                            <div class="step-ref passed">23</div>
+                        <div class="step-container" id="65">
+                            <div class="step-ref passed">65</div>
                             <div class="step-cell passed">Then status 200</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="24">
-                            <div class="step-ref passed">24</div>
+                        <div class="step-container" id="66">
+                            <div class="step-ref passed">66</div>
                             <div class="step-cell passed">* def articleId = response.article.slug</div>
                         </div>
                         <div class="time-cell passed">4</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="25">
-                            <div class="step-ref passed">25</div>
+                        <div class="step-container" id="67">
+                            <div class="step-ref passed">67</div>
                             <div class="step-cell passed">Given params { limit: 10, offset: 0 }</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="26">
-                            <div class="step-ref passed">26</div>
+                        <div class="step-container" id="68">
+                            <div class="step-ref passed">68</div>
                             <div class="step-cell passed">Given path 'articles'</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="27">
-                            <div class="step-ref passed">27</div>
+                        <div class="step-container" id="69">
+                            <div class="step-ref passed">69</div>
                             <div class="step-cell passed">When method Get</div>
                         </div>
-                        <div class="time-cell passed">755</div>
+                        <div class="time-cell passed">916</div>
                     </div>
-                    <div class="preformatted" data-parent="27">10:48:43.314 request:
+                    <div class="preformatted" data-parent="69">11:51:26.712 request:
 2 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
-2 &gt; Cookie: __cfduid=d44577580d698915499dcdabe235a25ab1614242924
+2 &gt; Cookie: __cfduid=d0e3f258114ea09365e099680fffa9ac31614678686
 2 &gt; Host: conduit.productionready.io
 2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 
-10:48:44.064 response time in milliseconds: 744.65
+11:51:27.625 response time in milliseconds: 911.52
 2 &lt; 200
 2 &lt; CF-Cache-Status: DYNAMIC
-2 &lt; CF-RAY: 62702b48cdf0ad4e-OTP
+2 &lt; CF-RAY: 6299ba03ab5c2c8a-LHR
 2 &lt; Cache-Control: max-age=0, private, must-revalidate
 2 &lt; Connection: keep-alive
 2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Date: Thu, 25 Feb 2021 08:48:45 GMT
-2 &lt; ETag: W/"545116b9cca318fd587dddff519f50fb"
+2 &lt; Date: Tue, 02 Mar 2021 09:51:27 GMT
+2 &lt; ETag: W/"ed09eb80b557541fd7e08ea53d49dfe9"
 2 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 2 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
-2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=gF39otcKlC92TPeRlWCRurwPXc3ZL7Xp3FRQ0L72bs9IzqAYfvrfc94bJNTDWkqvr0YLSb9B%2F5sSTV8LDKcoBbPJKU1H4f%2FCRPT6EWoPcwGlKbU4ctdjOPQlxg%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+2 &lt; Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=gTRfrDYbieaRVUzxKe0Y8hNieAmKS6fgLzqJKizVOW91TWrQ%2FoDHtRYiGcNEXCois5%2BJ9Umw7BHJ%2F7yhQRvJvD9Rukd0k%2Bp3Bqb3o2P%2FaxEjYgmBYwMltxarvQ%3D%3D"}]}
 2 &lt; Server: cloudflare
 2 &lt; Status: 200 OK
 2 &lt; Transfer-Encoding: chunked
@@ -459,149 +895,150 @@
 2 &lt; X-Content-Type-Options: nosniff
 2 &lt; X-Frame-Options: SAMEORIGIN
 2 &lt; X-Powered-By: Phusion Passenger 4.0.60
-2 &lt; X-Request-Id: 41b90eed-a196-43a9-8451-0e3a9f7f1763
-2 &lt; X-Runtime: 0.147065
+2 &lt; X-Request-Id: 4737567e-de9d-482e-8c4b-25dfe0a15524
+2 &lt; X-Runtime: 0.146326
 2 &lt; X-XSS-Protection: 1; mode=block
-2 &lt; cf-request-id: 0879f961790000ad4ec79a8000000001
-{"articles":[{"title":"Delete test","slug":"delete-test-i54jzw","body":"body","createdAt":"2021-02-25T08:48:44.626Z","updatedAt":"2021-02-25T08:48:44.626Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-h6i4u5","body":"body","createdAt":"2021-02-25T08:48:44.071Z","updatedAt":"2021-02-25T08:48:44.071Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-w2f51l","body":"body","createdAt":"2021-02-25T08:48:24.458Z","updatedAt":"2021-02-25T08:48:24.458Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"sadasdas","slug":"sadasdas-ezcbr5","body":"sjgjkadgjvaj","createdAt":"2021-02-25T08:41:10.988Z","updatedAt":"2021-02-25T08:41:10.988Z","tagList":[],"description":"sfghsgfhs","author":{"username":"zzc","bio":"I like to skateboard","image":"https://i.stack.imgur.com/xHWG8.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"who are you?","slug":"who-are-you-lxjm0x","body":"It's a lonely road to the top.","createdAt":"2021-02-25T08:38:28.797Z","updatedAt":"2021-02-25T08:38:28.797Z","tagList":["night","afternoon","moring"],"description":"this is my first title","author":{"username":"zzc","bio":"I like to skateboard","image":"https://i.stack.imgur.com/xHWG8.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"ưefwer","slug":"efwer-ic2h8d","body":"ưeerwerwe","createdAt":"2021-02-25T08:09:55.321Z","updatedAt":"2021-02-25T08:09:55.321Z","tagList":[],"description":"ưerwer","author":{"username":"Linh95sấ","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"just testing","slug":"just-testing-3io6ls","body":"lnmadfeelauztsskpq@kiabws.com","createdAt":"2021-02-25T08:03:38.847Z","updatedAt":"2021-02-25T08:03:38.847Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"test test test","slug":"test-test-test-lkefoe","body":"kkkkkkkk","createdAt":"2021-02-25T08:03:10.465Z","updatedAt":"2021-02-25T08:03:10.465Z","tagList":["lk"],"description":"short description","author":{"username":"Maksim Adams","bio":null,"image":"https://99px.ru/sstorage/41/2016/12/image_412712160204353152833.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-skfn2h","body":"Inbox\nRefresh\nAPI\nFAQ\nPrivacy\nFeedback\nContacts\n&copy; 2021 Mail.tm\n\nEmail\nyysdfglcz@maxresistance.com\n\n\n\nY\n\nTemp Mail\nProtect your personal email address from spam, bots, phishing and other online abuse. Temporary anonymous email address - no commitments and no risks.","createdAt":"2021-02-25T08:02:43.147Z","updatedAt":"2021-02-25T08:02:43.147Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-p11kyc","body":"Tempmailo - Temp mail address\nYour temporary email address\nvelapo@thichanthit.com\n\nCopy\nCopied\nAutorefresh in\n8\n Refresh\n Change\nInbox\n\nHello\nWelcome to Tempmailo\nFree, fast and secure temp email application\nTempmailo Team\nWelcome\n\nTweet Share on Facebook Submit to Reddit Send email\nTemp mail use cases\nWhy do we need a temp mail? Often, websites and online services ask for a valid e-mail address to register, access and view or receive content, etc. The problem, however, is that some of these sites may end up using our email address to send spam.\n\nOne good way to deal with this is to use a temp email address when you are not sure that this website is completely credible and trustworthy. This will help you keep your personal e-mail spam free and protect your privacy.\n\nThe disposable mail (also known as temp mail, temporary mail, 10 minute mail) works like any other email service with some differences:\n\nIt is short-living &ndash; from a few minutes up to few days (Тempmailo keep old emails for 2 days).\nIt's just for receiving emails. Sending a mail via temp mail service is impossible.\nOnly text and html messages are allowed, file attachments are disabled. The main reason for this is to protect users from dangerous content and viruses.\nThere are a few basic cases where you need temporary mail\nFor programmers to test the functionality of email part of the developed applications. They no longer need to create special test email inboxes. In Tempmailo they are ready right away. Our API will also soon become publicly available, which will make the job even easier.\nWhen you need to keep your personal data and privacy from suspicious websites and services, and to protect your personal mail from unwanted messages and junk mail. By using temp email you will no longer have to worry about it. Online privacy is now a huge concern for everyone. Temp mail is a good protection against dangers.\nFor each site or associated services, which is not important to you\nFor temporary registration on forums, mail listings to receive subscription protected content\nOn any non-trustworthy place on the internet\nRegistration in social networks - Facebook, Instagram, Twitter, etc.\nNote: Never use disposable mail for important information. It is short-living and your mail address is only temporary.\n\nFAQ\nWhat's a temp mail and how does it work?\n\nWhere can I use a temp mail?\nHow to use disposable email?\nHow long we keep your mail messages?\n\n\nWhere, who and how to use temp mail?\nWhere, who and how to use temp mail? \nTemporary Email or Disposable Email Service\nTemporary Email or Disposable Email Service \nGet temporary email address and get rid of Spam\nGet temporary email address and get rid of Spam\nCopyright &copy;2021 Tempmailo Status Privacy Terms Contact","createdAt":"2021-02-25T08:02:22.802Z","updatedAt":"2021-02-25T08:02:22.802Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}</div>
+2 &lt; cf-request-id: 0893f2964e00002c8a57183000000001
+{"articles":[{"title":"Delete test","slug":"delete-test-hdt7wk","body":"body","createdAt":"2021-03-02T09:51:26.751Z","updatedAt":"2021-03-02T09:51:26.751Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Elyria","slug":"elyria-hmsccf","body":"The things I do for love.","createdAt":"2021-03-02T09:51:25.873Z","updatedAt":"2021-03-02T09:51:25.873Z","tagList":[],"description":"Eden Risley","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Meereen","slug":"meereen-kaeszn","body":"The North remembers.","createdAt":"2021-03-02T09:51:25.076Z","updatedAt":"2021-03-02T09:51:25.076Z","tagList":[],"description":"Edrick Stark","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-ri29qj","body":"body","createdAt":"2021-03-02T09:51:24.382Z","updatedAt":"2021-03-02T09:51:24.382Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-yy6qz3","body":"body","createdAt":"2021-03-02T09:47:45.569Z","updatedAt":"2021-03-02T09:47:45.569Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Bla bla","slug":"bla-bla-wl7fju","body":"body","createdAt":"2021-03-02T09:47:18.723Z","updatedAt":"2021-03-02T09:47:18.723Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Bla bla","slug":"bla-bla-m5gn6r","body":"body","createdAt":"2021-03-02T09:39:37.904Z","updatedAt":"2021-03-02T09:39:37.904Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Title test 4","slug":"title-test-4-vh5n58","body":"Article test 4","createdAt":"2021-03-02T09:37:00.614Z","updatedAt":"2021-03-02T09:37:00.614Z","tagList":[],"description":"Desc test 4","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Title test 3","slug":"title-test-3-krxitd","body":"Article test 3","createdAt":"2021-03-02T09:36:58.415Z","updatedAt":"2021-03-02T09:36:58.415Z","tagList":[],"description":"Desc test 3","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Title test 2","slug":"title-test-2-kc5k9v","body":"Article test 2","createdAt":"2021-03-02T09:36:56.273Z","updatedAt":"2021-03-02T09:36:56.273Z","tagList":[],"description":"Desc test 2","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1}],"articlesCount":500}</div>
                     <div class="step-row">
-                        <div class="step-container" id="28">
-                            <div class="step-ref passed">28</div>
+                        <div class="step-container" id="70">
+                            <div class="step-ref passed">70</div>
                             <div class="step-cell passed">Then status 200</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="29">
-                            <div class="step-ref passed">29</div>
+                        <div class="step-container" id="71">
+                            <div class="step-ref passed">71</div>
                             <div class="step-cell passed">And match response.articles[0].title == 'Delete test'</div>
                         </div>
                         <div class="time-cell passed">4</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="30">
-                            <div class="step-ref passed">30</div>
+                        <div class="step-container" id="72">
+                            <div class="step-ref passed">72</div>
                             <div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="31">
-                            <div class="step-ref passed">31</div>
+                        <div class="step-container" id="73">
+                            <div class="step-ref passed">73</div>
                             <div class="step-cell passed">Given path 'articles', articleId</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="32">
-                            <div class="step-ref passed">32</div>
+                        <div class="step-container" id="74">
+                            <div class="step-ref passed">74</div>
                             <div class="step-cell passed">When method Delete</div>
                         </div>
-                        <div class="time-cell passed">331</div>
+                        <div class="time-cell passed">609</div>
                     </div>
-                    <div class="preformatted" data-parent="32">10:48:44.074 request:
-3 &gt; DELETE https://conduit.productionready.io/api/articles/delete-test-i54jzw
+                    <div class="preformatted" data-parent="74">11:51:27.633 request:
+3 &gt; DELETE https://conduit.productionready.io/api/articles/delete-test-hdt7wk
 3 &gt; Accept-Encoding: gzip,deflate
-3 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk0MjY5MjN9.5hbiLOuMPjv8rE1x7pqO1qMoXioPeLCRbxIivuKVhXY
+3 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NjI2ODN9.Sds34xgcKT5RhNEzKMUXUuvQ-ZfHM2A7K5hhLxYdGtg
 3 &gt; Connection: Keep-Alive
-3 &gt; Cookie: __cfduid=d44577580d698915499dcdabe235a25ab1614242924
+3 &gt; Cookie: __cfduid=d0e3f258114ea09365e099680fffa9ac31614678686
 3 &gt; Host: conduit.productionready.io
 3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 
-10:48:44.403 response time in milliseconds: 327.92
+11:51:28.240 response time in milliseconds: 605.93
 3 &lt; 200
 3 &lt; CF-Cache-Status: DYNAMIC
-3 &lt; CF-RAY: 62702b4d9fecad0c-OTP
+3 &lt; CF-RAY: 6299ba096a3a40d7-LHR
 3 &lt; Cache-Control: max-age=0, private, must-revalidate
 3 &lt; Connection: keep-alive
 3 &lt; Content-Type: application/json; charset=utf-8
-3 &lt; Date: Thu, 25 Feb 2021 08:48:45 GMT
+3 &lt; Date: Tue, 02 Mar 2021 09:51:28 GMT
 3 &lt; ETag: W/"99914b932bd37a50b983c5e7c90ae93b"
 3 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-3 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
-3 &lt; Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=yT8un%2FHLsLAgJ80BNc%2F7TnJFqtT13qVJ2kVLAua%2FKaCRmPK4oDS7spIQM%2Fylj44zK31O6GaYs03ULDHTN6bcA1ah84TrJL8HcnjyV6Ku3xn2NkQby44QNSdwRQ%3D%3D"}]}
+3 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+3 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=JkR5NhAK4GBvigX0POpsnbCVcuhC99eQ%2BvMD1ffujoKicjLW%2BpDDk0frIZOkR2LZBRkZnAYQI2fg3nry5HpknpspxW5PuKw5CpYYO328Lh5UFXxZfGzkB0DIDQ%3D%3D"}],"max_age":604800}
 3 &lt; Server: cloudflare
 3 &lt; Status: 200 OK
+3 &lt; Transfer-Encoding: chunked
 3 &lt; Vary: Origin
 3 &lt; X-Content-Type-Options: nosniff
 3 &lt; X-Frame-Options: SAMEORIGIN
 3 &lt; X-Powered-By: Phusion Passenger 4.0.60
-3 &lt; X-Request-Id: 77ca8189-b6bc-494d-9b13-c1e358b0f6c0
-3 &lt; X-Runtime: 0.053285
+3 &lt; X-Request-Id: 604d2540-f954-4f61-a1f2-32e127d108aa
+3 &lt; X-Runtime: 0.045771
 3 &lt; X-XSS-Protection: 1; mode=block
-3 &lt; cf-request-id: 0879f964800000ad0c7f92d000000001
+3 &lt; cf-request-id: 0893f299e3000040d7ff0e4000000001
 {}</div>
                     <div class="step-row">
-                        <div class="step-container" id="33">
-                            <div class="step-ref passed">33</div>
+                        <div class="step-container" id="75">
+                            <div class="step-ref passed">75</div>
                             <div class="step-cell passed">Then status 200</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="34">
-                            <div class="step-ref passed">34</div>
+                        <div class="step-container" id="76">
+                            <div class="step-ref passed">76</div>
                             <div class="step-cell passed">Given params { limit: 10, offset: 0 }</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="35">
-                            <div class="step-ref passed">35</div>
+                        <div class="step-container" id="77">
+                            <div class="step-ref passed">77</div>
                             <div class="step-cell passed">Given path 'articles'</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="36">
-                            <div class="step-ref passed">36</div>
+                        <div class="step-container" id="78">
+                            <div class="step-ref passed">78</div>
                             <div class="step-cell passed">When method Get</div>
                         </div>
-                        <div class="time-cell passed">888</div>
+                        <div class="time-cell passed">789</div>
                     </div>
-                    <div class="preformatted" data-parent="36">10:48:44.406 request:
+                    <div class="preformatted" data-parent="78">11:51:28.243 request:
 4 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
 4 &gt; Accept-Encoding: gzip,deflate
 4 &gt; Connection: Keep-Alive
-4 &gt; Cookie: __cfduid=d44577580d698915499dcdabe235a25ab1614242924
+4 &gt; Cookie: __cfduid=d0e3f258114ea09365e099680fffa9ac31614678686
 4 &gt; Host: conduit.productionready.io
 4 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
 
-10:48:45.290 response time in milliseconds: 881.21
+11:51:29.030 response time in milliseconds: 785.40
 4 &lt; 200
 4 &lt; CF-Cache-Status: DYNAMIC
-4 &lt; CF-RAY: 62702b4f8b41ad24-OTP
-4 &lt; Cache-Control: max-age=0, private, must-revalidate
+4 &lt; CF-RAY: 6299ba0d4c865470-LHR
 4 &lt; Connection: keep-alive
 4 &lt; Content-Type: application/json; charset=utf-8
-4 &lt; Date: Thu, 25 Feb 2021 08:48:46 GMT
-4 &lt; ETag: W/"f7eb70abbc2660a2a77ac7bbb7f47336"
+4 &lt; Date: Tue, 02 Mar 2021 09:51:29 GMT
 4 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 4 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
-4 &lt; Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=Nk1%2F18Wmr%2F939BjhjA%2B%2FIvlpyfWQkk2XM0slicuuz5sXaEJN82fwn6mlAV16ZsT5OJD9zyk00K%2BnpZdU2n%2BabLnuNlTpM%2FQaBJVdQ2orBZpsYDbojnijSdm7Kg%3D%3D"}]}
+4 &lt; Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=01Rezi5CwlHxH%2BCL%2FYOLAxnLXZXbTYv%2FZ3W6Yh8N1PdJV2MAkCwE8Cx6UnPS%2FfzdqbvcKAn%2BWGuXExN0B5rDTEY%2Bdmla5huNzgA2VlK3R4KmyH2f2aupA48ngA%3D%3D"}]}
 4 &lt; Server: cloudflare
-4 &lt; Status: 200 OK
 4 &lt; Transfer-Encoding: chunked
-4 &lt; Vary: Origin
-4 &lt; X-Content-Type-Options: nosniff
-4 &lt; X-Frame-Options: SAMEORIGIN
-4 &lt; X-Powered-By: Phusion Passenger 4.0.60
-4 &lt; X-Request-Id: a8ad0af0-9227-46fd-aa74-bf76bc5d985b
-4 &lt; X-Runtime: 0.157500
-4 &lt; X-XSS-Protection: 1; mode=block
-4 &lt; cf-request-id: 0879f965b80000ad24399d7000000001
-{"articles":[{"title":"Bla bla","slug":"bla-bla-h6i4u5","body":"body","createdAt":"2021-02-25T08:48:44.071Z","updatedAt":"2021-02-25T08:48:44.071Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-w2f51l","body":"body","createdAt":"2021-02-25T08:48:24.458Z","updatedAt":"2021-02-25T08:48:24.458Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"sadasdas","slug":"sadasdas-ezcbr5","body":"sjgjkadgjvaj","createdAt":"2021-02-25T08:41:10.988Z","updatedAt":"2021-02-25T08:41:10.988Z","tagList":[],"description":"sfghsgfhs","author":{"username":"zzc","bio":"I like to skateboard","image":"https://i.stack.imgur.com/xHWG8.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"who are you?","slug":"who-are-you-lxjm0x","body":"It's a lonely road to the top.","createdAt":"2021-02-25T08:38:28.797Z","updatedAt":"2021-02-25T08:38:28.797Z","tagList":["night","afternoon","moring"],"description":"this is my first title","author":{"username":"zzc","bio":"I like to skateboard","image":"https://i.stack.imgur.com/xHWG8.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"ưefwer","slug":"efwer-ic2h8d","body":"ưeerwerwe","createdAt":"2021-02-25T08:09:55.321Z","updatedAt":"2021-02-25T08:09:55.321Z","tagList":[],"description":"ưerwer","author":{"username":"Linh95sấ","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"just testing","slug":"just-testing-3io6ls","body":"lnmadfeelauztsskpq@kiabws.com","createdAt":"2021-02-25T08:03:38.847Z","updatedAt":"2021-02-25T08:03:38.847Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"test test test","slug":"test-test-test-lkefoe","body":"kkkkkkkk","createdAt":"2021-02-25T08:03:10.465Z","updatedAt":"2021-02-25T08:03:10.465Z","tagList":["lk"],"description":"short description","author":{"username":"Maksim Adams","bio":null,"image":"https://99px.ru/sstorage/41/2016/12/image_412712160204353152833.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-skfn2h","body":"Inbox\nRefresh\nAPI\nFAQ\nPrivacy\nFeedback\nContacts\n&copy; 2021 Mail.tm\n\nEmail\nyysdfglcz@maxresistance.com\n\n\n\nY\n\nTemp Mail\nProtect your personal email address from spam, bots, phishing and other online abuse. Temporary anonymous email address - no commitments and no risks.","createdAt":"2021-02-25T08:02:43.147Z","updatedAt":"2021-02-25T08:02:43.147Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"just testing","slug":"just-testing-p11kyc","body":"Tempmailo - Temp mail address\nYour temporary email address\nvelapo@thichanthit.com\n\nCopy\nCopied\nAutorefresh in\n8\n Refresh\n Change\nInbox\n\nHello\nWelcome to Tempmailo\nFree, fast and secure temp email application\nTempmailo Team\nWelcome\n\nTweet Share on Facebook Submit to Reddit Send email\nTemp mail use cases\nWhy do we need a temp mail? Often, websites and online services ask for a valid e-mail address to register, access and view or receive content, etc. The problem, however, is that some of these sites may end up using our email address to send spam.\n\nOne good way to deal with this is to use a temp email address when you are not sure that this website is completely credible and trustworthy. This will help you keep your personal e-mail spam free and protect your privacy.\n\nThe disposable mail (also known as temp mail, temporary mail, 10 minute mail) works like any other email service with some differences:\n\nIt is short-living &ndash; from a few minutes up to few days (Тempmailo keep old emails for 2 days).\nIt's just for receiving emails. Sending a mail via temp mail service is impossible.\nOnly text and html messages are allowed, file attachments are disabled. The main reason for this is to protect users from dangerous content and viruses.\nThere are a few basic cases where you need temporary mail\nFor programmers to test the functionality of email part of the developed applications. They no longer need to create special test email inboxes. In Tempmailo they are ready right away. Our API will also soon become publicly available, which will make the job even easier.\nWhen you need to keep your personal data and privacy from suspicious websites and services, and to protect your personal mail from unwanted messages and junk mail. By using temp email you will no longer have to worry about it. Online privacy is now a huge concern for everyone. Temp mail is a good protection against dangers.\nFor each site or associated services, which is not important to you\nFor temporary registration on forums, mail listings to receive subscription protected content\nOn any non-trustworthy place on the internet\nRegistration in social networks - Facebook, Instagram, Twitter, etc.\nNote: Never use disposable mail for important information. It is short-living and your mail address is only temporary.\n\nFAQ\nWhat's a temp mail and how does it work?\n\nWhere can I use a temp mail?\nHow to use disposable email?\nHow long we keep your mail messages?\n\n\nWhere, who and how to use temp mail?\nWhere, who and how to use temp mail? \nTemporary Email or Disposable Email Service\nTemporary Email or Disposable Email Service \nGet temporary email address and get rid of Spam\nGet temporary email address and get rid of Spam\nCopyright &copy;2021 Tempmailo Status Privacy Terms Contact","createdAt":"2021-02-25T08:02:22.802Z","updatedAt":"2021-02-25T08:02:22.802Z","tagList":[],"description":"nothing special","author":{"username":"automatio1","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"zivndfmaptsmxbrj","slug":"zivndfmaptsmxbrj-so2txi","body":"Automation testing description","createdAt":"2021-02-25T07:47:13.532Z","updatedAt":"2021-02-25T07:47:13.532Z","tagList":[],"description":"How to do automation testing","author":{"username":"wavkdmsdtgqhayhy","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}</div>
+4 &lt; cache-control: max-age=0, private, must-revalidate
+4 &lt; cf-request-id: 0893f29c4c0000547069148000000001
+4 &lt; etag: W/"f2ef71006ec3c85ffcb607833cd2f105"
+4 &lt; status: 200 OK
+4 &lt; vary: Origin
+4 &lt; x-content-type-options: nosniff
+4 &lt; x-frame-options: SAMEORIGIN
+4 &lt; x-powered-by: Phusion Passenger 4.0.60
+4 &lt; x-request-id: 584c813e-f4c0-4b28-8107-9d7d90206bef
+4 &lt; x-runtime: 0.150382
+4 &lt; x-xss-protection: 1; mode=block
+{"articles":[{"title":"Elyria","slug":"elyria-hmsccf","body":"The things I do for love.","createdAt":"2021-03-02T09:51:25.873Z","updatedAt":"2021-03-02T09:51:25.873Z","tagList":[],"description":"Eden Risley","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Meereen","slug":"meereen-kaeszn","body":"The North remembers.","createdAt":"2021-03-02T09:51:25.076Z","updatedAt":"2021-03-02T09:51:25.076Z","tagList":[],"description":"Edrick Stark","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-ri29qj","body":"body","createdAt":"2021-03-02T09:51:24.382Z","updatedAt":"2021-03-02T09:51:24.382Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-yy6qz3","body":"body","createdAt":"2021-03-02T09:47:45.569Z","updatedAt":"2021-03-02T09:47:45.569Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Bla bla","slug":"bla-bla-wl7fju","body":"body","createdAt":"2021-03-02T09:47:18.723Z","updatedAt":"2021-03-02T09:47:18.723Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Bla bla","slug":"bla-bla-m5gn6r","body":"body","createdAt":"2021-03-02T09:39:37.904Z","updatedAt":"2021-03-02T09:39:37.904Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Title test 4","slug":"title-test-4-vh5n58","body":"Article test 4","createdAt":"2021-03-02T09:37:00.614Z","updatedAt":"2021-03-02T09:37:00.614Z","tagList":[],"description":"Desc test 4","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Title test 3","slug":"title-test-3-krxitd","body":"Article test 3","createdAt":"2021-03-02T09:36:58.415Z","updatedAt":"2021-03-02T09:36:58.415Z","tagList":[],"description":"Desc test 3","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Title test 2","slug":"title-test-2-kc5k9v","body":"Article test 2","createdAt":"2021-03-02T09:36:56.273Z","updatedAt":"2021-03-02T09:36:56.273Z","tagList":[],"description":"Desc test 2","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Title test 1","slug":"title-test-1-q20sb2","body":"Article test 1","createdAt":"2021-03-02T09:36:54.320Z","updatedAt":"2021-03-02T09:36:54.320Z","tagList":[],"description":"Desc test 1","author":{"username":"mbzdziula","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1}],"articlesCount":500}</div>
                     <div class="step-row">
-                        <div class="step-container" id="37">
-                            <div class="step-ref passed">37</div>
+                        <div class="step-container" id="79">
+                            <div class="step-ref passed">79</div>
                             <div class="step-cell passed">Then status 200</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="38">
-                            <div class="step-ref passed">38</div>
-                            <div class="step-cell passed">And match response.articles[0].title != 'Delete test'</div>
+                        <div class="step-container" id="80">
+                            <div class="step-ref passed">80</div>
+                            <div class="step-cell passed">And match response.articles[0].title != articleRequestBody.article.title</div>
                         </div>
                         <div class="time-cell passed">1</div>
                     </div>
