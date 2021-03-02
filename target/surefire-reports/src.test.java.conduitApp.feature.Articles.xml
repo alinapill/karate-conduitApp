@@ -1,8 +1,14 @@
-<testsuite failures="0" name="src/test/java/conduitApp/feature/Articles.feature" skipped="0" tests="2" time="4.336207">
-  <testcase classname="src.test.java.conduitApp.feature.Articles" name="Create a new article" time="1.753728">
+<testsuite failures="0" name="src/test/java/conduitApp/feature/Articles.feature" skipped="0" tests="4" time="6.511487">
+  <testcase classname="src.test.java.conduitApp.feature.Articles" name="Create a new article | hardcoded values" time="2.168631">
     <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
-* def tokenResponse = callonce read('../../helpers/CreateToken.feature@CreateToken') { "email": "karate@user.com", "password": "karate123"} . passed
+* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"} . passed
 * def token = tokenResponse.authToken ..................................... passed
+* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body . passed
 Given header Authorization = 'Token ' + token ............................. passed
 Given path 'articles' ..................................................... passed
 And request ............................................................... passed
@@ -10,10 +16,16 @@ When method Post .......................................................... pass
 Then status 200 ........................................................... passed
 And match response.article.title == 'Bla bla' ............................. passed</system-out>
   </testcase>
-  <testcase classname="src.test.java.conduitApp.feature.Articles" name="Create and Delete article" time="2.582479">
+  <testcase classname="src.test.java.conduitApp.feature.Articles" name="Create a new article | using dynamic values - dataGenerated values" time="0.698221">
     <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
-* def tokenResponse = callonce read('../../helpers/CreateToken.feature@CreateToken') { "email": "karate@user.com", "password": "karate123"} . passed
+* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"} . passed
 * def token = tokenResponse.authToken ..................................... passed
+* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body . passed
 Given header Authorization = 'Token ' + token ............................. passed
 Given path 'articles' ..................................................... passed
 And request ............................................................... passed
@@ -21,8 +33,123 @@ When method Post .......................................................... pass
 Then status 200 ........................................................... passed
 And match response.article.title == 'Bla bla' ............................. passed
 Given url 'https://conduit.productionready.io/api/' ....................... passed
-* def tokenResponse = callonce read('../../helpers/CreateToken.feature@CreateToken') { "email": "karate@user.com", "password": "karate123"} . passed
+* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"} . passed
 * def token = tokenResponse.authToken ..................................... passed
+* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body . passed
+Given header Authorization = 'Token ' + token ............................. passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == articleRequestBody.article.title ...... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.conduitApp.feature.Articles" name="Create a new article | data generated values" time="0.618412">
+    <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
+* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"} . passed
+* def token = tokenResponse.authToken ..................................... passed
+* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body . passed
+Given header Authorization = 'Token ' + token ............................. passed
+Given path 'articles' ..................................................... passed
+And request ............................................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == 'Bla bla' ............................. passed
+Given url 'https://conduit.productionready.io/api/' ....................... passed
+* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"} . passed
+* def token = tokenResponse.authToken ..................................... passed
+* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body . passed
+Given header Authorization = 'Token ' + token ............................. passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == articleRequestBody.article.title ...... passed
+Given url 'https://conduit.productionready.io/api/' ....................... passed
+* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"} . passed
+* def token = tokenResponse.authToken ..................................... passed
+* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body . passed
+Given header Authorization = 'Token ' + token ............................. passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == articleRequestBody.article.title ...... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.conduitApp.feature.Articles" name="Create and Delete article | hardcoded values | using JSON request body file" time="3.026223">
+    <system-out>Given url 'https://conduit.productionready.io/api/' ....................... passed
+* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"} . passed
+* def token = tokenResponse.authToken ..................................... passed
+* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body . passed
+Given header Authorization = 'Token ' + token ............................. passed
+Given path 'articles' ..................................................... passed
+And request ............................................................... passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == 'Bla bla' ............................. passed
+Given url 'https://conduit.productionready.io/api/' ....................... passed
+* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"} . passed
+* def token = tokenResponse.authToken ..................................... passed
+* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body . passed
+Given header Authorization = 'Token ' + token ............................. passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == articleRequestBody.article.title ...... passed
+Given url 'https://conduit.productionready.io/api/' ....................... passed
+* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"} . passed
+* def token = tokenResponse.authToken ..................................... passed
+* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body . passed
+Given header Authorization = 'Token ' + token ............................. passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == articleRequestBody.article.title ...... passed
+Given url 'https://conduit.productionready.io/api/' ....................... passed
+* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"} . passed
+* def token = tokenResponse.authToken ..................................... passed
+* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title . passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body . passed
 Given header Authorization = 'Token ' + token ............................. passed
 Given path 'articles' ..................................................... passed
 And request ............................................................... passed
@@ -42,6 +169,6 @@ Given params { limit: 10, offset: 0 } ..................................... pass
 Given path 'articles' ..................................................... passed
 When method Get ........................................................... passed
 Then status 200 ........................................................... passed
-And match response.articles[0].title != 'Delete test' ..................... passed</system-out>
+And match response.articles[0].title != articleRequestBody.article.title .. passed</system-out>
   </testcase>
 </testsuite>

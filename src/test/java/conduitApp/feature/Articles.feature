@@ -2,10 +2,17 @@ Feature: Articles
 
     Background:
         Given url 'https://conduit.productionready.io/api/'
-        * def tokenResponse = callonce read('../../helpers/CreateToken.feature@CreateToken') { "email": "karate@user.com", "password": "karate123"}
+        * def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"}
         * def token = tokenResponse.authToken
+        # call JSON object, assign this Json into this object, call: articleRequestBody.article.title-description-body, assign to these values - the generated values
+        * def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json')
+        * def dataGenerator = Java.type('helpers.DataGenerator')
+        * set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title
+        * set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title
+        * set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description
+        * set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body
 
-    Scenario: Create a new article
+    Scenario: Create a new article | hardcoded values
         Given header Authorization = 'Token ' + token
         Given path 'articles'
         And request
@@ -24,7 +31,23 @@ Feature: Articles
         Then status 200
         And match response.article.title == 'Bla bla'
 
-    Scenario: Create and Delete article
+    Scenario: Create a new article | using dynamic values - dataGenerated values
+        Given header Authorization = 'Token ' + token
+        Given path 'articles'
+        And request articleRequestBody
+        When method Post
+        Then status 200
+        And match response.article.title == articleRequestBody.article.title
+
+    Scenario: Create a new article | data generated values
+        Given header Authorization = 'Token ' + token
+        Given path 'articles'
+        And request articleRequestBody
+        When method Post
+        Then status 200
+        And match response.article.title == articleRequestBody.article.title
+
+    Scenario: Create and Delete article | hardcoded values | using JSON request body file
         Given header Authorization = 'Token ' + token
         Given path 'articles'
         And request
@@ -58,4 +81,4 @@ Feature: Articles
         Given path 'articles'
         When method Get
         Then status 200
-        And match response.articles[0].title != 'Delete test'
+        And match response.articles[0].title != articleRequestBody.article.title

@@ -31,3 +31,4 @@ karate.log
 /target/
 
 /target/
+/target/surefire-reports/

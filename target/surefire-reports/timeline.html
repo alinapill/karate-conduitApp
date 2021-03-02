@@ -13,7 +13,7 @@
     <div id="visualization"></div>
     <script>
 var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-3"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"SignUp[3.1:114]","start":557,"end":2069,"title":"SignUp[3.1:114] 02:00:00.557-02:00:02.069 Validate sign up | Error messages"},{"id":2,"group":1,"content":"SignUp[3.2:115]","start":2081,"end":2969,"title":"SignUp[3.2:115] 02:00:02.081-02:00:02.969 Validate sign up | Error messages"},{"id":3,"group":1,"content":"SignUp[3.3:116]","start":2978,"end":3889,"title":"SignUp[3.3:116] 02:00:02.978-02:00:03.889 Validate sign up | Error messages"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"Articles[1:15]","start":629,"end":2812,"title":"Articles[1:15] 02:00:00.629-02:00:02.812 Create a new article | hardcoded values"},{"id":2,"group":1,"content":"Articles[2:34]","start":2825,"end":3526,"title":"Articles[2:34] 02:00:02.825-02:00:03.526 Create a new article | using dynamic values - dataGenerated values"},{"id":3,"group":1,"content":"Articles[3:42]","start":3536,"end":4157,"title":"Articles[3:42] 02:00:03.536-02:00:04.157 Create a new article | data generated values"},{"id":4,"group":1,"content":"Articles[4:50]","start":4165,"end":7196,"title":"Articles[4:50] 02:00:04.165-02:00:07.196 Create and Delete article | hardcoded values | using JSON request body file"}]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });
