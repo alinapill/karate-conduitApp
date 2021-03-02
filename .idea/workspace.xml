@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce0519c-9284-4110-a7b0-546ab653f9d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HooksExample1.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HooksExample2.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/helpers/HooksUtilFile.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Articles.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Articles.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/Hooks.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/helpers/Dummy.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/logback-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logback-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HooksExample2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HooksExample2.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-conduitApp.ConduitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-conduitApp.ConduitTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.ConduitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/conduitApp.ConduitTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.Articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.Articles.html" afterDir="false" />
@@ -21,6 +17,7 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.SignUp.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/Articles.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/Articles.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,26 +69,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: HooksExample1">
-    <configuration name="Feature: Dummy" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/helpers/Dummy.feature" />
-      <option name="GLUE" value="com.intuit.karate" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="karate-practice-project" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: Dummy" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cucumber Java.Feature: HooksExample2">
     <configuration name="Feature: HooksExample1" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HooksExample1.feature" />
@@ -130,26 +108,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Dummy" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/helpers/Dummy.feature" />
-      <option name="GLUE" value="com.intuit.karate" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="karate-practice-project" />
-      <option name="NAME_FILTER" value="^Dummy$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Dummy$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Dummy" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Scenario: First scenario" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HooksExample1.feature" />
@@ -170,20 +128,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConduitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="karate-practice-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="conduitApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="conduitApp" />
+      <option name="MAIN_CLASS_NAME" value="conduitApp.ConduitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConduitTest.testAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="karate-practice-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="conduitApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="conduitApp" />
+      <option name="MAIN_CLASS_NAME" value="conduitApp.ConduitTest" />
+      <option name="METHOD_NAME" value="testAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Cucumber Java.Feature: HooksExample1" />
       <item itemvalue="Cucumber Java.Scenario: First scenario" />
-      <item itemvalue="Cucumber Java.Feature: Dummy" />
-      <item itemvalue="Cucumber Java.Scenario: Dummy" />
       <item itemvalue="Cucumber Java.Feature: HooksExample2" />
+      <item itemvalue="JUnit.ConduitTest" />
+      <item itemvalue="JUnit.ConduitTest.testAll" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: HooksExample1" />
         <item itemvalue="Cucumber Java.Feature: HooksExample2" />
+        <item itemvalue="JUnit.ConduitTest.testAll" />
+        <item itemvalue="JUnit.ConduitTest" />
+        <item itemvalue="Cucumber Java.Feature: HooksExample1" />
         <item itemvalue="Cucumber Java.Scenario: First scenario" />
-        <item itemvalue="Cucumber Java.Scenario: Dummy" />
-        <item itemvalue="Cucumber Java.Feature: Dummy" />
       </list>
     </recent_temporary>
   </component>

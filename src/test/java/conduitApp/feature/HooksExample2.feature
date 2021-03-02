@@ -8,8 +8,16 @@ Feature: Hooks | using 'callonce'
         * def result = callonce read('classpath:helpers/HooksUtilFile.feature@HookCallReadOnce')
         * def username = result.username
 
+        # using in-line JS function
         * configure afterScenario = function(){ karate.call('classpath:helpers/HooksUtilFile.feature@HookAfterScenario') }
-        * configure afterFeature = function(){ karate.call('classpath:helpers/HooksUtilFile.feature@HookAfterFeature') }
+
+        # using embedded expression
+        * configure afterFeature =
+        """
+            function(){
+                karate.call('classpath:helpers/HooksUtilFile.feature@HookAfterFeature');
+                }
+        """
 
     Scenario: First scenario
         * print 'username: ', username

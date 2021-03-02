@@ -46,21 +46,21 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2021-03-02 01:07:31 PM</div>
+                <div id="nav-date">2021-03-02 02:22:11 PM</div>
                         
       
                 <div class="nav-container">
                     <div class="nav-item passed">
-                        <a href="#[1:15]">[1:15] Create a new article | hardcoded values </a>
+                        <a href="#[1:16]">[1:16] Create a new article | hardcoded values </a>
                     </div>
                     <div class="nav-item passed">
-                        <a href="#[2:34]">[2:34] Create a new article | using dynamic values - dataGenerated values </a>
+                        <a href="#[2:35]">[2:35] Create a new article | using dynamic values - dataGenerated values </a>
                     </div>
                     <div class="nav-item passed">
-                        <a href="#[3:42]">[3:42] Create a new article | data generated values </a>
+                        <a href="#[3:43]">[3:43] Create a new article | data generated values </a>
                     </div>
                     <div class="nav-item passed">
-                        <a href="#[4:50]">[4:50] Create and Delete article | hardcoded values | using JSON request body file </a>
+                        <a href="#[4:51]">[4:51] Create and Delete article | hardcoded values | using JSON request body file </a>
                     </div>
                 </div>
             </div>
@@ -71,42 +71,42 @@
                     <a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">conduitApp/feature/Articles.feature</span><span class="feature-description">Articles</span>
                 </div>
                 <div class="scenario">
-                    <div class="scenario-heading" id="[1:15]">
+                    <div class="scenario-heading" id="[1:16]">
                         <div class="heading-container">
                             <div class="scenario-tags"></div>
-                            <span class="scenario-keyword">Scenario: [1:15]</span><span class="scenario-name">Create a new article | hardcoded values </span>
+                            <span class="scenario-keyword">Scenario: [1:16]</span><span class="scenario-name">Create a new article | hardcoded values </span>
                         </div>
-                        <div class="scenario-time passed">ms: 2106</div>
+                        <div class="scenario-time passed">ms: 2027</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="[1:15]bg">
+                        <div class="step-container" id="[1:16]bg">
                             <div class="step-ref bg-step">&gt;&gt;</div>
                             <div class="step-cell passed">Background:</div>
                         </div>
                         <div class="time-cell passed"></div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="1">
                             <div class="step-ref bg-step">1</div>
                             <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
                         </div>
-                        <div class="time-cell passed">2</div>
+                        <div class="time-cell passed">3</div>
                     </div>
-                    <div class="preformatted" data-parent="1">13:07:24.742 not a js function or feature file: [type: NULL, value: null]</div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="preformatted" data-parent="1">14:22:04.238 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="2">
                             <div class="step-ref bg-step">2</div>
                             <div class="step-cell passed">* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"}</div>
                         </div>
-                        <div class="time-cell passed">1195</div>
+                        <div class="time-cell passed">1176</div>
                     </div>
-                    <div class="preformatted" data-parent="2">13:07:25.940 &lt;&lt; lock released, cached callonce: read('classpath:src/test/java/helpers/CreateToken.feature')</div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="preformatted" data-parent="2">14:22:05.418 &lt;&lt; lock released, cached callonce: read('classpath:src/test/java/helpers/CreateToken.feature')</div>
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="2.1">
                             <div class="step-ref bg-step">&gt;&gt;</div>
                             <div class="step-cell passed">src/test/java/helpers/CreateToken.feature</div>
                         </div>
-                        <div class="time-cell passed">1134</div>
+                        <div class="time-cell passed">1125</div>
                     </div>
                     <div class="callarg-container" data-parent="2.1">
                         <div class="step-ref"> </div>
@@ -116,16 +116,16 @@
 }
 </div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="3">
                             <div class="step-ref bg-step">3</div>
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
                         </div>
-                        <div class="time-cell passed">2</div>
+                        <div class="time-cell passed">3</div>
                     </div>
-                    <div class="preformatted" data-parent="3">13:07:24.753 &gt;&gt; lock acquired, begin callonce: read('classpath:src/test/java/helpers/CreateToken.feature')</div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="preformatted" data-parent="3">14:22:04.247 &gt;&gt; lock acquired, begin callonce: read('classpath:src/test/java/helpers/CreateToken.feature')</div>
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="4">
                             <div class="step-ref bg-step">4</div>
                             <div class="step-indent"> </div>
@@ -133,23 +133,58 @@
                         </div>
                         <div class="time-cell passed">2</div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="5">
                             <div class="step-ref bg-step">5</div>
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">And request {"user": {"email": "#(email)", "password": "#(password)"}}</div>
                         </div>
-                        <div class="time-cell passed">6</div>
+                        <div class="time-cell passed">7</div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="6">
                             <div class="step-ref bg-step">6</div>
                             <div class="step-indent"> </div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">1120</div>
+                        <div class="time-cell passed">1107</div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="preformatted" data-parent="6">14:22:04.524 request:
+1 &gt; POST https://conduit.productionready.io/api/users/login
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 59
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"user":{"email":"karate@user.com","password":"karate123"}}
+
+14:22:05.411 response time in milliseconds: 884.92
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 629a96aaaf2e53a4-LHR
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 02 Mar 2021 12:22:05 GMT
+1 &lt; ETag: W/"3e91f3f949343c748751b92d7352da4f"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=RwhBoAMoqhw%2FvXhU1U1jl7t3ZnIEtK8buM1xYJrO4YZcVdF2rFt6ecCS1IX46Ie%2BD%2BWCNBT0GDMCNIQkdXozo5GoaUpGTmW0ZiqZn0ys%2Bt0OBUk%2BZzdzDJe3Iw%3D%3D"}],"max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d02e44fff482f557d478de215ea4127881614687725; expires=Thu, 01-Apr-21 12:22:05 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 17b21e55-3ed0-436a-af75-0ab82740cffd
+1 &lt; X-Runtime: 0.081669
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 08947c7ea9000053a4eeae5000000001
+{"user":{"id":142785,"email":"karate@user.com","createdAt":"2021-02-15T14:14:26.716Z","updatedAt":"2021-02-15T14:14:26.722Z","username":"karateuser","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NzE3MjV9.NmFhcFgYPQ0hBGJSELVOzjQkTKZ1eAQtDKY4GuNaVw0"}}</div>
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="7">
                             <div class="step-ref bg-step">7</div>
                             <div class="step-indent"> </div>
@@ -157,7 +192,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="8">
                             <div class="step-ref bg-step">8</div>
                             <div class="step-indent"> </div>
@@ -165,75 +200,75 @@
                         </div>
                         <div class="time-cell passed">5</div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="9">
                             <div class="step-ref bg-step">9</div>
                             <div class="step-cell passed">* def token = tokenResponse.authToken</div>
                         </div>
                         <div class="time-cell passed">2</div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container">
                             <div class="step-ref bg-step"></div>
                             <div class="step-cell comment"># call JSON object, assign this Json into this object, call: articleRequestBody.article.title-description-body, assign to these values - the generated values</div>
                         </div>
                         <div class="time-cell comment"></div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="10">
                             <div class="step-ref bg-step">10</div>
                             <div class="step-cell passed">* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json')</div>
                         </div>
                         <div class="time-cell passed">3</div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="11">
                             <div class="step-ref bg-step">11</div>
                             <div class="step-cell passed">* def dataGenerator = Java.type('helpers.DataGenerator')</div>
                         </div>
                         <div class="time-cell passed">1</div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="12">
                             <div class="step-ref bg-step">12</div>
                             <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title</div>
                         </div>
-                        <div class="time-cell passed">37</div>
+                        <div class="time-cell passed">32</div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="13">
                             <div class="step-ref bg-step">13</div>
                             <div class="step-cell passed">* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title</div>
                         </div>
-                        <div class="time-cell passed">12</div>
+                        <div class="time-cell passed">26</div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="14">
                             <div class="step-ref bg-step">14</div>
                             <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description</div>
                         </div>
-                        <div class="time-cell passed">15</div>
+                        <div class="time-cell passed">35</div>
                     </div>
-                    <div class="step-row" data-parent="[1:15]bg">
+                    <div class="step-row" data-parent="[1:16]bg">
                         <div class="step-container" id="15">
                             <div class="step-ref bg-step">15</div>
                             <div class="step-cell passed">* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body</div>
                         </div>
-                        <div class="time-cell passed">16</div>
+                        <div class="time-cell passed">31</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="16">
                             <div class="step-ref passed">16</div>
                             <div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
                         </div>
-                        <div class="time-cell passed">3</div>
+                        <div class="time-cell passed">4</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="17">
                             <div class="step-ref passed">17</div>
                             <div class="step-cell passed">Given path 'articles'</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="18">
@@ -256,8 +291,44 @@
                             <div class="step-ref passed">19</div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">809</div>
+                        <div class="time-cell passed">706</div>
                     </div>
+                    <div class="preformatted" data-parent="19">14:22:05.562 request:
+1 &gt; POST https://conduit.productionready.io/api/articles
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NzE3MjV9.NmFhcFgYPQ0hBGJSELVOzjQkTKZ1eAQtDKY4GuNaVw0
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 84
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"article":{"tagList":[],"title":"Bla bla","description":"test test","body":"body"}}
+
+14:22:06.264 response time in milliseconds: 701.58
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 629a96b05c1e0756-LHR
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 02 Mar 2021 12:22:06 GMT
+1 &lt; ETag: W/"1a7865572bc419e787a95c02f8c8e5ce"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=FxQxeQrjZwCt5TOXIC300zG9s5tq11wRtUPu3ulcN%2BejXBLzo%2BF%2FD8DX8iBcJmaEglAEz0QQ51s8Kuq25kr016kD9K%2F7f2p6IjUae0RzaO6h2DmXyw%2FM5bL5%2Fw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=dbaa2150cac810a807855bf36974e210d1614687726; expires=Thu, 01-Apr-21 12:22:06 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 310945c9-94bb-4c5c-9e3e-8f7b3e28001b
+1 &lt; X-Runtime: 0.143543
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 08947c823b00000756aa8c9000000001
+{"article":{"title":"Bla bla","slug":"bla-bla-pt9qr9","body":"body","createdAt":"2021-03-02T12:22:06.533Z","updatedAt":"2021-03-02T12:22:06.533Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
                     <div class="step-row">
                         <div class="step-container" id="20">
                             <div class="step-ref passed">20</div>
@@ -270,94 +341,94 @@
                             <div class="step-ref passed">21</div>
                             <div class="step-cell passed">And match response.article.title == 'Bla bla'</div>
                         </div>
-                        <div class="time-cell passed">8</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                 </div>
                 <div class="scenario">
-                    <div class="scenario-heading" id="[2:34]">
+                    <div class="scenario-heading" id="[2:35]">
                         <div class="heading-container">
                             <div class="scenario-tags"></div>
-                            <span class="scenario-keyword">Scenario: [2:34]</span><span class="scenario-name">Create a new article | using dynamic values - dataGenerated values </span>
+                            <span class="scenario-keyword">Scenario: [2:35]</span><span class="scenario-name">Create a new article | using dynamic values - dataGenerated values </span>
                         </div>
-                        <div class="scenario-time passed">ms: 671</div>
+                        <div class="scenario-time passed">ms: 832</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="[2:34]bg">
+                        <div class="step-container" id="[2:35]bg">
                             <div class="step-ref bg-step">&gt;&gt;</div>
                             <div class="step-cell passed">Background:</div>
                         </div>
                         <div class="time-cell passed"></div>
                     </div>
-                    <div class="step-row" data-parent="[2:34]bg">
+                    <div class="step-row" data-parent="[2:35]bg">
                         <div class="step-container" id="22">
                             <div class="step-ref bg-step">22</div>
                             <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="22">13:07:26.856 not a js function or feature file: [type: NULL, value: null]</div>
-                    <div class="step-row" data-parent="[2:34]bg">
+                    <div class="preformatted" data-parent="22">14:22:06.276 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="step-row" data-parent="[2:35]bg">
                         <div class="step-container" id="23">
                             <div class="step-ref bg-step">23</div>
                             <div class="step-cell passed">* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"}</div>
                         </div>
-                        <div class="time-cell passed">2</div>
+                        <div class="time-cell passed">1</div>
                     </div>
-                    <div class="step-row" data-parent="[2:34]bg">
+                    <div class="step-row" data-parent="[2:35]bg">
                         <div class="step-container" id="24">
                             <div class="step-ref bg-step">24</div>
                             <div class="step-cell passed">* def token = tokenResponse.authToken</div>
                         </div>
                         <div class="time-cell passed">2</div>
                     </div>
-                    <div class="step-row" data-parent="[2:34]bg">
+                    <div class="step-row" data-parent="[2:35]bg">
                         <div class="step-container">
                             <div class="step-ref bg-step"></div>
                             <div class="step-cell comment"># call JSON object, assign this Json into this object, call: articleRequestBody.article.title-description-body, assign to these values - the generated values</div>
                         </div>
                         <div class="time-cell comment"></div>
                     </div>
-                    <div class="step-row" data-parent="[2:34]bg">
+                    <div class="step-row" data-parent="[2:35]bg">
                         <div class="step-container" id="25">
                             <div class="step-ref bg-step">25</div>
                             <div class="step-cell passed">* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json')</div>
                         </div>
                         <div class="time-cell passed">1</div>
                     </div>
-                    <div class="step-row" data-parent="[2:34]bg">
+                    <div class="step-row" data-parent="[2:35]bg">
                         <div class="step-container" id="26">
                             <div class="step-ref bg-step">26</div>
                             <div class="step-cell passed">* def dataGenerator = Java.type('helpers.DataGenerator')</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
-                    <div class="step-row" data-parent="[2:34]bg">
+                    <div class="step-row" data-parent="[2:35]bg">
                         <div class="step-container" id="27">
                             <div class="step-ref bg-step">27</div>
                             <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title</div>
                         </div>
-                        <div class="time-cell passed">14</div>
+                        <div class="time-cell passed">19</div>
                     </div>
-                    <div class="step-row" data-parent="[2:34]bg">
+                    <div class="step-row" data-parent="[2:35]bg">
                         <div class="step-container" id="28">
                             <div class="step-ref bg-step">28</div>
                             <div class="step-cell passed">* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title</div>
                         </div>
-                        <div class="time-cell passed">20</div>
+                        <div class="time-cell passed">15</div>
                     </div>
-                    <div class="step-row" data-parent="[2:34]bg">
+                    <div class="step-row" data-parent="[2:35]bg">
                         <div class="step-container" id="29">
                             <div class="step-ref bg-step">29</div>
                             <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description</div>
                         </div>
-                        <div class="time-cell passed">11</div>
+                        <div class="time-cell passed">28</div>
                     </div>
-                    <div class="step-row" data-parent="[2:34]bg">
+                    <div class="step-row" data-parent="[2:35]bg">
                         <div class="step-container" id="30">
                             <div class="step-ref bg-step">30</div>
                             <div class="step-cell passed">* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body</div>
                         </div>
-                        <div class="time-cell passed">10</div>
+                        <div class="time-cell passed">15</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="31">
@@ -385,8 +456,44 @@
                             <div class="step-ref passed">34</div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">606</div>
+                        <div class="time-cell passed">747</div>
                     </div>
+                    <div class="preformatted" data-parent="34">14:22:06.361 request:
+1 &gt; POST https://conduit.productionready.io/api/articles
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NzE3MjV9.NmFhcFgYPQ0hBGJSELVOzjQkTKZ1eAQtDKY4GuNaVw0
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 164
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"article":{"tagList":[],"title":"Pentos","description":"Oznak zo Pahl","body":"And I have a tender spot in my heart for cripples and bastards and broken things."}}
+
+14:22:07.106 response time in milliseconds: 743.71
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 629a96b53f7cf427-LHR
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 02 Mar 2021 12:22:07 GMT
+1 &lt; ETag: W/"7fa8707e287058b73fb66ad368f19513"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=N2MW7ib9brhXBfpIY3U%2FIVKMiXQFZwLmYOmBecRdivPKVGw%2FdZQ98673uY1ZyciKmznaUxfAR2evoG1zPYWVEfsNCY62CQ68VGl1pwu4oxq%2FpMKUVs3RmgnYSQ%3D%3D"}]}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d78b3fd884b9da6f470ae774be15390c61614687726; expires=Thu, 01-Apr-21 12:22:06 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 13d0da41-225e-4676-9a63-ef17d4fd175e
+1 &lt; X-Runtime: 0.143239
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 08947c85430000f427b2a37000000001
+{"article":{"title":"Pentos","slug":"pentos-rywv1c","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","createdAt":"2021-03-02T12:22:07.319Z","updatedAt":"2021-03-02T12:22:07.319Z","tagList":[],"description":"Oznak zo Pahl","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
                     <div class="step-row">
                         <div class="step-container" id="35">
                             <div class="step-ref passed">35</div>
@@ -399,94 +506,94 @@
                             <div class="step-ref passed">36</div>
                             <div class="step-cell passed">And match response.article.title == articleRequestBody.article.title</div>
                         </div>
-                        <div class="time-cell passed">4</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                 </div>
                 <div class="scenario">
-                    <div class="scenario-heading" id="[3:42]">
+                    <div class="scenario-heading" id="[3:43]">
                         <div class="heading-container">
                             <div class="scenario-tags"></div>
-                            <span class="scenario-keyword">Scenario: [3:42]</span><span class="scenario-name">Create a new article | data generated values </span>
+                            <span class="scenario-keyword">Scenario: [3:43]</span><span class="scenario-name">Create a new article | data generated values </span>
                         </div>
-                        <div class="scenario-time passed">ms: 752</div>
+                        <div class="scenario-time passed">ms: 913</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="[3:42]bg">
+                        <div class="step-container" id="[3:43]bg">
                             <div class="step-ref bg-step">&gt;&gt;</div>
                             <div class="step-cell passed">Background:</div>
                         </div>
                         <div class="time-cell passed"></div>
                     </div>
-                    <div class="step-row" data-parent="[3:42]bg">
+                    <div class="step-row" data-parent="[3:43]bg">
                         <div class="step-container" id="37">
                             <div class="step-ref bg-step">37</div>
                             <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="37">13:07:27.538 not a js function or feature file: [type: NULL, value: null]</div>
-                    <div class="step-row" data-parent="[3:42]bg">
+                    <div class="preformatted" data-parent="37">14:22:07.116 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="step-row" data-parent="[3:43]bg">
                         <div class="step-container" id="38">
                             <div class="step-ref bg-step">38</div>
                             <div class="step-cell passed">* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"}</div>
                         </div>
-                        <div class="time-cell passed">3</div>
+                        <div class="time-cell passed">2</div>
                     </div>
-                    <div class="step-row" data-parent="[3:42]bg">
+                    <div class="step-row" data-parent="[3:43]bg">
                         <div class="step-container" id="39">
                             <div class="step-ref bg-step">39</div>
                             <div class="step-cell passed">* def token = tokenResponse.authToken</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
-                    <div class="step-row" data-parent="[3:42]bg">
+                    <div class="step-row" data-parent="[3:43]bg">
                         <div class="step-container">
                             <div class="step-ref bg-step"></div>
                             <div class="step-cell comment"># call JSON object, assign this Json into this object, call: articleRequestBody.article.title-description-body, assign to these values - the generated values</div>
                         </div>
                         <div class="time-cell comment"></div>
                     </div>
-                    <div class="step-row" data-parent="[3:42]bg">
+                    <div class="step-row" data-parent="[3:43]bg">
                         <div class="step-container" id="40">
                             <div class="step-ref bg-step">40</div>
                             <div class="step-cell passed">* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json')</div>
                         </div>
-                        <div class="time-cell passed">2</div>
+                        <div class="time-cell passed">1</div>
                     </div>
-                    <div class="step-row" data-parent="[3:42]bg">
+                    <div class="step-row" data-parent="[3:43]bg">
                         <div class="step-container" id="41">
                             <div class="step-ref bg-step">41</div>
                             <div class="step-cell passed">* def dataGenerator = Java.type('helpers.DataGenerator')</div>
                         </div>
                         <div class="time-cell passed">1</div>
                     </div>
-                    <div class="step-row" data-parent="[3:42]bg">
+                    <div class="step-row" data-parent="[3:43]bg">
                         <div class="step-container" id="42">
                             <div class="step-ref bg-step">42</div>
                             <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title</div>
                         </div>
-                        <div class="time-cell passed">12</div>
+                        <div class="time-cell passed">17</div>
                     </div>
-                    <div class="step-row" data-parent="[3:42]bg">
+                    <div class="step-row" data-parent="[3:43]bg">
                         <div class="step-container" id="43">
                             <div class="step-ref bg-step">43</div>
                             <div class="step-cell passed">* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title</div>
                         </div>
-                        <div class="time-cell passed">8</div>
+                        <div class="time-cell passed">14</div>
                     </div>
-                    <div class="step-row" data-parent="[3:42]bg">
+                    <div class="step-row" data-parent="[3:43]bg">
                         <div class="step-container" id="44">
                             <div class="step-ref bg-step">44</div>
                             <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description</div>
                         </div>
-                        <div class="time-cell passed">12</div>
+                        <div class="time-cell passed">15</div>
                     </div>
-                    <div class="step-row" data-parent="[3:42]bg">
+                    <div class="step-row" data-parent="[3:43]bg">
                         <div class="step-container" id="45">
                             <div class="step-ref bg-step">45</div>
                             <div class="step-cell passed">* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body</div>
                         </div>
-                        <div class="time-cell passed">7</div>
+                        <div class="time-cell passed">17</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="46">
@@ -514,8 +621,44 @@
                             <div class="step-ref passed">49</div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">705</div>
+                        <div class="time-cell passed">845</div>
                     </div>
+                    <div class="preformatted" data-parent="49">14:22:07.187 request:
+1 &gt; POST https://conduit.productionready.io/api/articles
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NzE3MjV9.NmFhcFgYPQ0hBGJSELVOzjQkTKZ1eAQtDKY4GuNaVw0
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 150
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"article":{"tagList":[],"title":"Sunspear","description":"Timoth","body":"Some old wounds never truly heal, and bleed again at the slightest word."}}
+
+14:22:08.030 response time in milliseconds: 841.15
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 629a96ba5f0e53f2-LHR
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 02 Mar 2021 12:22:08 GMT
+1 &lt; ETag: W/"1ec4fad93bc1c737b738c8022964eade"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=POgAc5oIo2AaBPmD0ZitmvVD%2FWQussx378q9X%2Bq2Qm1pwlRQcDqZpz9Z0E6PraCjir1oXSc5vNHpApr0mQrPmPOtihr9%2F%2FAhvxSZN3r%2F4Zsty6yOCxUa8Lqqhg%3D%3D"}]}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d32ff63cb53eac4e561a7aac90fc0ae891614687727; expires=Thu, 01-Apr-21 12:22:07 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 354e76f2-8ea1-4252-ae73-2fce59036e4e
+1 &lt; X-Runtime: 0.249584
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 08947c8879000053f2c2a10000000001
+{"article":{"title":"Sunspear","slug":"sunspear-an21rf","body":"Some old wounds never truly heal, and bleed again at the slightest word.","createdAt":"2021-03-02T12:22:08.202Z","updatedAt":"2021-03-02T12:22:08.202Z","tagList":[],"description":"Timoth","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
                     <div class="step-row">
                         <div class="step-container" id="50">
                             <div class="step-ref passed">50</div>
@@ -532,97 +675,97 @@
                     </div>
                 </div>
                 <div class="scenario">
-                    <div class="scenario-heading" id="[4:50]">
+                    <div class="scenario-heading" id="[4:51]">
                         <div class="heading-container">
                             <div class="scenario-tags"></div>
-                            <span class="scenario-keyword">Scenario: [4:50]</span><span class="scenario-name">Create and Delete article | hardcoded values | using JSON request body file </span>
+                            <span class="scenario-keyword">Scenario: [4:51]</span><span class="scenario-name">Create and Delete article | hardcoded values | using JSON request body file </span>
                         </div>
-                        <div class="scenario-time passed">ms: 3455</div>
+                        <div class="scenario-time passed">ms: 3680</div>
                     </div>
                     <div class="step-row">
-                        <div class="step-container" id="[4:50]bg">
+                        <div class="step-container" id="[4:51]bg">
                             <div class="step-ref bg-step">&gt;&gt;</div>
                             <div class="step-cell passed">Background:</div>
                         </div>
                         <div class="time-cell passed"></div>
                     </div>
-                    <div class="step-row" data-parent="[4:50]bg">
+                    <div class="step-row" data-parent="[4:51]bg">
                         <div class="step-container" id="52">
                             <div class="step-ref bg-step">52</div>
                             <div class="step-cell passed">Given url 'https://conduit.productionready.io/api/'</div>
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="52">13:07:28.301 not a js function or feature file: [type: NULL, value: null]</div>
-                    <div class="step-row" data-parent="[4:50]bg">
+                    <div class="preformatted" data-parent="52">14:22:08.039 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="step-row" data-parent="[4:51]bg">
                         <div class="step-container" id="53">
                             <div class="step-ref bg-step">53</div>
                             <div class="step-cell passed">* def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"}</div>
                         </div>
-                        <div class="time-cell passed">3</div>
+                        <div class="time-cell passed">2</div>
                     </div>
-                    <div class="step-row" data-parent="[4:50]bg">
+                    <div class="step-row" data-parent="[4:51]bg">
                         <div class="step-container" id="54">
                             <div class="step-ref bg-step">54</div>
                             <div class="step-cell passed">* def token = tokenResponse.authToken</div>
                         </div>
                         <div class="time-cell passed">1</div>
                     </div>
-                    <div class="step-row" data-parent="[4:50]bg">
+                    <div class="step-row" data-parent="[4:51]bg">
                         <div class="step-container">
                             <div class="step-ref bg-step"></div>
                             <div class="step-cell comment"># call JSON object, assign this Json into this object, call: articleRequestBody.article.title-description-body, assign to these values - the generated values</div>
                         </div>
                         <div class="time-cell comment"></div>
                     </div>
-                    <div class="step-row" data-parent="[4:50]bg">
+                    <div class="step-row" data-parent="[4:51]bg">
                         <div class="step-container" id="55">
                             <div class="step-ref bg-step">55</div>
                             <div class="step-cell passed">* def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json')</div>
                         </div>
                         <div class="time-cell passed">2</div>
                     </div>
-                    <div class="step-row" data-parent="[4:50]bg">
+                    <div class="step-row" data-parent="[4:51]bg">
                         <div class="step-container" id="56">
                             <div class="step-ref bg-step">56</div>
                             <div class="step-cell passed">* def dataGenerator = Java.type('helpers.DataGenerator')</div>
                         </div>
                         <div class="time-cell passed">1</div>
                     </div>
-                    <div class="step-row" data-parent="[4:50]bg">
+                    <div class="step-row" data-parent="[4:51]bg">
                         <div class="step-container" id="57">
                             <div class="step-ref bg-step">57</div>
                             <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().title</div>
                         </div>
                         <div class="time-cell passed">12</div>
                     </div>
-                    <div class="step-row" data-parent="[4:50]bg">
+                    <div class="step-row" data-parent="[4:51]bg">
                         <div class="step-container" id="58">
                             <div class="step-ref bg-step">58</div>
                             <div class="step-cell passed">* set articleRequestBody.article.description = dataGenerator.getRandomArticlesValues().title</div>
                         </div>
-                        <div class="time-cell passed">10</div>
+                        <div class="time-cell passed">9</div>
                     </div>
-                    <div class="step-row" data-parent="[4:50]bg">
+                    <div class="step-row" data-parent="[4:51]bg">
                         <div class="step-container" id="59">
                             <div class="step-ref bg-step">59</div>
                             <div class="step-cell passed">* set articleRequestBody.article.title = dataGenerator.getRandomArticlesValues().description</div>
                         </div>
                         <div class="time-cell passed">9</div>
                     </div>
-                    <div class="step-row" data-parent="[4:50]bg">
+                    <div class="step-row" data-parent="[4:51]bg">
                         <div class="step-container" id="60">
                             <div class="step-ref bg-step">60</div>
                             <div class="step-cell passed">* set articleRequestBody.article.body = dataGenerator.getRandomArticlesValues().body</div>
                         </div>
-                        <div class="time-cell passed">15</div>
+                        <div class="time-cell passed">8</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="61">
                             <div class="step-ref passed">61</div>
                             <div class="step-cell passed">Given header Authorization = 'Token ' + token</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="62">
@@ -652,8 +795,43 @@
                             <div class="step-ref passed">64</div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">943</div>
+                        <div class="time-cell passed">890</div>
                     </div>
+                    <div class="preformatted" data-parent="64">14:22:08.084 request:
+1 &gt; POST https://conduit.productionready.io/api/articles
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NzE3MjV9.NmFhcFgYPQ0hBGJSELVOzjQkTKZ1eAQtDKY4GuNaVw0
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 88
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"article":{"tagList":[],"title":"Delete test","description":"test test","body":"body"}}
+
+14:22:08.972 response time in milliseconds: 887.33
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 629a96bffeef5404-LHR
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 02 Mar 2021 12:22:09 GMT
+1 &lt; ETag: W/"46da210d0647ec0db1ce5dc018232129"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=qzpRm5MpfsBuak3z3nN2Eov5iRzOdOz%2B07qAXX8kEQKqncrvfwb81buxOH5f3BaBqPwCJ7oSz9noGTjCv2fzP679kW8ctw%2BjNrgp4IqcONt15KAQWY%2FEr29Szw%3D%3D"}]}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d296dd0f7385000fe8c3ef9cc96c6aea31614687728; expires=Thu, 01-Apr-21 12:22:08 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 4edb6c46-7ee9-4acb-a504-a6961290aba6
+1 &lt; X-Runtime: 0.386999
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 08947c8c00000054043400b000000001
+{"article":{"title":"Delete test","slug":"delete-test-hpjfnw","body":"body","createdAt":"2021-03-02T12:22:09.226Z","updatedAt":"2021-03-02T12:22:09.226Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}</div>
                     <div class="step-row">
                         <div class="step-container" id="65">
                             <div class="step-ref passed">65</div>
@@ -666,7 +844,7 @@
                             <div class="step-ref passed">66</div>
                             <div class="step-cell passed">* def articleId = response.article.slug</div>
                         </div>
-                        <div class="time-cell passed">4</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="67">
@@ -687,8 +865,40 @@
                             <div class="step-ref passed">69</div>
                             <div class="step-cell passed">When method Get</div>
                         </div>
-                        <div class="time-cell passed">919</div>
+                        <div class="time-cell passed">1204</div>
                     </div>
+                    <div class="preformatted" data-parent="69">14:22:08.979 request:
+2 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Cookie: __cfduid=d296dd0f7385000fe8c3ef9cc96c6aea31614687728
+2 &gt; Host: conduit.productionready.io
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+
+14:22:10.180 response time in milliseconds: 1200.16
+2 &lt; 200
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; CF-RAY: 629a96c57f82e69c-LHR
+2 &lt; Cache-Control: max-age=0, private, must-revalidate
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Tue, 02 Mar 2021 12:22:10 GMT
+2 &lt; ETag: W/"734da3862f31f36ca812c8e6d8a55d50"
+2 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+2 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=JlwPnpSiUAtAWzPgsGIMxVzS2yh2TR58Cd%2BShSaRRw5y8MZQInCSO6WfCq2k3ZgjX%2FZv9nOo8VHA46aQNdRccz78R8PkwzljZrBQoUWaK3i7Jvps35rH%2B3NfSg%3D%3D"}],"group":"cf-nel","max_age":604800}
+2 &lt; Server: cloudflare
+2 &lt; Status: 200 OK
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Origin
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-Powered-By: Phusion Passenger 4.0.60
+2 &lt; X-Request-Id: 49199a4a-af22-49e0-9d4b-5a04b853e0c8
+2 &lt; X-Runtime: 0.469266
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; cf-request-id: 08947c8f6c0000e69c5223f000000001
+{"articles":[{"title":"Delete test","slug":"delete-test-hpjfnw","body":"body","createdAt":"2021-03-02T12:22:09.226Z","updatedAt":"2021-03-02T12:22:09.226Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Sunspear","slug":"sunspear-an21rf","body":"Some old wounds never truly heal, and bleed again at the slightest word.","createdAt":"2021-03-02T12:22:08.202Z","updatedAt":"2021-03-02T12:22:08.202Z","tagList":[],"description":"Timoth","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Pentos","slug":"pentos-rywv1c","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","createdAt":"2021-03-02T12:22:07.319Z","updatedAt":"2021-03-02T12:22:07.319Z","tagList":[],"description":"Oznak zo Pahl","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-pt9qr9","body":"body","createdAt":"2021-03-02T12:22:06.533Z","updatedAt":"2021-03-02T12:22:06.533Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Jenkins12","slug":"jenkins12-wyfo6h","body":"Mamamamamama","createdAt":"2021-03-02T12:20:12.129Z","updatedAt":"2021-03-02T12:20:12.129Z","tagList":[],"description":"working","author":{"username":"Falafal","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Samyrian","slug":"samyrian-vb6ukh","body":"Every flight begins with a fall.","createdAt":"2021-03-02T12:19:57.747Z","updatedAt":"2021-03-02T12:19:57.747Z","tagList":[],"description":"Marianne Vance","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Gulltown","slug":"gulltown-tyrj49","body":"All dwarfs are bastards in their father's eyes","createdAt":"2021-03-02T12:19:57.018Z","updatedAt":"2021-03-02T12:19:57.018Z","tagList":[],"description":"Balman Byrch","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-slautj","body":"body","createdAt":"2021-03-02T12:19:56.421Z","updatedAt":"2021-03-02T12:19:56.421Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Lorath","slug":"lorath-qdrt8u","body":"The North remembers.","createdAt":"2021-03-02T12:19:01.264Z","updatedAt":"2021-03-02T12:19:01.264Z","tagList":[],"description":"Werlag","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Mantarys","slug":"mantarys-93zgbv","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","createdAt":"2021-03-02T12:19:00.406Z","updatedAt":"2021-03-02T12:19:00.406Z","tagList":[],"description":"Garizon","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}</div>
                     <div class="step-row">
                         <div class="step-container" id="70">
                             <div class="step-ref passed">70</div>
@@ -722,8 +932,41 @@
                             <div class="step-ref passed">74</div>
                             <div class="step-cell passed">When method Delete</div>
                         </div>
-                        <div class="time-cell passed">607</div>
+                        <div class="time-cell passed">724</div>
                     </div>
+                    <div class="preformatted" data-parent="74">14:22:10.186 request:
+3 &gt; DELETE https://conduit.productionready.io/api/articles/delete-test-hpjfnw
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQyNzg1LCJ1c2VybmFtZSI6ImthcmF0ZXVzZXIiLCJleHAiOjE2MTk4NzE3MjV9.NmFhcFgYPQ0hBGJSELVOzjQkTKZ1eAQtDKY4GuNaVw0
+3 &gt; Connection: Keep-Alive
+3 &gt; Cookie: __cfduid=d296dd0f7385000fe8c3ef9cc96c6aea31614687728
+3 &gt; Host: conduit.productionready.io
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+
+14:22:10.908 response time in milliseconds: 720.99
+3 &lt; 200
+3 &lt; CF-Cache-Status: DYNAMIC
+3 &lt; CF-RAY: 629a96cd2ec040ea-LHR
+3 &lt; Cache-Control: max-age=0, private, must-revalidate
+3 &lt; Connection: keep-alive
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Date: Tue, 02 Mar 2021 12:22:11 GMT
+3 &lt; ETag: W/"99914b932bd37a50b983c5e7c90ae93b"
+3 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+3 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+3 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=ojcNF17FHfeCc6vP7Q5n37Ozbx1F%2FwsRykc5tqmVd8xVr5LXK8NRC9jrQLFRy7W1BPuBbmwJyJc3N9M%2BJdo0lvON0Eo%2FwosMpv5PfrJiLmJeDHwcKeiaau11Ug%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+3 &lt; Server: cloudflare
+3 &lt; Status: 200 OK
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Vary: Origin
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-Powered-By: Phusion Passenger 4.0.60
+3 &lt; X-Request-Id: 436c163e-6886-4fd9-abe8-e4b9731221a1
+3 &lt; X-Runtime: 0.194340
+3 &lt; X-XSS-Protection: 1; mode=block
+3 &lt; cf-request-id: 08947c943a000040eaca3ad000000001
+{}</div>
                     <div class="step-row">
                         <div class="step-container" id="75">
                             <div class="step-ref passed">75</div>
@@ -750,8 +993,40 @@
                             <div class="step-ref passed">78</div>
                             <div class="step-cell passed">When method Get</div>
                         </div>
-                        <div class="time-cell passed">923</div>
+                        <div class="time-cell passed">811</div>
                     </div>
+                    <div class="preformatted" data-parent="78">14:22:10.911 request:
+4 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Connection: Keep-Alive
+4 &gt; Cookie: __cfduid=d296dd0f7385000fe8c3ef9cc96c6aea31614687728
+4 &gt; Host: conduit.productionready.io
+4 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+
+14:22:11.719 response time in milliseconds: 805.05
+4 &lt; 200
+4 &lt; CF-Cache-Status: DYNAMIC
+4 &lt; CF-RAY: 629a96d1ad80dc4f-LHR
+4 &lt; Cache-Control: max-age=0, private, must-revalidate
+4 &lt; Connection: keep-alive
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Date: Tue, 02 Mar 2021 12:22:12 GMT
+4 &lt; ETag: W/"26f2ba62121a1bdd10ddbda27f34d01e"
+4 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+4 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+4 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=%2FBQJzPPdSYjmossFj00UKnPphymHWtR1%2F3MlQI0QEgfH%2FfbDAl9kp4ixRUrxJGROXbuenw4OuTTYCOVtpiCNiFnTbQr5D1rqSzbefqRvzITzBxUz7rhPuooizQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+4 &lt; Server: cloudflare
+4 &lt; Status: 200 OK
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Vary: Origin
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-Frame-Options: SAMEORIGIN
+4 &lt; X-Powered-By: Phusion Passenger 4.0.60
+4 &lt; X-Request-Id: 8ee1dc72-f70e-46ef-a365-e4fbebb00f32
+4 &lt; X-Runtime: 0.247997
+4 &lt; X-XSS-Protection: 1; mode=block
+4 &lt; cf-request-id: 08947c970b0000dc4f2d39e000000001
+{"articles":[{"title":"Sunspear","slug":"sunspear-an21rf","body":"Some old wounds never truly heal, and bleed again at the slightest word.","createdAt":"2021-03-02T12:22:08.202Z","updatedAt":"2021-03-02T12:22:08.202Z","tagList":[],"description":"Timoth","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Pentos","slug":"pentos-rywv1c","body":"And I have a tender spot in my heart for cripples and bastards and broken things.","createdAt":"2021-03-02T12:22:07.319Z","updatedAt":"2021-03-02T12:22:07.319Z","tagList":[],"description":"Oznak zo Pahl","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-pt9qr9","body":"body","createdAt":"2021-03-02T12:22:06.533Z","updatedAt":"2021-03-02T12:22:06.533Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Jenkins12","slug":"jenkins12-wyfo6h","body":"Mamamamamama","createdAt":"2021-03-02T12:20:12.129Z","updatedAt":"2021-03-02T12:20:12.129Z","tagList":[],"description":"working","author":{"username":"Falafal","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Samyrian","slug":"samyrian-vb6ukh","body":"Every flight begins with a fall.","createdAt":"2021-03-02T12:19:57.747Z","updatedAt":"2021-03-02T12:19:57.747Z","tagList":[],"description":"Marianne Vance","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Gulltown","slug":"gulltown-tyrj49","body":"All dwarfs are bastards in their father's eyes","createdAt":"2021-03-02T12:19:57.018Z","updatedAt":"2021-03-02T12:19:57.018Z","tagList":[],"description":"Balman Byrch","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-slautj","body":"body","createdAt":"2021-03-02T12:19:56.421Z","updatedAt":"2021-03-02T12:19:56.421Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Lorath","slug":"lorath-qdrt8u","body":"The North remembers.","createdAt":"2021-03-02T12:19:01.264Z","updatedAt":"2021-03-02T12:19:01.264Z","tagList":[],"description":"Werlag","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Mantarys","slug":"mantarys-93zgbv","body":"Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.","createdAt":"2021-03-02T12:19:00.406Z","updatedAt":"2021-03-02T12:19:00.406Z","tagList":[],"description":"Garizon","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Bla bla","slug":"bla-bla-dvv97x","body":"body","createdAt":"2021-03-02T12:18:59.491Z","updatedAt":"2021-03-02T12:18:59.491Z","tagList":[],"description":"test test","author":{"username":"karateuser","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}</div>
                     <div class="step-row">
                         <div class="step-container" id="79">
                             <div class="step-ref passed">79</div>

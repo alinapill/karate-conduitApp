@@ -46,7 +46,7 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2021-03-02 01:07:35 PM</div>
+                <div id="nav-date">2021-03-02 02:22:15 PM</div>
                         
       
                 <div class="nav-container">
@@ -79,7 +79,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario: [1:12]</span><span class="scenario-name">Create a new user | Sign up </span>
                         </div>
-                        <div class="scenario-time passed">ms: 900</div>
+                        <div class="scenario-time passed">ms: 869</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[1:12]bg">
@@ -95,7 +95,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="1">13:07:31.803 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="preformatted" data-parent="1">14:22:11.796 not a js function or feature file: [type: NULL, value: null]</div>
                     <div class="step-row" data-parent="[1:12]bg">
                         <div class="step-container">
                             <div class="step-ref bg-step"></div>
@@ -115,21 +115,21 @@
                             <div class="step-ref bg-step">3</div>
                             <div class="step-cell passed">* def timeValidator = read('../../helpers/timeValidator.js')</div>
                         </div>
-                        <div class="time-cell passed">13</div>
+                        <div class="time-cell passed">12</div>
                     </div>
                     <div class="step-row" data-parent="[1:12]bg">
                         <div class="step-container" id="4">
                             <div class="step-ref bg-step">4</div>
                             <div class="step-cell passed">* def randomEmail = dataGenerator.getRandomEmail()</div>
                         </div>
-                        <div class="time-cell passed">32</div>
+                        <div class="time-cell passed">21</div>
                     </div>
                     <div class="step-row" data-parent="[1:12]bg">
                         <div class="step-container" id="5">
                             <div class="step-ref bg-step">5</div>
                             <div class="step-cell passed">* def randomUsername = dataGenerator.getRandomUsername()</div>
                         </div>
-                        <div class="time-cell passed">17</div>
+                        <div class="time-cell passed">16</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="6">
@@ -143,7 +143,7 @@
                             <div class="step-ref passed">7</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">6</div>
+                        <div class="time-cell passed">5</div>
                     </div>
                     <div class="preformatted" data-parent="7">{
     "user": {
@@ -157,8 +157,44 @@
                             <div class="step-ref passed">8</div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">803</div>
+                        <div class="time-cell passed">785</div>
                     </div>
+                    <div class="preformatted" data-parent="8">14:22:11.855 request:
+1 &gt; POST https://conduit.productionready.io/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 86
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"user":{"email":"jaime15@test.com","password":"karate2121","username":"carlos.will"}}
+
+14:22:12.638 response time in milliseconds: 782.01
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 629a96d78fe2076a-LHR
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 02 Mar 2021 12:22:12 GMT
+1 &lt; ETag: W/"4cf6571dec22e6066baa66b24ccae838"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; Location: /
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=kcGJO47G2uIUWF%2Fc7vtUwh6zUuMn6BB0WIZx8aSyJDAo7gld9%2BQiSMwE1C%2BySh33l4MyesWp3EiUhzY8L6dYjHAiX6O86aNAMLhDVaaUx4Z5rgoBkGLniQP74A%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d6482443f930c6474fece4405fe8eb5951614687732; expires=Thu, 01-Apr-21 12:22:12 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 3d16094a-03ea-4ec8-8291-1010e27fa9a5
+1 &lt; X-Runtime: 0.173835
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 08947c9ab10000076adab5e000000001
+{"user":{"id":146048,"email":"jaime15@test.com","createdAt":"2021-03-02T12:22:12.827Z","updatedAt":"2021-03-02T12:22:12.835Z","username":"carlos.will","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ2MDQ4LCJ1c2VybmFtZSI6ImNhcmxvcy53aWxsIiwiZXhwIjoxNjE5ODcxNzMyfQ.HsZcF7RAvwN-zx4HHeqo24I5YNGXmRAJumfqsR_IUos"}}</div>
                     <div class="step-row">
                         <div class="step-container" id="9">
                             <div class="step-ref passed">9</div>
@@ -171,7 +207,7 @@
                             <div class="step-ref passed">10</div>
                             <div class="step-cell passed">And match response ==</div>
                         </div>
-                        <div class="time-cell passed">26</div>
+                        <div class="time-cell passed">27</div>
                     </div>
                     <div class="preformatted" data-parent="10">{
     "user": {
@@ -192,7 +228,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario: [2:44]</span><span class="scenario-name">Create a new user | Sign up - using a JS function to create an instance of the JAVA file </span>
                         </div>
-                        <div class="scenario-time passed">ms: 892</div>
+                        <div class="scenario-time passed">ms: 876</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[2:44]bg">
@@ -208,7 +244,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="11">13:07:32.709 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="preformatted" data-parent="11">14:22:12.685 not a js function or feature file: [type: NULL, value: null]</div>
                     <div class="step-row" data-parent="[2:44]bg">
                         <div class="step-container">
                             <div class="step-ref bg-step"></div>
@@ -221,28 +257,28 @@
                             <div class="step-ref bg-step">12</div>
                             <div class="step-cell passed">* def dataGenerator = Java.type('helpers.DataGenerator')</div>
                         </div>
-                        <div class="time-cell passed">0</div>
+                        <div class="time-cell passed">1</div>
                     </div>
                     <div class="step-row" data-parent="[2:44]bg">
                         <div class="step-container" id="13">
                             <div class="step-ref bg-step">13</div>
                             <div class="step-cell passed">* def timeValidator = read('../../helpers/timeValidator.js')</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row" data-parent="[2:44]bg">
                         <div class="step-container" id="14">
                             <div class="step-ref bg-step">14</div>
                             <div class="step-cell passed">* def randomEmail = dataGenerator.getRandomEmail()</div>
                         </div>
-                        <div class="time-cell passed">11</div>
+                        <div class="time-cell passed">10</div>
                     </div>
                     <div class="step-row" data-parent="[2:44]bg">
                         <div class="step-container" id="15">
                             <div class="step-ref bg-step">15</div>
                             <div class="step-cell passed">* def randomUsername = dataGenerator.getRandomUsername()</div>
                         </div>
-                        <div class="time-cell passed">12</div>
+                        <div class="time-cell passed">9</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container">
@@ -282,7 +318,7 @@
                             <div class="step-ref passed">19</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">2</div>
+                        <div class="time-cell passed">3</div>
                     </div>
                     <div class="preformatted" data-parent="19">{
     "user": {
@@ -296,8 +332,44 @@
                             <div class="step-ref passed">20</div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">847</div>
+                        <div class="time-cell passed">834</div>
                     </div>
+                    <div class="preformatted" data-parent="20">14:22:12.727 request:
+1 &gt; POST https://conduit.productionready.io/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 84
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"user":{"email":"joesph0@test.com","password":"karate2121","username":"gerry.orn"}}
+
+14:22:13.560 response time in milliseconds: 831.74
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 629a96dd0e94070a-LHR
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 02 Mar 2021 12:22:13 GMT
+1 &lt; ETag: W/"2ffd629b0ec75e8033f4190c28cde82c"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; Location: /
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=%2B6IygfiicY14ifbqj%2Ft7zzpY1wm7j7tAUKKWZjq1AnAG70MlNnuPI4u3G%2FOFq4jWXVCSBkmafgoF3kbZfXoWzfqJ%2FHICYv37PciXzofD181BkeeBm5vwg4m5Cw%3D%3D"}]}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d86bc62be3b34861769b883f37ec570aa1614687733; expires=Thu, 01-Apr-21 12:22:13 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: ff310bb5-ec64-4650-829a-520e20f68060
+1 &lt; X-Runtime: 0.095077
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 08947c9e260000070ac71b1000000001
+{"user":{"id":146049,"email":"joesph0@test.com","createdAt":"2021-03-02T12:22:13.629Z","updatedAt":"2021-03-02T12:22:13.634Z","username":"gerry.orn","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQ2MDQ5LCJ1c2VybmFtZSI6ImdlcnJ5Lm9ybiIsImV4cCI6MTYxOTg3MTczM30.mV7fOEblgzd_mmsD1Y-B1w5iYOVEvcJdVT_gxW7JrXA"}}</div>
                     <div class="step-row">
                         <div class="step-container" id="21">
                             <div class="step-ref passed">21</div>
@@ -331,7 +403,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario Outline: [3.1:107]</span><span class="scenario-name">Validate sign up | Error messages </span>
                         </div>
-                        <div class="scenario-time passed">ms: 747</div>
+                        <div class="scenario-time passed">ms: 754</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[3.1:107]bg">
@@ -347,7 +419,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="23">13:07:33.607 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="preformatted" data-parent="23">14:22:13.574 not a js function or feature file: [type: NULL, value: null]</div>
                     <div class="step-row" data-parent="[3.1:107]bg">
                         <div class="step-container">
                             <div class="step-ref bg-step"></div>
@@ -360,28 +432,28 @@
                             <div class="step-ref bg-step">24</div>
                             <div class="step-cell passed">* def dataGenerator = Java.type('helpers.DataGenerator')</div>
                         </div>
-                        <div class="time-cell passed">0</div>
+                        <div class="time-cell passed">1</div>
                     </div>
                     <div class="step-row" data-parent="[3.1:107]bg">
                         <div class="step-container" id="25">
                             <div class="step-ref bg-step">25</div>
                             <div class="step-cell passed">* def timeValidator = read('../../helpers/timeValidator.js')</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">2</div>
                     </div>
                     <div class="step-row" data-parent="[3.1:107]bg">
                         <div class="step-container" id="26">
                             <div class="step-ref bg-step">26</div>
                             <div class="step-cell passed">* def randomEmail = dataGenerator.getRandomEmail()</div>
                         </div>
-                        <div class="time-cell passed">12</div>
+                        <div class="time-cell passed">10</div>
                     </div>
                     <div class="step-row" data-parent="[3.1:107]bg">
                         <div class="step-container" id="27">
                             <div class="step-ref bg-step">27</div>
                             <div class="step-cell passed">* def randomUsername = dataGenerator.getRandomUsername()</div>
                         </div>
-                        <div class="time-cell passed">9</div>
+                        <div class="time-cell passed">10</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="28">
@@ -395,7 +467,7 @@
                             <div class="step-ref passed">29</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">0</div>
+                        <div class="time-cell passed">1</div>
                     </div>
                     <div class="preformatted" data-parent="29">{
     "user": {
@@ -409,8 +481,42 @@
                             <div class="step-ref passed">30</div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">724</div>
+                        <div class="time-cell passed">730</div>
                     </div>
+                    <div class="preformatted" data-parent="30">14:22:13.600 request:
+1 &gt; POST https://conduit.productionready.io/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 88
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"user":{"email":"debbie36@test.com","password":"Karate123","username":"KarateUser123"}}
+
+14:22:14.329 response time in milliseconds: 727.70
+1 &lt; 422
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 629a96e26bae4268-LHR
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 02 Mar 2021 12:22:14 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=CCI%2BvoaMHOlBJT8iSQ3rplcDorJWj74my26%2Fdh2f%2BI2W9VeO%2FEKKL%2BKJh9CUm0R4dBtwO7FUu5T%2B7Iv9A%2BJHPJx9ti3NPJVOMAXNt65tCSPBmnnIOOXKZtj4Nw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d1dc7e651d025a4ce660afb0c3bb171261614687734; expires=Thu, 01-Apr-21 12:22:14 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 422 Unprocessable Entity
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 568d1862-12a3-4f88-9b29-cdb8e829cde7
+1 &lt; X-Runtime: 0.086943
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 08947ca18300004268e1af1000000001
+{"errors":{"username":["has already been taken"]}}</div>
                     <div class="step-row">
                         <div class="step-container" id="31">
                             <div class="step-ref passed">31</div>
@@ -432,7 +538,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario Outline: [3.2:108]</span><span class="scenario-name">Validate sign up | Error messages </span>
                         </div>
-                        <div class="scenario-time passed">ms: 770</div>
+                        <div class="scenario-time passed">ms: 760</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[3.2:108]bg">
@@ -448,7 +554,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="33">13:07:34.365 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="preformatted" data-parent="33">14:22:14.335 not a js function or feature file: [type: NULL, value: null]</div>
                     <div class="step-row" data-parent="[3.2:108]bg">
                         <div class="step-container">
                             <div class="step-ref bg-step"></div>
@@ -461,7 +567,7 @@
                             <div class="step-ref bg-step">34</div>
                             <div class="step-cell passed">* def dataGenerator = Java.type('helpers.DataGenerator')</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row" data-parent="[3.2:108]bg">
                         <div class="step-container" id="35">
@@ -475,14 +581,14 @@
                             <div class="step-ref bg-step">36</div>
                             <div class="step-cell passed">* def randomEmail = dataGenerator.getRandomEmail()</div>
                         </div>
-                        <div class="time-cell passed">13</div>
+                        <div class="time-cell passed">11</div>
                     </div>
                     <div class="step-row" data-parent="[3.2:108]bg">
                         <div class="step-container" id="37">
                             <div class="step-ref bg-step">37</div>
                             <div class="step-cell passed">* def randomUsername = dataGenerator.getRandomUsername()</div>
                         </div>
-                        <div class="time-cell passed">9</div>
+                        <div class="time-cell passed">10</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="38">
@@ -496,7 +602,7 @@
                             <div class="step-ref passed">39</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">0</div>
+                        <div class="time-cell passed">1</div>
                     </div>
                     <div class="preformatted" data-parent="39">{
     "user": {
@@ -510,8 +616,42 @@
                             <div class="step-ref passed">40</div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">745</div>
+                        <div class="time-cell passed">737</div>
                     </div>
+                    <div class="preformatted" data-parent="40">14:22:14.360 request:
+1 &gt; POST https://conduit.productionready.io/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 92
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"user":{"email":"KarateUser1@test.com","password":"Karate123","username":"larhonda.fahey"}}
+
+14:22:15.096 response time in milliseconds: 735.15
+1 &lt; 422
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 629a96e719ad066a-LHR
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 47
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 02 Mar 2021 12:22:15 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=y4FBvimodiZbGjeSdOtzr%2FfjGPHwkJV%2F2CcI4%2B9QL0mRUN1VQ8WyNs2V%2FROeia1UiSV0vHfmp9c9pjTxQfqQhcl6ieAoz6J8YAo%2F9GkmAb%2FhgFVGWgTJ82px8w%3D%3D"}],"max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d74d905f28979c4fc16aea7abe78457261614687734; expires=Thu, 01-Apr-21 12:22:14 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 422 Unprocessable Entity
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 2d8f8341-de62-45d4-a884-e99bbfbcb9d1
+1 &lt; X-Runtime: 0.084517
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 08947ca4740000066ad321d000000001
+{"errors":{"email":["has already been taken"]}}</div>
                     <div class="step-row">
                         <div class="step-container" id="41">
                             <div class="step-ref passed">41</div>
@@ -533,7 +673,7 @@
                             <div class="scenario-tags"></div>
                             <span class="scenario-keyword">Scenario Outline: [3.3:109]</span><span class="scenario-name">Validate sign up | Error messages </span>
                         </div>
-                        <div class="scenario-time passed">ms: 596</div>
+                        <div class="scenario-time passed">ms: 631</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[3.3:109]bg">
@@ -549,7 +689,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="43">13:07:35.141 not a js function or feature file: [type: NULL, value: null]</div>
+                    <div class="preformatted" data-parent="43">14:22:15.102 not a js function or feature file: [type: NULL, value: null]</div>
                     <div class="step-row" data-parent="[3.3:109]bg">
                         <div class="step-container">
                             <div class="step-ref bg-step"></div>
@@ -576,14 +716,14 @@
                             <div class="step-ref bg-step">46</div>
                             <div class="step-cell passed">* def randomEmail = dataGenerator.getRandomEmail()</div>
                         </div>
-                        <div class="time-cell passed">9</div>
+                        <div class="time-cell passed">12</div>
                     </div>
                     <div class="step-row" data-parent="[3.3:109]bg">
                         <div class="step-container" id="47">
                             <div class="step-ref bg-step">47</div>
                             <div class="step-cell passed">* def randomUsername = dataGenerator.getRandomUsername()</div>
                         </div>
-                        <div class="time-cell passed">12</div>
+                        <div class="time-cell passed">19</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="48">
@@ -597,7 +737,7 @@
                             <div class="step-ref passed">49</div>
                             <div class="step-cell passed">And request</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
                     <div class="preformatted" data-parent="49">{
     "user": {
@@ -611,8 +751,42 @@
                             <div class="step-ref passed">50</div>
                             <div class="step-cell passed">When method Post</div>
                         </div>
-                        <div class="time-cell passed">573</div>
+                        <div class="time-cell passed">597</div>
                     </div>
+                    <div class="preformatted" data-parent="50">14:22:15.137 request:
+1 &gt; POST https://conduit.productionready.io/api/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 68
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/14.0.1)
+{"user":{"email":"","password":"Karate123","username":"thuy.zieme"}}
+
+14:22:15.733 response time in milliseconds: 595.22
+1 &lt; 422
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 629a96ec0c754263-LHR
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 02 Mar 2021 12:22:16 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=amPP9cJj%2FR%2F3Z15lGrlx7i2DG%2BMrBKtkDGRQ62wRlNvct5v%2F1KYFD4pD%2FaJ7XgJwGcR7TmIjVpzPXn32OuNxx1fM52p1eOWYfzLmpXM451RWHBFSOsNGsNmNUA%3D%3D"}]}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=daefe837dabb53e55bc83f634618a4d121614687735; expires=Thu, 01-Apr-21 12:22:15 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 422 Unprocessable Entity
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: cfcfd5f1-f8aa-435b-ab18-f05b7d9e073a
+1 &lt; X-Runtime: 0.108081
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; cf-request-id: 08947ca7870000426383929000000001
+{"errors":{"email":["can't be blank"]}}</div>
                     <div class="step-row">
                         <div class="step-container" id="51">
                             <div class="step-ref passed">51</div>

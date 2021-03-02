@@ -32,3 +32,6 @@ karate.log
 
 /target/
 /target/surefire-reports/
+/.idea/
+/.settings/
+/.vscode/
