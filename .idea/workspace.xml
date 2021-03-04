@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce0519c-9284-4110-a7b0-546ab653f9d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/helpers/AddLikes.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karate-practice-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/karate-practice-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/ConduitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/ConduitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/main.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-conduitApp.ConduitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-conduitApp.ConduitTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.ConduitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/conduitApp.ConduitTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.Articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.Articles.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.SignUp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/HomePage.feature" afterDir="false" />
-    </list>
+    <list default="true" id="3ce0519c-9284-4110-a7b0-546ab653f9d5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
