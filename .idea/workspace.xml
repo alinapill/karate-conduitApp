@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ce0519c-9284-4110-a7b0-546ab653f9d5" name="Default Changelist" comment="" />
+    <list default="true" id="3ce0519c-9284-4110-a7b0-546ab653f9d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/HomePage.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,16 +64,15 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Conditional logic">
-    <configuration name="Scenario: Add likes" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: HomePage">
+    <configuration name="Feature: HomePage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/helpers/AddLikes.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="karate-practice-project" />
-      <option name="NAME_FILTER" value="^Add likes$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Add likes$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add likes" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: HomePage" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -99,15 +104,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Get 10 articles from the page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Number to String" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="karate-practice-project" />
-      <option name="NAME_FILTER" value="^Get 10 articles from the page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Get 10 articles from the page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Get 10 articles from the page" />
+      <option name="NAME_FILTER" value="^Number to String$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Number to String$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Number to String" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -119,51 +124,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConduitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Retry call" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" />
+      <option name="GLUE" value="com.intuit.karate" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="karate-practice-project" />
+      <option name="NAME_FILTER" value="^Retry call$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Retry call$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Retry call" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="conduitApp.*" />
+          <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="conduitApp" />
-      <option name="MAIN_CLASS_NAME" value="conduitApp.ConduitTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConduitTest.testParallel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: String to Number" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" />
+      <option name="GLUE" value="com.intuit.karate" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="karate-practice-project" />
+      <option name="NAME_FILTER" value="^String to Number$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^String to Number$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: String to Number" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="conduitApp.*" />
+          <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="conduitApp" />
-      <option name="MAIN_CLASS_NAME" value="conduitApp.ConduitTest" />
-      <option name="METHOD_NAME" value="testParallel" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ConduitTest" />
-      <item itemvalue="JUnit.ConduitTest.testParallel" />
       <item itemvalue="Cucumber Java.Scenario: Conditional logic" />
-      <item itemvalue="Cucumber Java.Scenario: Add likes" />
-      <item itemvalue="Cucumber Java.Scenario: Get 10 articles from the page" />
+      <item itemvalue="Cucumber Java.Scenario: Retry call" />
+      <item itemvalue="Cucumber Java.Scenario: Number to String" />
+      <item itemvalue="Cucumber Java.Scenario: String to Number" />
+      <item itemvalue="Cucumber Java.Feature: HomePage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: HomePage" />
+        <item itemvalue="Cucumber Java.Scenario: String to Number" />
+        <item itemvalue="Cucumber Java.Scenario: Number to String" />
+        <item itemvalue="Cucumber Java.Scenario: Retry call" />
         <item itemvalue="Cucumber Java.Scenario: Conditional logic" />
-        <item itemvalue="Cucumber Java.Scenario: Add likes" />
-        <item itemvalue="Cucumber Java.Scenario: Get 10 articles from the page" />
-        <item itemvalue="JUnit.ConduitTest" />
-        <item itemvalue="JUnit.ConduitTest.testParallel" />
       </list>
     </recent_temporary>
   </component>

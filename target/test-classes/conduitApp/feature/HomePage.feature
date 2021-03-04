@@ -1,4 +1,3 @@
-@Disabled
 Feature: Tests for the HomePage
 
     Background:
@@ -67,24 +66,44 @@ Feature: Tests for the HomePage
             }
         """
 
-        Scenario: Conditional logic
-            Given params { limit: 10, offset: 0 }
-            Given path 'articles'
-            When method Get
-            Then status 200
-            * def favouritesCount = response.articles[0].favoritesCount
-            * print favouritesCount
-            * def article = response.articles[0]
-            * print article
+    Scenario: Conditional logic
+        Given params { limit: 10, offset: 0 }
+        Given path 'articles'
+        When method Get
+        Then status 200
+        * def favouritesCount = response.articles[0].favoritesCount
+        * print favouritesCount
+        * def article = response.articles[0]
+        * print article
 
             # create Condition Logic:
             # IF 'favouritesCount = 0', then call AddLikes.feature and return the result (likesCount variable)
             # otherwise, return result of 'favouritesCount'
-            * def result = favouritesCount == 0 ? karate.call('classpath:helpers/AddLikes.feature', article).likesCount : favouritesCount
+        * def result = favouritesCount == 0 ? karate.call('classpath:helpers/AddLikes.feature', article).likesCount : favouritesCount
 
-            Given params { limit: 10, offset: 0 }
-            Given path 'articles'
-            When method Get
-            Then status 200
+        Given params { limit: 10, offset: 0 }
+        Given path 'articles'
+        When method Get
+        Then status 200
             # if your no. of likes is > 1 (eg. 2), then favouritesCount returns 2, it's assigned to 'result'. Then, the response will be equal to 'result' (initial 'favouritesCount')
-            And match response.articles[0].favoritesCount == result
+        And match response.articles[0].favoritesCount == result
+
+    # add an empty String to the foo value and it's automatically converted from Integer to String
+    Scenario: Number to String
+        * def foo = 10
+        * def json = { "bar": #(foo+'') }
+        * match json == { "bar": '10' }
+
+            # Multiply the foo String with 1 and will be converted from String to Number
+    Scenario: String to Number
+        * def foo = '10'
+        * def json = { "bar": #(foo*1) }
+        * match json == { "bar": 10 }
+
+
+            # when you make any math operation in JS using parseInt, it creates a Double type
+            # '~~' double tilda converts Double to Integer
+    Scenario: String to Number
+        * def foo = '10'
+        * def json2 = { "bar": #(~~parseInt(foo)) }
+        * match json2 == { "bar": 10 }
