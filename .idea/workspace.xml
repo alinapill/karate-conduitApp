@@ -5,10 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ce0519c-9284-4110-a7b0-546ab653f9d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/conduitApp/performance/PerformanceTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/conduitApp/performance/getTags.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_intuit_karate_karate_apache_0_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_intuit_karate_karate_core_0_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_intuit_karate_karate_junit5_0_9_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_12.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/karate-practice-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/karate-practice-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/main.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-conduitApp.ConduitTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.ConduitTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.Articles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.HomePage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/conduitApp.feature.SignUp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/karate-tags.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/jquery.tablesorter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/karate-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/karate-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/karate-report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/res/karate-report.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/HomePage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/conduitApp/feature/HomePage.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,14 +72,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/helpers" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/conduitApp" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java/helpers" />
-      <recent name="$PROJECT_DIR$/src/test/java/conduitApp/feature" />
+      <recent name="$PROJECT_DIR$/src/test/java/conduitApp" />
+      <recent name="$PROJECT_DIR$/src/test/java/performance" />
+      <recent name="$APPLICATION_CONFIG_DIR$/scratches/stuff" />
+      <recent name="$PROJECT_DIR$/src/test/gatling/scala/actions" />
+      <recent name="$PROJECT_DIR$/src/test/gatling/scala/simulations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/java/conduitApp/performance" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="conduitApp" />
@@ -64,15 +97,15 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: HomePage">
-    <configuration name="Feature: HomePage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Get all tags">
+    <configuration name="Feature: CreateArticle" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/gatling/scala/actions/CreateArticle.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="karate-practice-project" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: HomePage" />
+      <option name="SUGGESTED_NAME" value="Feature: CreateArticle" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -84,15 +117,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Conditional logic" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: createArticle" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/performance/createArticle.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="karate-practice-project" />
-      <option name="NAME_FILTER" value="^Conditional logic$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Conditional logic$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Conditional logic" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: createArticle" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -104,15 +136,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Number to String" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Create and Delete article | hardcoded values | using JSON request body file" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/performance/CreateArticle.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="karate-practice-project" />
-      <option name="NAME_FILTER" value="^Number to String$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Number to String$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Number to String" />
+      <option name="NAME_FILTER" value="^Create and Delete article \| hardcoded values \| using JSON request body file$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Create and Delete article \| hardcoded values \| using JSON request body file$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create and Delete article | hardcoded values | using JSON request body file" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -124,15 +156,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Retry call" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Get all tags" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/performance/createArticle.feature" />
       <option name="GLUE" value="com.intuit.karate" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="karate-practice-project" />
-      <option name="NAME_FILTER" value="^Retry call$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Retry call$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Retry call" />
+      <option name="NAME_FILTER" value="^Get all tags$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Get all tags$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Get all tags" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -144,40 +176,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: String to Number" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/conduitApp/feature/HomePage.feature" />
-      <option name="GLUE" value="com.intuit.karate" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="karate-practice-project" />
-      <option name="NAME_FILTER" value="^String to Number$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^String to Number$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: String to Number" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Scenario: Conditional logic" />
-      <item itemvalue="Cucumber Java.Scenario: Retry call" />
-      <item itemvalue="Cucumber Java.Scenario: Number to String" />
-      <item itemvalue="Cucumber Java.Scenario: String to Number" />
-      <item itemvalue="Cucumber Java.Feature: HomePage" />
+      <item itemvalue="Cucumber Java.Scenario: Create and Delete article | hardcoded values | using JSON request body file" />
+      <item itemvalue="Cucumber Java.Feature: CreateArticle" />
+      <item itemvalue="Cucumber Java.Feature: createArticle" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Cucumber Java.Scenario: Get all tags" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: HomePage" />
-        <item itemvalue="Cucumber Java.Scenario: String to Number" />
-        <item itemvalue="Cucumber Java.Scenario: Number to String" />
-        <item itemvalue="Cucumber Java.Scenario: Retry call" />
-        <item itemvalue="Cucumber Java.Scenario: Conditional logic" />
+        <item itemvalue="Cucumber Java.Scenario: Get all tags" />
+        <item itemvalue="Cucumber Java.Feature: createArticle" />
+        <item itemvalue="Cucumber Java.Feature: CreateArticle" />
+        <item itemvalue="Cucumber Java.Scenario: Create and Delete article | hardcoded values | using JSON request body file" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>

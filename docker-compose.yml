@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  karate-tests:
+    image: karate-tests
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+        - ./target:/usr/src/app/target
+        - ~/.m2:/root/.m2
+    command: mvn test
+
+# context: . (starts in the root of the directory)
+# volumes:
+#  - is a mapping of the folder structure between container and host machine
+#  - map `target` folder (copy `target` folder from container to host machine
+#  - caching of the maven dependencies from host machine into our container (will check cache first, if does not find any values, then will download the dependencies from maven central)
+#  - `./m2` is a folder on host machine the maven dependencies are stored

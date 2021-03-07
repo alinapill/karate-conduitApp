@@ -28,11 +28,5 @@ out/
 karate.log
 
 /.vscode/
-/target/
 
-/target/
-/target/surefire-reports/
-/.idea/
-/.settings/
-/.vscode/
-/.idea/
+
