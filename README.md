@@ -5,7 +5,7 @@
 - Java
 - Maven
 - Docker
-- Gatling (for conduitApp.performance testing)
+- Gatling (for HTTP interaction)
 - Cucumber reporting
 
 ### Concepts illustrated in this suite of tests:
@@ -59,17 +59,17 @@ To run all conduitApp.performance tests on the local machine, use next command:
 
 #### Metrics
 
-`MAX_DURATION` - value (maximum duration of the simulation)
+`MAX_DURATION` - X minutes (maximum duration of the simulation)
 
-`REQUESTS_SUCCESSFUL_PERCENTAGE` - 90.0 (percentage of successful requests under test)
+`REQUESTS_SUCCESSFUL_PERCENTAGE` - 99.9 (percentage of successful requests under test)
 
-`INITIAL_LOAD` - value (initial number of requests)
+`INITIAL_LOAD` - X (initial number of requests)
 
-`MAX_LOAD` - value (maximum number of requests)
+`MAX_LOAD` - X (maximum number of requests)
 
-`RAMP_PERIOD` - value (ramp up period)
+`RAMP_PERIOD_MINS` - X minutes (ramp up period in minutes)
 
-`SUSTAIN_PERIOD_MINS` - value(sustain period)
+`SUSTAIN_PERIOD_MINS` - X minute (sustain period in minutes)
 
 #### Performance Tests Reporting
 
