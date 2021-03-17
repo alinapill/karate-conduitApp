@@ -10,7 +10,11 @@ class PerformanceTest extends Simulation {
   // in Scala, Nil = Null
   val protocol = karateProtocol("/api/articles/{articleId}" -> Nil)
 
+  // there are also other strategies: random, shuffle or queue
+  val csvFeeder = csv("articles.csv").circular
+
   val nightlyScn: ScenarioBuilder = scenario("Nightly Simulation")
+    .feed(csvFeeder)
     .randomSwitch(
       35.0 -> exec(karateFeature("classpath:conduitApp/performance/createArticle.feature", "@performance")),
       35.0 -> exec(karateFeature("classpath:conduitApp/performance/createArticle.feature", "@performance")),
@@ -18,7 +22,7 @@ class PerformanceTest extends Simulation {
     )
 
   setUp(
-    nightlyScn.inject(atOnceUsers(10)).protocols(protocol)
+    nightlyScn.inject(atOnceUsers(5)).protocols(protocol)
   )
 
 

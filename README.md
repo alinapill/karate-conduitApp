@@ -53,7 +53,7 @@ Performance tests are used to check service behaviour & functionality under high
 Tests are written using *karate* and *gatling*.
 
 #### Execution
-To run all conduitApp.performance tests on the local machine, use next command:
+To run all performance tests on the local machine, use next command:
 
 `mvn clean test-compile gatling:test`
 

@@ -4,6 +4,8 @@ Feature: Create and delete articles
         * url baseUrl
         * def sleep = function(ms){ java.lang.Thread.sleep(ms) }
         * def pause = karate.get('__gatling.pause', sleep)
+        * def title = __gatling.Title
+        * def description = __gatling.Description
 
     @performance
     Scenario: Create and Delete article | hardcoded values | using JSON request body file
@@ -29,8 +31,8 @@ Feature: Create and delete articles
                           "article": {
                             "tagList": [
                             ],
-                            "title": "Delete test",
-                            "description": "test test",
+                            "title": "#(title)",
+                            "description": "#(description)",
                             "body": "body"
                           }
                         }
@@ -41,9 +43,9 @@ Feature: Create and delete articles
 
         # If we specify for example: inject 3 users at once => first it creates 3 articles, then it waits for 5 seconds and only after this pause
         # it goes and deletes the articles set into the PerformanceTest (to mimic real live user interaction)
-        * pause(5000)
-
-        Given header Authorization = 'Token ' + authToken
-        Given path 'articles', articleId
-        When method Delete
-        Then status 200
+#        * pause(5000)
+#
+#        Given header Authorization = 'Token ' + authToken
+#        Given path 'articles', articleId
+#        When method Delete
+#        Then status 200
