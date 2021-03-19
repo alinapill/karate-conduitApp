@@ -1,4 +1,6 @@
 # Test suite for Conduit application
+This repository contains the concepts illustrated in this Udemy course:
+https://www.udemy.com/course/karate-dsl-api-automation-and-performance-from-zero-to-hero/
 
 ### Tools used:
 - Karate (for BDD testing)
