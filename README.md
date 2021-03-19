@@ -63,5 +63,10 @@ To run all performance tests on the local machine, use next command:
 `mvn clean test-compile gatling:test`
 
 #### Performance Tests Reporting
-Gatling reports are generated in 'target/gatling' folder -> index.html
+By running the tests on the local machine, Gatling reports are generated (project root
+-> gatlingResults folder -> simulationName -> index.html)
+
+[comment]: <> (By running the tests on CI, Gatling reports are created. You can click on Job "Browse" button)
+
+[comment]: <> (to see the index.html file.)
 

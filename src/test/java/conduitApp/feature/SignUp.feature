@@ -1,3 +1,4 @@
+@functional
 Feature: Sign up a new user
 
     Background:

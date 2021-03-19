@@ -1,3 +1,4 @@
+@functional
 Feature: Tests for the Homepage
 
     Background:

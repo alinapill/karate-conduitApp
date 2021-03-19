@@ -1,3 +1,4 @@
+@functional
 Feature: Articles
 
     Background:

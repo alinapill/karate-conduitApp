@@ -1,0 +1,10 @@
+{
+  "simulation": "conduitApp.performance.PerformanceTest",
+  "simulationId": "performancetest",
+  "start": 1616162080713,
+  "description": "| Performance test suite.",
+  "scenarios": ["Performance simulation"],
+  "assertions": [
+
+  ]
+}

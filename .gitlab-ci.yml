@@ -1,0 +1,41 @@
+stages:
+  - test
+  - performance
+
+.test:
+  image: adoptopenjdk:11-jdk-hotspot
+  script:
+    - mvn test -Dkarate.options="--tags @functional"
+  after_script:
+    - mv build/reports/cucumber-html-reports cucumber-report
+  artifacts:
+    when: always
+    paths:
+      - cucumber-report/
+    expose_as: "Cucumber Report"
+    reports:
+      junit: build/reports/karate/scenario*.xml
+
+.performance:
+  image: adoptopenjdk:11-jdk-hotspot
+  script:
+    - mvn clean test-compile gatling:test
+  after_script:
+    - mv build/reports/gatlingResults gatlingResults
+
+test-auto:
+  stage: test
+  extends: .test
+
+test-manual:
+  stage: test
+  extends: .test
+  when: manual
+  allow_failure: false
+  except:
+    - master
+
+performance-auto:
+  stage: test
+  extends: .performance
+  allow_failure: false
