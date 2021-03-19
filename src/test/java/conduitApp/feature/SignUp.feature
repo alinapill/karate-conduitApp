@@ -1,8 +1,7 @@
 Feature: Sign up a new user
 
     Background:
-        Given url 'https://conduit.productionready.io/api/'
-#        Given url baseUrl
+        * url baseUrl
         * def dataGenerator = Java.type('helpers.DataGenerator')
         * def timeValidator = read('../../helpers/timeValidator.js')
         * def randomEmail = dataGenerator.getRandomEmail()
@@ -10,7 +9,6 @@ Feature: Sign up a new user
 
         # embedded expressions | multiline expressions
     Scenario: Create a new user | Sign up
-
         Given path 'users'
         And request
                     """
@@ -25,7 +23,7 @@ Feature: Sign up a new user
         When method Post
         Then status 200
         And match response ==
-        ## replace with fuzzy matching and schema validation patterns
+        # replace with fuzzy matching and schema validation patterns
         """
             {
                 "user": {
@@ -86,7 +84,6 @@ Feature: Sign up a new user
         """
 
     Scenario Outline: Validate sign up | Error messages
-
         Given path 'users'
         And request
                     """

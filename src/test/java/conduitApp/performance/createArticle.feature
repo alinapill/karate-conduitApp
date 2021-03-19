@@ -1,7 +1,7 @@
 Feature: Create articles
 
     Background:
-        * url 'https://conduit.productionready.io/api/'
+        * url baseUrl
         * def articleRequestBody = read('classpath:src/test/java/conduitApp/json/newArticleRequest.json')
         * set articleRequestBody.article.title = __gatling.Title
         * set articleRequestBody.article.description = __gatling.Description

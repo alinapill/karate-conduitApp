@@ -1,7 +1,7 @@
 Feature: Articles
 
     Background:
-        Given url 'https://conduit.productionready.io/api/'
+        * url baseUrl
         * def tokenResponse = callonce read('classpath:src/test/java/helpers/CreateToken.feature') { "email": "karate@user.com", "password": "karate123"}
         * def token = tokenResponse.authToken
         # call JSON object, assign this Json into this object, call: articleRequestBody.article.title-description-body, assign to these values - the generated values
@@ -15,7 +15,7 @@ Feature: Articles
 
     Scenario: Create a new article | hardcoded values
         Given header Authorization = 'Token ' + token
-        Given path 'articles'
+        And path 'articles'
         And request
                     """
                         {
@@ -34,7 +34,7 @@ Feature: Articles
 
     Scenario: Create a new article | using dynamic values - dataGenerated values
         Given header Authorization = 'Token ' + token
-        Given path 'articles'
+        And path 'articles'
         And request articleRequestBody
         When method Post
         Then status 200
@@ -42,7 +42,7 @@ Feature: Articles
 
     Scenario: Create a new article | data generated values
         Given header Authorization = 'Token ' + token
-        Given path 'articles'
+        And path 'articles'
         And request articleRequestBody
         When method Post
         Then status 200
@@ -50,7 +50,7 @@ Feature: Articles
 
     Scenario: Create and Delete article | hardcoded values | using JSON request body file
         Given header Authorization = 'Token ' + token
-        Given path 'articles'
+        And path 'articles'
         And request
                     """
                         {
@@ -68,18 +68,18 @@ Feature: Articles
         * def articleId = response.article.slug
 
         Given params { limit: 10, offset: 0 }
-        Given path 'articles'
+        And path 'articles'
         When method Get
         Then status 200
         And match response.articles[0].title == 'Delete test'
 
         Given header Authorization = 'Token ' + token
-        Given path 'articles', articleId
+        And path 'articles', articleId
         When method Delete
         Then status 200
 
         Given params { limit: 10, offset: 0 }
-        Given path 'articles'
+        And path 'articles'
         When method Get
         Then status 200
         And match response.articles[0].title != articleRequestBody.article.title
