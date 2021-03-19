@@ -1,6 +1,6 @@
-# Test suite for Conduit app
+# Test suite for Conduit application
 
-### Technology stack:
+### Tools used:
 - Karate (for BDD testing)
 - Java
 - Maven
@@ -22,6 +22,9 @@
 - Type conversion   
 - Authentication with token
 - Cucumber reporting
+- Feeders from files and custom feeders
+- Name Resolver for Gatling tests customization
+- Dispatcher configuration for Gatling tests
 
 ### 1. Functional tests
 
@@ -57,22 +60,6 @@ To run all performance tests on the local machine, use next command:
 
 `mvn clean test-compile gatling:test`
 
-#### Metrics
-
-`MAX_DURATION` - X minutes (maximum duration of the simulation)
-
-`REQUESTS_SUCCESSFUL_PERCENTAGE` - 99.9 (percentage of successful requests under test)
-
-`INITIAL_LOAD` - X (initial number of requests)
-
-`MAX_LOAD` - X (maximum number of requests)
-
-`RAMP_PERIOD_MINS` - X minutes (ramp up period in minutes)
-
-`SUSTAIN_PERIOD_MINS` - X minute (sustain period in minutes)
-
 #### Performance Tests Reporting
-
-[comment]: <> (#TODO)
-By running the tests on the local machine, Gatling reports are generated (project root -> gatlingResults folder -> simulationName -> index.html)
+Gatling reports are generated in 'target/gatling' folder -> index.html
 
