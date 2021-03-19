@@ -1,6 +1,5 @@
-Feature: Create Token
+Feature: Create token
 
-    @CreateToken
     Scenario: Create token
         Given url 'https://conduit.productionready.io/api/'
         Given path 'users/login'
