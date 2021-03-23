@@ -70,3 +70,7 @@ By running the tests on the local machine, Gatling reports are generated (projec
 
 [comment]: <> (to see the index.html file.)
 
+### 3. Postman collection
+Can be found at this path: `src/main/resources/postmanCollection`
+Contains all the requests that are used in this suite.
+
